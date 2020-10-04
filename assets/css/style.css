@@ -29,6 +29,14 @@
     width: 15%;
     height: auto;
 }
+.landscape {
+    width: 50%;
+    height: auto;
+    border: 3px;
+    border-color: gray;
+    border-style: groove;
+    border-radius: 25px;
+}
 .heads {
     width: 25%;
     height: auto;
