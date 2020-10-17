@@ -115,6 +115,7 @@ home
 |    |    |    |    |--> vanilla 
 |    |    |    |    |    |
 |    |    |    |    |    |--> season-3
+|    |    |    |    |    |--> season-4
 |    |    |
 |    |    |--> butterminer200
 |    |    |    |
@@ -434,6 +435,14 @@ home
 |    |    |    |    |    |
 |    |    |    |    |    |--> season-3
 |    |    |
+|    |    |--> nerdnation454
+|    |    |    |
+|    |    |    |--> bases
+|    |    |    |    |
+|    |    |    |    |--> vanilla 
+|    |    |    |    |    |
+|    |    |    |    |    |--> season-4
+|    |    |
 |    |    |--> noodleuwu
 |    |    |    |
 |    |    |    |--> bases
@@ -627,6 +636,7 @@ home
 |    |
 |    |--> vanilla
 |    |    |
+|    |    |--> dynmap
 |    |    |--> season 1
 |    |    |--> season 2
 |    |    |--> season 3
@@ -635,12 +645,16 @@ home
 |    |    |    |--> Shop Prices
 |    |    |    |    |
 |    |    |    |    |--> album map art
+|    |    |    |    |--> casino
 |    |    |    |    |--> general store
+|    |    |    |    |--> hobbit house
 |    |    |    |    |--> nether emporium
+|    |    |    |    |--> redstone ore
 |    |    |    |    |--> rockets emporium
 |    |    |    |    |--> shop o sticks
 |    |    |    |    |--> shulker
 |    |    |    |    |--> sticky situation
+|    |    |    |    |--> wapdonalds
 |    |    |    |    |--> wizard lizard gizard
 |    |
 |    |--> modded
