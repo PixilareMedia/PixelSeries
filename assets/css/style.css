@@ -3,6 +3,14 @@
     text-decoration: none;
     color: darkgray;
 }
+.copyrighted {
+    text-decoration: none;
+    color: darkgray;
+}
+.copyrighted:hover {
+    text-decoration: underline;
+    color: lightgray;
+}
 .caption {
     text-decoration: none;
     font-size: small;
