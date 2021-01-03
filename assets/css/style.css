@@ -19,6 +19,10 @@
     text-decoration: none;
     color: lightgreen;
 }
+.downloads:hover {
+    text-decoration: underline;
+    color: mediumseagreen;
+}
 .internal-links {
     text-decoration: none;
     color: gold;
@@ -26,6 +30,10 @@
 .external-links {
     text-decoration: none;
     color: aqua;
+}
+.external-links:hover {
+    text-decoration: underline;
+    color: rgb(72, 245, 245);
 }
 .links-out {
     width: 15%;
