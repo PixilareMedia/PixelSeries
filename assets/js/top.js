@@ -1,12 +1,3 @@
-/*Setting the current year at the bottom of the page*/
-document.addEventListener("DOMContentLoaded", currentYear);
-
-function currentYear() {
-    var y = new Date().getFullYear();
-    document.getElementById("currentYear").textContent = y;
-}
-
-/*Back to top java script functions*/
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

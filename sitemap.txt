@@ -272,6 +272,7 @@ home
 |    |    |    |    |    |
 |    |    |    |    |    |--> season-1
 |    |    |    |    |    |--> season-2
+|    |    |    |    |    |--> season-3
 |    |    |    |    |
 |    |    |    |    |--> vanilla 
 |    |    |    |    |    |
@@ -661,5 +662,6 @@ home
 |    |    |
 |    |    |--> season 1
 |    |    |--> season 2
+|    |    |--> season 3
 |
 |--> join request

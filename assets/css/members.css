@@ -1,0 +1,51 @@
+.primary-title {
+    text-decoration: none;
+    color: purple;
+}
+.secondary-title {
+    text-decoration: none;
+    color: violet;
+}
+.info {
+    border: 3px;
+    border-color: lightgray;
+    border-style: outset;
+    border-radius: 50px;
+    color: rgb(165, 112, 218);
+    font-size: large;
+    padding: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    background-color: rgba(51, 51, 51, 0.7);
+    text-decoration-line: none;
+}
+.image-links {
+    width: 15%;
+    height: auto;
+}
+.internal-links {
+    text-decoration: none;
+    color: gold;
+}
+.internal-links:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+.heads {
+    width: 25%;
+    height: auto;
+}
+.links-out {
+    width: 15%;
+    height: auto;
+    color: aqua;
+    padding: 29px;
+}
+.landscape {
+    width: 50%;
+    height: auto;
+    border: 3px;
+    border-color: gray;
+    border-style: groove;
+    border-radius: 25px;
+}

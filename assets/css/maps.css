@@ -1,0 +1,45 @@
+.primary-title {
+    text-decoration: none;
+    color: purple;
+}
+.secondary-title {
+    text-decoration: none;
+    color: violet;
+}
+.info {
+    border: 3px;
+    border-color: lightgray;
+    border-style: outset;
+    border-radius: 50px;
+    color: rgb(165, 112, 218);
+    font-size: large;
+    padding: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    background-color: rgba(51, 51, 51, 0.7);
+    text-decoration-line: none;
+}
+.internal-links {
+    text-decoration: none;
+    color: gold;
+}
+.internal-links:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+.downloads {
+    text-decoration: none;
+    color: lightgreen;
+}
+.downloads:hover {
+    text-decoration: underline;
+    color: mediumseagreen;
+}
+.external-links {
+    text-decoration: none;
+    color: aqua;
+}
+.external-links:hover {
+    text-decoration: underline;
+    color: rgb(72, 245, 245);
+}
