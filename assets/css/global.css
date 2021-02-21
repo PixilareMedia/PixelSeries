@@ -8,6 +8,11 @@
     color: darkgray;
     font-size: small;
 }
+.copyright-xsm {
+    text-decoration: none;
+    color: darkgray;
+    font-size: x-small;
+}
 .copyrighted {
     text-decoration: none;
     color: darkgray;

@@ -2,7 +2,8 @@
 .topnav {
     background-color: rgba(51, 51, 51, 0.7);
     overflow: hidden;
-    width: 527.2px;
+    /*width: 513.2px;*/
+    width: 393.8px;
     border-style: groove;
     border-radius: 10px;
 }
