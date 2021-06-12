@@ -1,0 +1,17 @@
+/*Error Styling*/
+.info {
+    color: white;
+    font-size: large;
+}
+.content {
+    bottom: 0em;
+}
+.p-title {
+    font-size: 250px;
+}
+.s-title {
+    color: violet;
+}
+.s-title:hover {
+    color: rgb(127, 90, 207);
+}

@@ -1,35 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ca">
     <head>
         <meta charset="UTF-8">
         <title>Dynmap - Pixel Modded - Pixel Series</title>
-        <link rel="shotcut icon" href="/assets/images/logo/pixilaremedia.png">
+        <link rel="shotcut icon" href="/assets/images/logos/pixelseries.png">
         <link rel="stylesheet" href="/assets/css/global.css">
         <link rel="stylesheet" href="/assets/css/navigation.css">
         <link rel="stylesheet" href="/assets/css/top.css">
-        <link rel="stylesheet" href="/assets/css/maps.css">
-        <script src="/assets/js/navigation.js"></script>
-        <script src="/assets/js/copyright.js"></script>
+        <link rel="stylesheet" href="/assets/css/dynmap.css">
+        <script src="/assets/js/global.js"></script>
         <script src="/assets/js/top.js"></script>
     </head>
     <body class="container">
-        <header class="row justify-content-center">
-            <div w3-include-html="/assets/html/top.html"></div>
-            <div w3-include-html="/assets/html/nav.html"></div>
-        </header>
-        <main class="col">
-            <div class="row justify-content-center">
-                <div class="col text-center">
-                    <iframe class="info" src="https://pmmap.pixilaremedia.com/" height="710" width="1280"></iframe>
+        <div include-html="/assets/html/top.html"></div>
+        <div include-html="/assets/html/nav.html" class="nav"></div>
+        <div class="content justify-content-center text-center">
+            <div class="justify-content-center text-center info space-bottom">
+                <div class="row justify-content-center">
+                    <iframe class="infos" src="https://pmmap.pixilaremedia.com/" height="800" width="1600"></iframe>
                 </div>
             </div>
-        </main>
-        <footer class="row justify-content-center text-center">
-            <div>
-                <div w3-include-html="/assets/html/socials.html"></div>
-                <p class="copyright">Pixel Series/Craft/Modded &copy; 2016-<span id="currentYear">2016</span> <a class="copyrighted" href="https://www.pixilaremedia.com" target="_blank">Pixilare Media</a></p>
-                <div w3-include-html="/assets/html/cbwill.html"></div>
-            </div>
-        </footer>
+        </div>
+        <div include-html="/assets/html/footer.html" class="footer-info text-center"></div>
     </body>
 </html>
