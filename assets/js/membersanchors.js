@@ -49,4 +49,9 @@ function anchorCheck() {
             openClose(PMs4);
         }
     }
+    //All Members Anchor Check
+    if(curl1 === "#All" || curl2 === "#All" || curl3 === "#All")
+    {
+        openClose(ALL);
+    }
 }

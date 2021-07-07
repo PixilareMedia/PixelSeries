@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", startUp);
 //Variables
-var allOpen = "no";
+var ALL;
 var PCs1;
 var PCs2;
 var PCs3;
@@ -13,6 +13,7 @@ var PMs4;
 //Setup for the Members Page
 function startUp() {
     //Assigning Variables to Elements
+    ALL = document.getElementById("ALL");
     PCs1 = document.getElementById("cs1");
     PCs2 = document.getElementById("cs2");
     PCs3 = document.getElementById("cs3");
@@ -23,6 +24,7 @@ function startUp() {
     PMs3 = document.getElementById("ms3");
     PMs4 = document.getElementById("ms4");
     //Changing the Display value of the Elements
+    ALL.style.display = "none";
     PCs1.style.display = "none";
     PCs2.style.display = "none";
     PCs3.style.display = "none";
@@ -37,6 +39,7 @@ function startUp() {
 }
 //Set all Elements to be Hidden
 function hideBlocks() {
+    ALL.style.display = "none";
     PCs1.style.display = "none";
     PCs2.style.display = "none";
     PCs3.style.display = "none";
@@ -47,18 +50,6 @@ function hideBlocks() {
     PMs3.style.display = "none";
     PMs4.style.display = "none";
 }
-//Set all Elements to be Showen
-function showBlocks() {
-    PCs1.style.display = "block";
-    PCs2.style.display = "block";
-    PCs3.style.display = "block";
-    PCs4.style.display = "block";
-    PCs5.style.display = "block";
-    PMs1.style.display = "block";
-    PMs2.style.display = "block";
-    PMs3.style.display = "block";
-    PMs4.style.display = "block";
-}
 //Change Display of One Element
 function openClose(name) {
     hideBlocks();
@@ -66,15 +57,5 @@ function openClose(name) {
         name.style.display = "block";
     } else {
         name.style.display = "none";
-    }
-}
-//Show all at once function
-function executeAll() {
-    if(allOpen === "no") {
-        allOpen = "yes";
-        showBlocks();
-    } else {
-        allOpen = "no";
-        firstHide();
     }
 }
