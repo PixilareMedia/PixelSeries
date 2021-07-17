@@ -5,6 +5,7 @@ home/root
 |    |    |--> members
 |    |--> images
 |    |    |--> backgrounds
+|    |    |--> icons
 |    |    |--> logos
 |    |    |--> pixel-craft
 |    |    |--> pixel-modded
@@ -53,7 +54,6 @@ home/root
 |    |    |--> katiebear88
 |    |    |--> kigmd
 |    |    |--> kitteekat115
-|    |    |--> kwulf1668
 |    |    |--> lemayz
 |    |    |--> livvie24
 |    |    |--> lucidrosez
@@ -90,6 +90,7 @@ home/root
 |    |    |--> typicaldude
 |    |    |--> xqcl
 |    |    |--> yeahbox
+|    |    |--> wulfdemon
 |    |    |--> zackman1291
 |    |    |--> zoreon_zen
 |    |    |--> zyfur
