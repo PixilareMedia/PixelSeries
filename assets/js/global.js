@@ -25,8 +25,10 @@ function setup() {
         }
     }
 
-    var y = new Date().getFullYear();
-    document.getElementById("currentYear").textContent = y;
+    var year = new Date().getFullYear();
+    var version = "2.5";
+    document.getElementById("currentYear").textContent = year;
+    document.getElementById("site-version").textContent = version;
 }
 
 const themeButton = document.getElementById("themeBtn");
