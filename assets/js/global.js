@@ -26,7 +26,7 @@ function setup() {
     }
 
     var year = new Date().getFullYear();
-    var version = "2.5";
+    var version = "2.6";
     document.getElementById("currentYear").textContent = year;
     document.getElementById("site-version").textContent = version;
 }
