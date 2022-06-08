@@ -33,6 +33,9 @@ function anchorCheck() {
         if(anchor1 === "Season-5" || anchor2 === "Season-5" || anchor3 === "Season-5") {
             openClose(PCs5);
         }
+        if(anchor1 === "Season-6" || anchor2 === "Season-6" || anchor3 === "Season-6") {
+            openClose(PCs6);
+        }
     }
     //Pixel Modded Anchor Checks
     if(series4 === "#Pixel-Modded-" || series5 === "#Pixel-Modded-" || series6 === "#Pixel-Modded-") {

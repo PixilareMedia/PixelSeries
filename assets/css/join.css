@@ -35,3 +35,12 @@
 .space-bottom {
     padding-bottom: 5em;
 }
+
+.primary-title {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: groove;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: rgba(51, 51, 51, 0.5);
+}

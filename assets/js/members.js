@@ -6,6 +6,7 @@ var PCs2;
 var PCs3;
 var PCs4;
 var PCs5;
+var PCs6;
 var PMs1;
 var PMs2;
 var PMs3;
@@ -19,6 +20,7 @@ function startUp() {
     PCs3 = document.getElementById("cs3");
     PCs4 = document.getElementById("cs4");
     PCs5 = document.getElementById("cs5");
+    PCs6 = document.getElementById("cs6");
     PMs1 = document.getElementById("ms1");
     PMs2 = document.getElementById("ms2");
     PMs3 = document.getElementById("ms3");
@@ -29,7 +31,8 @@ function startUp() {
     PCs2.style.display = "none";
     PCs3.style.display = "none";
     PCs4.style.display = "none";
-    PCs5.style.display = "block";
+    PCs5.style.display = "none";
+    PCs6.style.display = "block";
     PMs1.style.display = "none";
     PMs2.style.display = "none";
     PMs3.style.display = "none";
@@ -45,6 +48,7 @@ function hideBlocks() {
     PCs3.style.display = "none";
     PCs4.style.display = "none";
     PCs5.style.display = "none";
+    PCs6.style.display = "none";
     PMs1.style.display = "none";
     PMs2.style.display = "none";
     PMs3.style.display = "none";

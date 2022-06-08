@@ -8,6 +8,7 @@ home/root
 |    |    |--> icons
 |    |    |--> logos
 |    |    |--> pixel-craft
+|    |    |    |--> season-6
 |    |    |--> pixel-modded
 |    |--> js
 |--> join-request
@@ -19,6 +20,7 @@ home/root
 |    |    |--> _pengu__
 |    |    |--> 7r1
 |    |    |--> annyongb
+|    |    |--> apparitionx27
 |    |    |--> armoredexplosive
 |    |    |--> awoah
 |    |    |--> bear_mohawk
@@ -29,7 +31,10 @@ home/root
 |    |    |--> butterminer200
 |    |    |--> catsandwich999
 |    |    |--> chroifala
+|    |    |--> chuzubb
+|    |    |--> comradeautismo
 |    |    |--> cool_rock_pic
+|    |    |--> crustybird
 |    |    |--> czerczer
 |    |    |--> dain_fa
 |    |    |--> diamond_miner245
@@ -50,7 +55,6 @@ home/root
 |    |    |--> iskygraphics
 |    |    |--> jamacias19
 |    |    |--> kaidonn
-|    |    |--> kaiju_pool115
 |    |    |--> katiebear88
 |    |    |--> kigmd
 |    |    |--> kitteekat115
@@ -67,6 +71,7 @@ home/root
 |    |    |--> nerdnation454
 |    |    |--> nik_storey
 |    |    |--> oddly_ended
+|    |    |--> ogknightbro94
 |    |    |--> peachypugs
 |    |    |--> perry____
 |    |    |--> phroggers_mc
@@ -85,6 +90,7 @@ home/root
 |    |    |--> thatotherpeep
 |    |    |--> thermalbucket41
 |    |    |--> thetrueduality
+|    |    |--> timber_awoo
 |    |    |--> tiwborn
 |    |    |--> toomuchstag
 |    |    |--> typicaldude
@@ -101,6 +107,25 @@ home/root
 |    |--> season-3
 |    |--> season-4
 |    |--> season-5
+|    |--> season-6
+|    |    |--> shulker-box-advancements
+|    |    |    |--> battle-box
+|    |    |    |--> beacon-box
+|    |    |    |--> build-box
+|    |    |    |--> crop-box
+|    |    |    |--> drinking-box
+|    |    |    |--> food-box
+|    |    |    |--> lingering-box
+|    |    |    |--> redstone-box
+|    |    |    |--> sea-box
+|    |    |    |--> shulker-shulker-box
+|    |    |    |--> splashing-box
+|    |    |    |--> stone-box-1
+|    |    |    |--> stone-box-2
+|    |    |    |--> tool-box
+|    |    |    |--> vegetation-box-1
+|    |    |    |--> vegetation-box-2
+|    |    |    |--> wood-box
 |--> pixel-modded
 |    |--> dynmap
 |    |--> season-1

@@ -5,6 +5,8 @@
     bottom: 0em;
     width: 13em;
     background-color: rgb(32, 28, 28);
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .home-img {
     width: 8em;
@@ -57,7 +59,7 @@
     transition:.2s all; 
 }
 .nav-box-wrap:hover .nav-box{
-    filter:blur(3px);
+    /*filter:blur(3px);*/
     opacity:.5;
     transform: scale(.98);
     box-shadow:none;
@@ -70,7 +72,7 @@
 
 
 .content {
-    background-color: rgba(51, 51, 51, 0.5);
+    /*background-color: rgba(51, 51, 51, 0.5);*/
     position: absolute;
     left: 13em;
     top: 0em;
