@@ -19,6 +19,7 @@ home/root
 |    |    |--> _macspy_
 |    |    |--> _pengu__
 |    |    |--> 7r1
+|    |    |--> aki_ryuto
 |    |    |--> annyongb
 |    |    |--> apparitionx27
 |    |    |--> armoredexplosive
@@ -30,6 +31,7 @@ home/root
 |    |    |--> burningorphans
 |    |    |--> butterminer200
 |    |    |--> catsandwich999
+|    |    |--> chaoscreature4k
 |    |    |--> chroifala
 |    |    |--> chuzubb
 |    |    |--> comradeautismo
@@ -76,6 +78,7 @@ home/root
 |    |    |--> perry____
 |    |    |--> phroggers_mc
 |    |    |--> pskett
+|    |    |--> qwispy_spyderz
 |    |    |--> radical_mc
 |    |    |--> rnad
 |    |    |--> seonbwii
@@ -92,8 +95,10 @@ home/root
 |    |    |--> thetrueduality
 |    |    |--> timber_awoo
 |    |    |--> tiwborn
+|    |    |--> tkatra
 |    |    |--> toomuchstag
 |    |    |--> typicaldude
+|    |    |--> x_cygnus_x
 |    |    |--> xqcl
 |    |    |--> yeahbox
 |    |    |--> wulfdemon
@@ -101,7 +106,7 @@ home/root
 |    |    |--> zoreon_zen
 |    |    |--> zyfur
 |--> pixel-craft
-|    |--> dynmap
+|    |--> map
 |    |--> season-1
 |    |--> season-2
 |    |--> season-3
@@ -127,7 +132,7 @@ home/root
 |    |    |    |--> vegetation-box-2
 |    |    |    |--> wood-box
 |--> pixel-modded
-|    |--> dynmap
+|    |--> map
 |    |--> season-1
 |    |--> season-2
 |    |--> season-3
