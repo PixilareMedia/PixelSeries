@@ -1,0 +1,392 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Redirecting. . . - Pixel Series">
+    <Navigation/>
+	<main class="container justify-content-center text-center space-bottom">
+        <div class="col justify-content-center">
+            <h2>This page will change shortly...</h2>
+            <img src="/images/icons/doggo.gif"/>
+            <a class="members-page" href="/members/"><p>If it does not change click Here</p></a>
+        </div>
+	</main>
+    <Footer/>
+</Layout>
+
+<style>
+    .container {
+        position: absolute;
+        left: 12em;
+        top: 0em;
+        right: 0em;
+        color: white;
+        font-size: large;
+    }
+    .justify-content-center {
+        -webkit-box-pack: center!important;
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+    }
+    .text-center {
+        text-align: center!important;
+    }
+
+    .col {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+
+    .members-page {
+        color: white;
+        font-size: large;
+        text-decoration: none;
+    }
+    .members-page:hover {
+        color: purple;
+        text-decoration: underline;
+    }
+    .space-bottom {
+        padding-bottom: 3em;
+    }
+</style>
+
+<script>
+    //Run This Function Once The DOM Content Has Loaded.
+    document.addEventListener("DOMContentLoaded", anchorCheck);
+
+    //Checking The Anchor On The Page.
+    function anchorCheck() {
+        //Hash Varaible.
+        var hash = location.hash.toLocaleLowerCase();
+
+        //Member Checking.
+        //Herobrain_gamer.
+        if(hash == "#herobrain_gamer" || hash == "#willongnose")
+            location.replace("/members/herobrain_gamer");
+        //IItsBradyy.
+        if(hash == "#iitsbradyy")
+            location.replace("/members/iitsbradyy");
+        //midna_87.
+        if(hash == "#midna_87")
+            location.replace("/members/midna_87");
+        //Gardonn.
+        if(hash == "#gardonn")
+            location.replace("/members/gardonn");
+        //EggyLadd.
+        if(hash == "#eggyladd")
+            location.replace("/members/eggyladd");
+        //TheTrueDuality.
+        if(hash == "#thetrueduality" || hash == "#wolfcat01")
+            location.replace("/members/thetrueduality");
+        //TooMuchStag.
+        if(hash == "#toomuchstag")
+            location.replace("/members/toomuchstag");
+        //AnnyongB.
+        if(hash == "#annyongb")
+            location.replace("/members/annyongb");
+        //Butterminer200.
+        if(hash == "#butterminer200")
+            location.replace("/members/butterminer200");
+        //Tanner_Marco.
+        if(hash == "#tanner_marco")
+            location.replace("/members/tanner_marco");
+        //Iruka77.
+        if(hash == "#iruka77")
+            location.replace("/members/iruka77");
+        //CatSandWich999.
+        if(hash == "#catsandwich999")
+            location.replace("/members/catsandwich999");
+        //_Blaze_.
+        if(hash == "#_blaze_" || hash == "#blaze")
+            location.replace("/members/blaze");
+        //dieing.
+        if(hash == "#dieing")
+            location.replace("/members/dieing");
+        //SkyPixels21.
+        if(hash == "#skypixels21")
+            location.replace("/members/skypixels21");
+        //iSkygraphics.
+        if(hash == "#iskygraphics")
+            location.replace("/members/iskygraphics");
+        //Livvie24.
+        if(hash == "#livvie24")
+            location.replace("/members/livvie24");
+        //sparklevamp02.
+        if(hash == "#sparklevamp02")
+            location.replace("/members/sparklevamp02");
+        //zackman1291.
+        if(hash === "#zackman1291" || hash === "#zackman129")
+            location.replace("/members/zackman1291");
+        //HellSubjection.
+        if(hash == "#hellsubjection")
+            location.replace("/members/hellsubjection");
+        //KatieBear88.
+        if(hash == "#katiebear88")
+            location.replace("/members/katiebear88");
+        //Bear_Mohawk.
+        if(hash == "#bear_mohawk")
+            location.replace("/members/bear_mohawk");
+        //Stranqe_People.
+        if(hash == "#stranqe_people")
+            location.replace("/members/stranqe_people");
+        //WulfDemon.
+        if(hash == "#wulfdemon")
+            location.replace("/members/wulfdemon");
+        //Chroifala.
+        if(hash == "#chroifala")
+            location.replace("/members/chroifala");
+        //MasterZent.
+        if(hash == "#masterzent" || hash == "#zaag97")
+            location.replace("/members/masterzent");
+        //BurningOrphans.
+        if(hash == "#burningorphans")
+            location.replace("/members/burningorphans");
+        //SKstarbreaker.
+        if(hash == "#skstarbreaker")
+            location.replace("/members/skstarbreaker");
+        //GeorgeWBush1946.
+        if(hash == "#georgewbush1946")
+            location.replace("/members/georgewbush1946");
+        //xqcL.
+        if(hash == "#xqcl")
+            location.replace("/members/xqcl");
+        //Zyfur.
+        if(hash == "#zyfur")
+            location.replace("/members/zyfur");
+        //_Pengu__.
+        if(hash == "#_pengu__" || hash == "#pengu")
+            location.replace("/members/pengu");
+        //chuzubb.
+        if(hash == "#chuzubb")
+            location.replace("/members/chuzubb");
+        //Kaidonn.
+        if(hash == "#kaidonn")
+            location.replace("/members/kaidonn");
+        //igomigo.
+        if(hash == "#igomigo")
+            location.replace("/members/igomigo");
+        //muttonbuster8.
+        if(hash == "#muttonbuster8")
+            location.replace("/members/muttonbuster8");
+        //McLukers.
+        if(hash == "#mclukers")
+            location.replace("/members/mclukers");
+        //Foughtful.
+        if(hash == "#foughtful")
+            location.replace("/members/foughtful");
+        //awoah.
+        if(hash == "#awoah")
+            location.replace("/members/awoah");
+        //Perry____.
+        if(hash == "#perry____")
+            location.replace("/members/perry____");
+        //TypicalDude.
+        if(hash == "#typicaldude")
+            location.replace("/members/typicaldude");
+        //7r1.
+        if(hash == "#7r1")
+            location.replace("/members/7r1");
+        //Pskett.
+        if(hash == "#pskett")
+            location.replace("/members/pskett");
+        //franko27.
+        if(hash == "#franko27")
+            location.replace("/members/franko27");
+        //__Guard1an__.
+        if(hash == "#__guard1an__" || hash == "#guard1an")
+            location.replace("/members/guard1an");
+        //ThatOtherPeep.
+        if(hash == "#thatotherpeep")
+            location.replace("/members/thatotherpeep");
+        //Diamond_Miner245.
+        if(hash == "#diamond_miner245")
+            location.replace("/members/diamond_miner245");
+        //BlueDiamondBoy11.
+        if(hash == "#bluediamondboy11")
+            location.replace("/members/bluediamondboy11");
+        //Gevans.
+        if(hash == "#gevans")
+            location.replace("/members/gevans");
+        //ArmoredExplosive.
+        if(hash == "#armoredexplosive")
+            location.replace("/members/armoredexplosive");
+        //_Macspy_.
+        if(hash == "#_macspy_" || hash == "#macspy")
+            location.replace("/members/macspy");
+        //dmanPL.
+        if(hash == "#dmanpl")
+            location.replace("/members/dmanpl");
+        //BugoutBoi.
+        if(hash == "#bugoutboi")
+            location.replace("/members/bugoutboi");
+        //Rnad.
+        if(hash == "#rnad")
+            location.replace("/members/rnad");
+        //Frost780.
+        if(hash == "#frost780")
+            location.replace("/members/frost780");
+        //KigMD.
+        if(hash == "#kigmd")
+            location.replace("/members/kigmd");
+        //jamacias19.
+        if(hash == "#jamacias19")
+            location.replace("/members/jamacias19");
+        //Zoreon_Zen.
+        if(hash == "#zoreon_zen")
+            location.replace("/members/zoreon_zen");
+        //ComradeAutismo.
+        if(hash == "#comradeautismo")
+            location.replace("/members/comradeautismo");
+        //Cool_Rock_Pic.
+        if(hash == "#cool_rock_pic")
+            location.replace("/members/cool_rock_pic");
+        //Phroggers_MC.
+        if(hash == "#phroggers_mc")
+            location.replace("/members/phroggers_mc");
+        //Tiwborn.
+        if(hash == "#tiwborn")
+            location.replace("/members/tiwborn");
+        //Nik_Storey.
+        if(hash == "#nik_storey")
+            location.replace("/members/nik_storey");
+        //seonbwii.
+        if(hash == "#seonbwii")
+            location.replace("/members/seonbwii");
+        //czerczer.
+        if(hash == "#czerczer")
+            location.replace("/members/czerczer");
+        //nerdnation454.
+        if(hash == "#nerdnation454")
+            location.replace("/members/nerdnation454");
+        //MainManQuince.
+        if(hash == "#mainmanquince")
+            location.replace("/members/mainmanquince");
+        //Lemayz.
+        if(hash == "#lemayz")
+            location.replace("/members/lemayz");
+        //PeachyPugs.
+        if(hash == "#peachypugs")
+            location.replace("/members/peachypugs");
+        //SLRvoid.
+        if(hash == "#slrvoid")
+            location.replace("/members/slrvoid");
+        //Matth3w404.
+        if(hash == "#matth3w404")
+            location.replace("/members/matth3w404");
+        //beth1qw.
+        if(hash == "#beth1qw")
+            location.replace("/members/beth1qw");
+        //KitteeKat115.
+        if(hash == "#kitteekat115")
+            location.replace("/members/kitteekat115");
+        //Squiggy_Cryptid.
+        if(hash == "#squiggy_cryptid")
+            location.replace("/members/squiggy_cryptid");
+        //ThermalBucket41.
+        if(hash == "#thermalbucket41")
+            location.replace("/members/thermalbucket41");
+        //yeahbox.
+        if(hash == "#yeahbox")
+            location.replace("/members/yeahbox");
+        //Nave1803.
+        if(hash == "#nave1803")
+            location.replace("/members/nave1803");
+        //Stansh02.
+        if(hash == "#stansh02")
+            location.replace("/members/stansh02");
+        //Lucidrosez.
+        if(hash == "#lucidrosez")
+            location.replace("/members/lucidrosez");
+        //Dain_Fa.
+        if(hash == "#dain_fa")
+            location.replace("/members/dain_fa");
+        //Zoaraym.
+        if(hash == "#zoaraym")
+            location.replace("/members/zoaraym");
+        //CrustyBird.
+        if(hash == "#crustybird")
+            location.replace("/members/crustybird");
+        //ApparitionX27.
+        if(hash == "#apparitionx27")
+            location.replace("/members/apparitionx27");
+        //OGKnightBro94.
+        if(hash == "#ogknightbro94")
+            location.replace("/members/ogknightbro94");
+        //Timber_Awoo.
+        if(hash == "#timber_awoo")
+            location.replace("/members/timber_awoo");
+        //X_Cygnus_X.
+        if(hash == "#x_cygnus_x")
+            location.replace("/members/x_cygnus_x");
+        //TKatra.
+        if(hash == "#tkatra")
+            location.replace("/members/tkatra");
+        //Qwispy_Spyderz.
+        if(hash == "#qwispy_spyderz")
+            location.replace("/members/qwispy_spyderz");
+        //The_Sharktooth.
+        if(hash == "#the_sharktooth")
+            location.replace("/members/the_sharktooth");
+        //Aki_Ryuto.
+        if(hash == "#aki_ryuto")
+            location.replace("/members/aki_ryuto");
+        //ChaosCreature4K.
+        if(hash == "#chaoscreature4k")
+            location.replace("/members/chaoscreature4k");
+        
+        //Miscellaneous Link Checking.
+        if(hash == "#home" || hash == "#main" || hash == "#root")
+            location.replace("/");
+        if(hash == "#members" || hash == "#member" || hash == "#peoples" || hash == "#people" || hash == "#users" || hash == "#user")
+            location.replace("/members/");
+        if(hash == "#join-request" || hash == "#join")
+            location.replace("/join-request/");
+        
+        //Pixel Craft Link Checking.
+        //Map.
+        if(hash == "#pixel-craft-map" || hash == "#pcmap")
+            location.replace("/pixel-craft/map/");
+        //Season #6.
+        if(hash == "#pixel-craft-season-6" || hash == "#pcs6")
+            location.replace("/pixel-craft/season-6/");
+        //Season #5.
+        if(hash == "#pixel-craft-season-5" || hash == "#pcs5")
+            location.replace("/pixel-craft/season-5/");
+        //Season #4.
+        if(hash == "#pixel-craft-season-4" || hash == "#pcs4")
+            location.replace("/pixel-craft/season-4/");
+        //Season #3.
+        if(hash == "#pixel-craft-season-3" || hash == "#pcs3")
+            location.replace("/pixel-craft/season-3/");
+        //Season #2.
+        if(hash == "#pixel-craft-season-2" || hash == "#pcs2")
+            location.replace("/pixel-craft/season-2/");
+        //Season #1.
+        if(hash == "#pixel-craft-season-1" || hash == "#pcs1")
+            location.replace("/pixel-craft/season-1/");
+        
+        //Pixel Modded Link Checking.
+        //Map.
+        if(hash == "#pixel-modded-map" || hash == "#pmmap")
+            location.replace("/pixel-modded/map/");
+        //Season #4.
+        if(hash == "#pixel-modded-season-4" || hash == "#pms4")
+            location.replace("/pixel-modded/season-4/");
+        //Season #3.
+        if(hash == "#pixel-modded-season-3" || hash == "#pms3")
+            location.replace("/pixel-modded/season-3/");
+        //Season #2.
+        if(hash == "#pixel-modded-season-2" || hash == "#pms2")
+            location.replace("/pixel-modded/season-2/");
+        //Season #1.
+        if(hash == "#pixel-modded-season-1" || hash == "#pms1")
+            location.replace("/pixel-modded/season-1/");
+    }
+</script>

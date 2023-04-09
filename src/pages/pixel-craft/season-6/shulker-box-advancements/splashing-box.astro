@@ -1,0 +1,124 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Navigation from '../../../../components/Navigation.astro';
+import Footer from '../../../../components/Footer.astro';
+import ItemLists from '../../../../components/ItemLists.astro';
+---
+
+<Layout title="Splashing Box - Shulker Box Advancements - Season #6 - Pixel Craft - Pixel Series">
+    <Navigation/>
+	<main class="container justify-content-center text-center space-bottom">
+        <div class="row justify-content-center">
+            <h1 class="primary-title">Pixel Craft Season #6</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col info text-center">
+                <h2>Splashing Box Advancemen</h2>
+                <div class="col justify-content-center">
+                    <img src="/images/pixel-craft/season-6/shulker-box-advancements/splashing_box.png" alt="An image of the contents of the Splashing Box Advancment."/>
+                    <p>This is what is required for the Splashing Box Advancement. A text list of what is in the Splashing Shulker Box</p>
+                    <div class="row justify-content-center">
+                        <ItemLists
+                            title="Top Row"
+                            item1="1x Splash Potion of Fire Resistance (3:00)"
+                            item2="1x Splash Potion of Regeneration (0:45)"
+                            item3="1x Splash Potion of Harming (I)"
+                            item4="1x Splash Potion of Weakness (1:30)"
+                            item5="1x Splash Potion of Slow Falling (1:30)"
+                            item6="1x Splash Potion of Water Breathing (3:00)"
+                            item7="1x Splash Potion of Slowness (1:30)"
+                            item8="1x Splash Potion of Invisibility (3:00)"
+                            item9="1x Splash Potion of Jump Boost (3:00)"
+                        />
+                        <ItemLists
+                            title="Middle Row"
+                            item1="1x Splash Potion of Healing (I)"
+                            item2="1x Splash Potion of Poison (0:45)"
+                            item3="1x Splash Potion of Strength (3:00)"
+                            item4="1x Splash Potion of Luck (5:00)"
+                            item5="1x Splash Potion of Night Vision (3:00)"
+                            item6="1x Splash Potion of Swiftness (3:00)"
+                            item7="1x Splash Potion of Absorption (2:00)"
+                            item8="1x Splash Potion of Blindness (0:20)"
+                            item9="1x Splash Potion of Haste (3:00)"
+                        />
+                        <ItemLists
+                            title="Bottom Row"
+                            item1="1x Splash Potion of Health Boost (2:00)"
+                            item2="1x Splash Potion of Hunger (1:30)"
+                            item3="1x Splash Potion of Levitation (0:10)"
+                            item4="1x Splash Potion of Mining Fatigue (3:00)"
+                            item5="1x Splash Potion of Nausea (0:45)"
+                            item6="1x Splash Potion of Resistance (3:00)"
+                            item7="1x Splash Potion of Saturation (VIII)"
+                            item8="1x Splash Potion of Unluck (5:00)"
+                            item9="1x Splash Potion of Wither (0:45)"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+	</main>
+    <Footer/>
+</Layout>
+
+<style>
+    .container {
+        position: absolute;
+        left: 12em;
+        top: 0em;
+        right: 0em;
+        color: white;
+        font-size: large;
+    }
+    .justify-content-center {
+        -webkit-box-pack: center!important;
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+    }
+    .text-center {
+        text-align: center!important;
+    }
+
+    .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .col {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+
+    .info {
+        border: 3px;
+        border-color: lightslategray;
+        border-style: inset;
+        border-radius: 25px;
+        font-size: large;
+        padding: 10px;
+        margin: 5px;
+        background-color: rgba(51, 51, 51, 0.5);
+    }
+    .space-bottom {
+        padding-bottom: 3em;
+    }
+    .primary-title {
+        border: 3px;
+        border-color: lightslategray;
+        border-style: groove;
+        border-radius: 25px;
+        padding: 10px;
+        background-color: rgba(51, 51, 51, 0.5);
+    }
+</style>

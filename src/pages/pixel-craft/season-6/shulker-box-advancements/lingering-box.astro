@@ -1,0 +1,124 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Navigation from '../../../../components/Navigation.astro';
+import Footer from '../../../../components/Footer.astro';
+import ItemLists from '../../../../components/ItemLists.astro';
+---
+
+<Layout title="Lingering Box - Shulker Box Advancements - Season #6 - Pixel Craft - Pixel Series">
+    <Navigation/>
+	<main class="container justify-content-center text-center space-bottom">
+        <div class="row justify-content-center">
+            <h1 class="primary-title">Pixel Craft Season #6</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col info text-center">
+                <h2>Lingering Box Advancemen</h2>
+                <div class="col justify-content-center">
+                    <img src="/images/pixel-craft/season-6/shulker-box-advancements/lingering_box.png" alt="An image of the contents of the Lingering Box Advancment."/>
+                    <p>This is what is required for the Lingering Box Advancement. A text list of what is in the Lingering Shulker Box</p>
+                    <div class="row justify-content-center">
+                        <ItemLists
+                            title="Top Row"
+                            item1="1x Lingering Potion of Fire Resistance (0:45)"
+                            item2="1x Lingering Potion of Regeneration (0:11)"
+                            item3="1x Lingering Potion of Harming (I)"
+                            item4="1x Lingering Potion of Weakness (0:22)"
+                            item5="1x Lingering Potion of Slow Falling (0:22)"
+                            item6="1x Lingering Potion of Water Breathing (0:45)"
+                            item7="1x Lingering Potion of Slowness (0:22)"
+                            item8="1x Lingering Potion of Invisibility (0:45)"
+                            item9="1x Lingering Potion of Jump Boost (0:45)"
+                        />
+                        <ItemLists
+                            title="Middle Row"
+                            item1="1x Lingering Potion of Healing (I)"
+                            item2="1x Lingering Potion of Poison (0:11)"
+                            item3="1x Lingering Potion of Strength (0:45)"
+                            item4="1x Lingering Potion of Luck (1:15)"
+                            item5="1x Lingering Potion of Night Vision (0:45)"
+                            item6="1x Lingering Potion of Swiftness (0:45)"
+                            item7="1x Lingering Potion of Absorption (0:07)"
+                            item8="1x Lingering Potion of Blindness (0:01)"
+                            item9="1x Lingering Potion of Haste (0:11)"
+                        />
+                        <ItemLists
+                            title="Bottom Row"
+                            item1="1x Lingering Potion of Health Boost (0:07)"
+                            item2="1x Lingering Potion of Hunger (0:05)"
+                            item3="1x Lingering Potion of Levitation (0:00)"
+                            item4="1x Lingering Potion of Mining Fatigue (0:11)"
+                            item5="1x Lingering Potion of Nausea (0:02)"
+                            item6="1x Lingering Potion of Resistance (0:11)"
+                            item7="1x Lingering Potion of Saturation (VIII)"
+                            item8="1x Lingering Potion of Unluck (0:18)"
+                            item9="1x Lingering Potion of Wither (0:02)"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+	</main>
+    <Footer/>
+</Layout>
+
+<style>
+    .container {
+        position: absolute;
+        left: 12em;
+        top: 0em;
+        right: 0em;
+        color: white;
+        font-size: large;
+    }
+    .justify-content-center {
+        -webkit-box-pack: center!important;
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+    }
+    .text-center {
+        text-align: center!important;
+    }
+
+    .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .col {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+
+    .info {
+        border: 3px;
+        border-color: lightslategray;
+        border-style: inset;
+        border-radius: 25px;
+        font-size: large;
+        padding: 10px;
+        margin: 5px;
+        background-color: rgba(51, 51, 51, 0.5);
+    }
+    .space-bottom {
+        padding-bottom: 3em;
+    }
+    .primary-title {
+        border: 3px;
+        border-color: lightslategray;
+        border-style: groove;
+        border-radius: 25px;
+        padding: 10px;
+        background-color: rgba(51, 51, 51, 0.5);
+    }
+</style>

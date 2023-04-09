@@ -1,0 +1,33 @@
+<footer class="footer-panel">
+    <p>&copy; 2016-<span id="currentYear">NULL</span> | All Rights Reserved | <a href="https://www.pixilaremedia.com" target="_blank">Pixilare Media</a> | Site Version <a href="https://github.com/PixilareMedia/PixelSeries/commits/master" target="_blank">v3.0</a> |</p>
+</footer>
+
+<script>
+    var year = new Date().getFullYear().toString();
+    document.getElementById("currentYear").textContent = year;
+</script>
+
+<style>
+    .footer-panel {
+        position: fixed;
+        bottom: 0em;
+        left: 13em;
+        right: 0em;
+        background-color: rgb(14, 14, 14);
+        text-align: center;
+    }
+
+    .footer-panel > p {
+        color: white;
+        font-size: smaller;
+    }
+
+    .footer-panel > p > a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer-panel > p > a:hover {
+        color: rgb(70, 33, 151);
+    }
+</style>
