@@ -10,11 +10,25 @@ import Footer from '../../components/Footer.astro';
         <div class="row justify-content-center">
             <h1 class="primary-title">Pixel Craft Season #6</h1>
         </div>
-        <div class="row justify-content-center">
+        <div class="col justify-content-center">
             <div class="col info text-center">
                 <p>Season #6 of Pixel Craft this season we are starting in The Wild Update and playing in the same world for as long as we feel like keeping this world. We've also got a bunch of custom stuff that we are adding to the server to enhance our gameplay experience.</p>
-                <p>We have an optional things for people to use if the want and one required thing. The optional things is a Fabric client. The required thing is a Custom Resource Pack that we use for the custom things that we wanted to add to the server. You can get all of these from <a class="external-links" href="https://download.pixilaremedia.com/user/pixilare-media/pixel-craft/season-6/resource-packs/" target="_blank">Resource Packs Here</a> and <a class="external-links" href="https://download.pixilaremedia.com/user/pixilare-media/pixel-craft/season-6/clients/" target="_blank">Clients Here</a>. There is also a page for the <a class="internal-links" href="/pixel-craft/season-6/shulker-box-advancements/">Shulker Box Advancements Here</a> and <a class="internal-links" href="/pixel-craft/season-6/blood-moon-summoning-ritual/">Blood Moon Summoning Ritual Here</a>.</p>
-                <p><a class="downloads" href="https://cdn.roebuck.dev/user/pixilare-media/pixel-series/pixel-craft/season-6/worlds/pixel-craft-season-6-starting-map.zip">Starting Map</a></p>
+                <p>We have an optional things for people to use if the want and one required thing. The optional things is a Fabric client. The required thing is a Custom Resource Pack that we use for the custom things that we wanted to add to the server. You can get all of these from <a class="external-links" href="https://download.pixilaremedia.com/user/pixilare-media/pixel-craft/season-6/resource-packs" target="_blank">Resource Packs Here</a> and <a class="external-links" href="https://download.pixilaremedia.com/user/pixilare-media/pixel-craft/season-6/clients" target="_blank">Clients Here</a>.</p>
+                <p><a class="downloads" href="https://cdn.roebuck.dev/user/pixilare-media/pixel-craft/worlds/season_6_start.zip">Starting Map</a></p>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col info text-center">
+                    <p>Some useful pages for this season.</p>
+                    <ul>
+                        <li><a class="internal-links" href="/pixel-craft/map/">Live Web Map</a></li>
+                        <li><a class="internal-links" href="/pixel-craft/season-6/shulker-box-advancements/">Shulker Box Advancements</a></li>
+                        <!--li><a class="internal-links" href="/pixel-craft/season-6/summoning-ritual/">Summoning Rituals</a></li-->
+                        <li><a class="internal-links" href="/pixel-craft/season-6/summoning-ritual/blood-moon/">Blood Moon Summoning Ritual</a></li>
+                        <li><a class="internal-links" href="/pixel-craft/season-6/item-combinations/">Item Combinations</a></li>
+                    </ul>
+                </div>
+                <div class="col"></div>
             </div>
         </div>
 	</main>
@@ -59,6 +73,10 @@ import Footer from '../../components/Footer.astro';
         max-width: 100%;
     }
 
+    ul {
+        list-style: none;
+    }
+
     .info {
         border: 3px;
         border-color: lightslategray;
@@ -70,11 +88,11 @@ import Footer from '../../components/Footer.astro';
         background-color: rgba(51, 51, 51, 0.5);
     }
     .internal-links {
-        color: rgba(9, 62, 123, 0.696);
+        color: aqua;
         text-decoration: none;
     }
     .internal-links:hover {
-        color: rgb(9, 62, 123);
+        color: rgb(72, 245, 245);
     }
     .downloads {
         color: lightgreen;

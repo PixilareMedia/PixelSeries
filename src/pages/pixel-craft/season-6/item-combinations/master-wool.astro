@@ -1,0 +1,148 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Navigation from '../../../../components/Navigation.astro';
+import Footer from '../../../../components/Footer.astro';
+import ImageLinks from '../../../../components/ImageLinks.astro';
+---
+
+<Layout title="Master Wool - Item Combinations - Season #6 - Pixel Craft - Pixel Series">
+    <Navigation/>
+	<main class="container justify-content-center text-center space-bottom">
+        <div class="row justify-content-center">
+            <h1 class="primary-title">Pixel Craft Season #6</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col info text-center">
+                <h2>Master Wool Item Combination</h2>
+                <p>To create the Master Wool item for the unlock rituals.</p>
+                <p>The images can be clicked on for more information about the items in that go into the barrels. If any enchantments are mentioned they are in the order they are mentioned.</p>
+                <div class="row justify-content-center">
+                    <ImageLinks
+                        href="/pixel-craft/season-6/item-combinations/master-wool/floor-barrel/"
+                        img="/images/pixel-craft/season-6/item-combinations/master-wool/floor_barrel.png"
+                        alt="An image of the contents of the floor barrel to create the Master Wool."
+                        desc="This is what is required for the floor barrel to create the Master Wool."
+                    />
+                    <ImageLinks
+                        href="/pixel-craft/season-6/item-combinations/master-wool/roof-barrel/"
+                        img="/images/pixel-craft/season-6/item-combinations/master-wool/roof_barrel.png"
+                        alt="An image of the contents of the roof barrel to create the Master Wool."
+                        desc="This is what is required for the roof barrel to create the Master Wool."
+                    />
+                </div>
+                <div class="row justify-content-center">
+                    <ImageLinks
+                        href="/pixel-craft/season-6/item-combinations/master-wool/red-shulker-box/"
+                        img="/images/pixel-craft/season-6/item-combinations/master-wool/red_shulker_box.png"
+                        alt="An image of the contents of the red shulker box to create the Master Wool."
+                        desc="This is what is required for the red shulker box to create the Master Wool."
+                    />
+                    <ImageLinks
+                        href="/pixel-craft/season-6/item-combinations/master-wool/green-shulker-box/"
+                        img="/images/pixel-craft/season-6/item-combinations/master-wool/green_shulker_box.png"
+                        alt="An image of the contents of the green shulker box to create the Master Wool."
+                        desc="This is what is required for the green shulker box to create the Master Wool."
+                    />
+                    <ImageLinks
+                        href="/pixel-craft/season-6/item-combinations/master-wool/blue-shulker-box/"
+                        img="/images/pixel-craft/season-6/item-combinations/master-wool/blue_shulker_box.png"
+                        alt="An image of the contents of the blue shulker box to create the Master Wool."
+                        desc="This is what is required for the blue shulker box to create the Master Wool."
+                    />
+                    <ImageLinks
+                        href="/pixel-craft/season-6/item-combinations/master-wool/purple-shulker-box/"
+                        img="/images/pixel-craft/season-6/item-combinations/master-wool/purple_shulker_box.png"
+                        alt="An image of the contents of the purple shulker box to create the Master Wool."
+                        desc="This is what is required for the purple shulker box to create the Master Wool."
+                    />
+                    <ImageLinks
+                        href="/pixel-craft/season-6/item-combinations/master-wool/cyan-shulker-box/"
+                        img="/images/pixel-craft/season-6/item-combinations/master-wool/cyan_shulker_box.png"
+                        alt="An image of the contents of the cyan shulker box to create the Master Wool."
+                        desc="This is what is required for the cyan shulker box to create the Master Wool."
+                    />
+                    <ImageLinks
+                        href="/pixel-craft/season-6/item-combinations/master-wool/magenta-shulker-box/"
+                        img="/images/pixel-craft/season-6/item-combinations/master-wool/magenta_shulker_box.png"
+                        alt="An image of the contents of the magenta shulker box to create the Master Wool."
+                        desc="This is what is required for the magenta shulker box to create the Master Wool."
+                    />
+                    <ImageLinks
+                        href="/pixel-craft/season-6/item-combinations/master-wool/yellow-shulker-box/"
+                        img="/images/pixel-craft/season-6/item-combinations/master-wool/yellow_shulker_box.png"
+                        alt="An image of the contents of the yellow shulker box to create the Master Wool."
+                        desc="This is what is required for the yellow shulker box to create the Master Wool."
+                    />
+                    <ImageLinks
+                        href="/pixel-craft/season-6/item-combinations/master-wool/orange-shulker-box/"
+                        img="/images/pixel-craft/season-6/item-combinations/master-wool/orange_shulker_box.png"
+                        alt="An image of the contents of the orange shulker box to create the Master Wool."
+                        desc="This is what is required for the orange shulker box to create the Master Wool."
+                    />
+                </div>
+            </div>
+        </div>
+	</main>
+    <Footer/>
+</Layout>
+
+<style>
+    .container {
+        position: absolute;
+        left: 12em;
+        top: 0em;
+        right: 0em;
+        color: white;
+        font-size: large;
+    }
+    .justify-content-center {
+        -webkit-box-pack: center!important;
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+    }
+    .text-center {
+        text-align: center!important;
+    }
+
+    .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .col {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+
+    .info {
+        border: 3px;
+        border-color: lightslategray;
+        border-style: inset;
+        border-radius: 25px;
+        font-size: large;
+        padding: 10px;
+        margin: 5px;
+        background-color: rgba(51, 51, 51, 0.5);
+    }
+    .space-bottom {
+        padding-bottom: 3em;
+    }
+    .primary-title {
+        border: 3px;
+        border-color: lightslategray;
+        border-style: groove;
+        border-radius: 25px;
+        padding: 10px;
+        background-color: rgba(51, 51, 51, 0.5);
+    }
+</style>
