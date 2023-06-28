@@ -1,0 +1,128 @@
+---
+import Layout from '../../../../../layouts/Layout.astro';
+import Navigation from '../../../../../components/Navigation.astro';
+import Footer from '../../../../../components/Footer.astro';
+import ItemLists from '../../../../../components/ItemLists.astro';
+import Back from '../../../../../components/Back.astro';
+import Top from '../../../../../components/Top.astro';
+---
+
+<Layout title="Orange Shulker Box - Master Aquatic Foliage - Item Combinations - Season #6 - Pixel Craft - Pixel Series">
+    <Navigation/>
+    <Top/>
+    <Back href="/pixel-craft/season-6/item-combinations/master-aquatic-foliage/"/>
+	<main class="container justify-content-center text-center space-bottom">
+        <div class="row justify-content-center">
+            <h1 class="primary-title">Pixel Craft Season #6</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col info text-center">
+                <h2>Master Aquatic Foliage Orange Shulker Box</h2>
+                <div class="col justify-content-center">
+                    <img src="/images/pixel-craft/season-6/item-combinations/master-aquatic-foliage/orange_shulker_box.png" alt="An image of the contents of the Orange Shulker Box for the Master Aquatic Foliage."/>
+                    <p>This is what is required for the Orange Shulker Box in the Master Aquatic Foliage item. A text list of what is in the Orange Shulker Box.</p>
+                    <div class="row justify-content-center">
+                        <ItemLists
+                            title="Top Row"
+                            item1="Empty"
+                            item2="1x String"
+                            item3="1x Feather"
+                            item4="1x Dried Kelp"
+                            item5="1x Dried Kelp Block"
+                            item6="1x dried Kelp Block"
+                            item7="1x Feather"
+                            item8="1x String"
+                            item9="Empty"
+                        />
+                        <ItemLists
+                            title="Middle Row"
+                            item1="1x String"
+                            item2="1x Feather"
+                            item3="1x String"
+                            item4="1x Horn Coral Block"
+                            item5="1x Honeycomb"
+                            item6="1x Dried Kelp Block"
+                            item7="1x String"
+                            item8="1x Feather"
+                            item9="1x String"
+                        />
+                        <ItemLists
+                            title="Bottom Row"
+                            item1="1x Feather"
+                            item2="1x String"
+                            item3="Empty"
+                            item4="1x Horn Coral Block"
+                            item5="1x Horn Coral Block"
+                            item6="1x Dried Kelp"
+                            item7="Empty"
+                            item8="1x String"
+                            item9="1x Feather"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+	</main>
+    <Footer/>
+</Layout>
+
+<style>
+    .container {
+        position: absolute;
+        left: 12em;
+        top: 0em;
+        right: 0em;
+        color: white;
+        font-size: large;
+    }
+    .justify-content-center {
+        -webkit-box-pack: center!important;
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+    }
+    .text-center {
+        text-align: center!important;
+    }
+
+    .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .col {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+
+    .info {
+        border: 3px;
+        border-color: lightslategray;
+        border-style: inset;
+        border-radius: 25px;
+        font-size: large;
+        padding: 10px;
+        margin: 5px;
+        background-color: rgba(51, 51, 51, 0.5);
+    }
+    .space-bottom {
+        padding-bottom: 3em;
+    }
+    .primary-title {
+        border: 3px;
+        border-color: lightslategray;
+        border-style: groove;
+        border-radius: 25px;
+        padding: 10px;
+        background-color: rgba(51, 51, 51, 0.5);
+    }
+</style>

@@ -3,10 +3,14 @@ import Layout from '../../../layouts/Layout.astro';
 import Navigation from '../../../components/Navigation.astro';
 import Footer from '../../../components/Footer.astro';
 import ImageLinks from '../../../components/ImageLinks.astro';
+import Back from '../../../components/Back.astro';
+import Top from '../../../components/Top.astro';
 ---
 
 <Layout title="Item Combinations - Season #6 - Pixel Craft - Pixel Series">
     <Navigation/>
+    <Top/>
+    <Back href="/pixel-craft/season-6/"/>
 	<main class="container justify-content-center text-center space-bottom">
         <div class="row justify-content-center">
             <h1 class="primary-title">Pixel Craft Season #6</h1>
@@ -45,6 +49,32 @@ import ImageLinks from '../../../components/ImageLinks.astro';
                         img="/images/pixel-craft/season-6/item-combinations/master_concrete.png"
                         alt="An image of the requirments of the Master Concrete."
                         desc="This is what is required to make the Master Concrete."
+                    />
+                </div>
+                <div class="row justify-content-center">
+                    <ImageLinks
+                        href="/pixel-craft/season-6/item-combinations/master-flowers/"
+                        img="/images/pixel-craft/season-6/item-combinations/master_flowers.png"
+                        alt="An image of the requirments of the Master Flowers."
+                        desc="This is what is required to make the Master Flowers."
+                    />
+                    <ImageLinks
+                        href="/pixel-craft/season-6/item-combinations/master-crops/"
+                        img="/images/pixel-craft/season-6/item-combinations/master_crops.png"
+                        alt="An image of the requirments of the Master Crops."
+                        desc="This is what is required to make the Master Crops."
+                    />
+                    <ImageLinks
+                        href="/pixel-craft/season-6/item-combinations/master-aquatic-foliage/"
+                        img="/images/pixel-craft/season-6/item-combinations/master_aquatic_foliage.png"
+                        alt="An image of the requirments of the Master Aquatic Foliage."
+                        desc="This is what is required to make the Master aquatic Foliage."
+                    />
+                    <ImageLinks
+                        href="/pixel-craft/season-6/item-combinations/master-miscellaneous-foliage/"
+                        img="/images/pixel-craft/season-6/item-combinations/master_miscellaneous_foliage.png"
+                        alt="An image of the requirments of the Master Miscellaneous Foliage."
+                        desc="This is what is required to make the Master Miscellaneous Foliage."
                     />
                 </div>
             </div>

@@ -2,10 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
+import Back from '../components/Back.astro';
+import Top from '../components/Top.astro';
 ---
 
 <Layout title="Redirecting. . . - Pixel Series">
     <Navigation/>
+    <Top/>
+    <Back href="/"/>
 	<main class="container justify-content-center text-center space-bottom">
         <div class="col justify-content-center">
             <h2>This page will change shortly...</h2>
@@ -340,6 +344,9 @@ import Footer from '../components/Footer.astro';
         //ChaosCreature4K.
         if(hash == "#chaoscreature4k")
             location.replace("/members/chaoscreature4k");
+        //ArtisticArnie.
+        if(hash == "#artisticarnie")
+            location.replace("/members/artisticarnie");
         
         //Miscellaneous Link Checking.
         if(hash == "#home" || hash == "#main" || hash == "#root")

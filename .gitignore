@@ -1,6 +1,5 @@
 # build output
 dist/
-images/
 .output/
 
 # dependencies
