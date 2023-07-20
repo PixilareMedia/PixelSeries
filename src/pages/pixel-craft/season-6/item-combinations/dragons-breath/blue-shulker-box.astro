@@ -1,0 +1,128 @@
+---
+import Layout from '../../../../../layouts/Layout.astro';
+import Navigation from '../../../../../components/Navigation.astro';
+import Footer from '../../../../../components/Footer.astro';
+import ItemLists from '../../../../../components/ItemLists.astro';
+import Back from '../../../../../components/Back.astro';
+import Top from '../../../../../components/Top.astro';
+---
+
+<Layout title="Blue Shulker Box - Dragon's Breath - Item Combinations - Season #6 - Pixel Craft - Pixel Series">
+    <Navigation/>
+    <Top/>
+    <Back href="/pixel-craft/season-6/item-combinations/dragons-breath/"/>
+	<main class="container justify-content-center text-center space-bottom">
+        <div class="row justify-content-center">
+            <h1 class="primary-title">Pixel Craft Season #6</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col info text-center">
+                <h2>Dragon's Breath Blue Shulker Box</h2>
+                <div class="col justify-content-center">
+                    <img src="/images/pixel-craft/season-6/item-combinations/dragons-breath/blue_shulker_box.png" alt="An image of the contents of the Blue Shulker Box for the Dragon's Breath."/>
+                    <p>This is what is required for the Blue Shulker Box in the Dragon's Breath item. A text list of what is in the Blue Shulker Box.</p>
+                    <div class="row justify-content-center">
+                        <ItemLists
+                            title="Top Row"
+                            item1="1x Rabbit's Foot"
+                            item2="1x Rabbit's Foot"
+                            item3="1x Fermented Spider Eye"
+                            item4="1x Magma Cream"
+                            item5="1x Magma Cream"
+                            item6="1x Magma Cream"
+                            item7="1x Fermented Spider Eye"
+                            item8="1x Rabbit's Foot"
+                            item9="1x Rabbit's Foot"
+                        />
+                        <ItemLists
+                            title="Middle Row"
+                            item1="1x Sugar"
+                            item2="1x Phantom Membrane"
+                            item3="1x Sugar"
+                            item4="1x Sugar"
+                            item5="1x Phantom Membrane"
+                            item6="1x Sugar"
+                            item7="1x Sugar"
+                            item8="1x Phantom Membrane"
+                            item9="1x Sugar"
+                        />
+                        <ItemLists
+                            title="Bottom Row"
+                            item1="1x Gunpowder"
+                            item2="1x Gunpowder"
+                            item3="1x Glistering Melon Slice"
+                            item4="1x Glistering Melon Slice"
+                            item5="1x Gunpowder"
+                            item6="1x Glistering Melon Slice"
+                            item7="1x Glistering Melon Slice"
+                            item8="1x Gunpowder"
+                            item9="1x Gunpowder"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+	</main>
+    <Footer/>
+</Layout>
+
+<style>
+    .container {
+        position: absolute;
+        left: 12em;
+        top: 0em;
+        right: 0em;
+        color: white;
+        font-size: large;
+    }
+    .justify-content-center {
+        -webkit-box-pack: center!important;
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+    }
+    .text-center {
+        text-align: center!important;
+    }
+
+    .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .col {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+
+    .info {
+        border: 3px;
+        border-color: lightslategray;
+        border-style: inset;
+        border-radius: 25px;
+        font-size: large;
+        padding: 10px;
+        margin: 5px;
+        background-color: rgba(51, 51, 51, 0.5);
+    }
+    .space-bottom {
+        padding-bottom: 3em;
+    }
+    .primary-title {
+        border: 3px;
+        border-color: lightslategray;
+        border-style: groove;
+        border-radius: 25px;
+        padding: 10px;
+        background-color: rgba(51, 51, 51, 0.5);
+    }
+</style>
