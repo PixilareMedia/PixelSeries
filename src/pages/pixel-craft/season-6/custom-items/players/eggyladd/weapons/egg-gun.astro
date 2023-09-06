@@ -1,0 +1,49 @@
+---
+import Layout from '../../../../../../../layouts/Generic.astro';
+import List from '../../../../../../../components/seasons/RecipeScribingLists.astro';
+---
+
+<Layout title='Egg Gun - Weapons - EggyLadd - Players - Custom Items - Season #6 - Pixel Craft - Pixel Series' backPage='/pixel-craft/season-6/custom-items/'>
+  <div class="row justify-content-center">
+    <h1 class="primary-title">Pixel Craft Season #6</h1>
+  </div>
+  <div class="col justify-content-center">
+    <div class="col info text-center">
+      <h2>Egg Gun</h2>
+      <div class="col justify-content-center">
+        <img src="/images/pixel-craft/season-6/custom-items/players/eggyladd/weapons/egg_gun.png" alt="An image of the recipe for the Egg Gun.">
+        <p>This is what is required for the Egg Gun recipe.</p>
+        <div class="row justify-content-center">
+          <List
+          item1="1x Cross Bow"
+          item2="1x Egg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .primary-title {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: groove;
+    border-radius: 25px;
+    padding: 10px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+  .info {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: inset;
+    border-radius: 25px;
+    font-size: large;
+    padding: 10px;
+    margin: 5px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+  .info:last-child {
+    margin-bottom: 3em;
+  }
+</style>

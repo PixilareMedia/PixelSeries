@@ -1,0 +1,825 @@
+---
+import Layout from '../../../layouts/Generic.astro';
+import Recipes from '../../../components/seasons/Recipes.astro';
+import Card from '../../../components/seasons/RecipeCard.astro';
+---
+
+<Layout title='Custom Items - Season #6 - Pixel Craft - Pixel Series' backPage='/pixel-craft/season-6/'>
+  <div class="row justify-content-center">
+    <h1 class="primary-title">Pixel Craft Season #6</h1>
+  </div>
+  <div class="col justify-content-center">
+    <div class="row justify-content-center">
+      <div class="col side">
+        <div class="col info text-center">
+          <h2 class="secondary-title">Server</h2>
+          <div class="row justify-content-center">
+            <button id="ServerUtilitiesButton" class="show-categories">Utilities</button>
+            <button id="ServerFoodButton" class="show-categories">Food</button>
+            <button id="ServerDrinksButton" class="show-categories">Drinks</button>
+            <button id="ServerWildMusicDiscsButton" class="show-categories">Wild Music Discs</button>
+            <button id="ServerMiscellaneousButton" class="show-categories">Miscellaneous</button>
+          </div>
+        </div>
+      </div>
+      <div class="col center">
+        <div class="col info text-center">
+          <h2>Custom Items</h2>
+          <p>This is a list of all the different Custom Items that can be crafted in the<br>Working Table / Scribing Table / Commands / World Crafting.</p>
+        </div>
+      </div>
+      <div class="col side">
+        <div class="col info text-center">
+          <h2 class="secondary-title">Players</h2>
+          <div class="row justify-content-center">
+            <button id="zackman1291MiniaturesButton" class="show-categories">zackman1291 Miniatures</button>
+            <button id="zackman1291ToysButton" class="show-categories">zackman1291 Toys</button>
+            <button id="EggyLaddWeaponsButton" class="show-categories">EggyLadd Weapons</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col justify-content-center">
+      <Recipes title='Utilities' id='ServerUtilities' anchor='#Server-Utilities'>
+        <div class="row">
+          <Card
+            href='utilities/working-table/'
+            img='utilities/working_table.png'
+            name='Working Table'
+          />
+          <Card
+            href='utilities/scribing-table/'
+            img='utilities/scribing_table.png'
+            name='Scribing Table'
+          />
+          <Card
+            href='utilities/voice-chat/wiretap-microphone/'
+            img='utilities/voice-chat/wiretap_microphone.png'
+            name='Wiretap & Microphone'
+          />
+        </div>
+        <div class=row>
+          <Card
+            href='utilities/voice-chat/radio/'
+            img='utilities/voice-chat/radio.png'
+            name='Radio'
+          />
+          <Card
+            href='utilities/voice-chat/music-disc/'
+            img='utilities/voice-chat/music_disc.png'
+            name='Music Disc'
+          />
+          <Card
+            href='utilities/voice-chat/goat-horn/'
+            img='utilities/voice-chat/goat_horn.png'
+            name='Goat Horn'
+          />
+        </div>
+      </Recipes>
+      <Recipes title='Food' id='ServerFood' anchor='#Server-Food'>
+        <div class="row">
+          <Card
+            href='food/caramel-muffin/'
+            img='food/caramel_muffin.png'
+            name='Caramel Muffin'
+          />
+          <Card
+            href='food/carrot-muffin/'
+            img='food/carrot_muffin.png'
+            name='Carrot Muffin'
+          />
+          <Card
+            href='food/chocolate-muffin/'
+            img='food/chocolate_muffin.png'
+            name='Chocolate Muffin'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='food/pumpkin-muffin/'
+            img='food/pumpkin_muffin.png'
+            name='Pumpkin Muffin'
+          />
+          <Card
+            href='food/donut/'
+            img='food/donut.png'
+            name='Donut'
+          />
+          <Card
+            href='food/doughnut/'
+            img='food/doughnut.png'
+            name='Doughnut'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='food/chocolate-donut/'
+            img='food/chocolate_donut.png'
+            name='Chocolate Donut'
+          />
+          <Card
+            href='food/jelly-donut/'
+            img='food/jelly_donut.png'
+            name='Jelly Donut'
+          />
+        </div>
+      </Recipes>
+      <Recipes title='Drinks' id='ServerDrinks' anchor='#Server-Drinks'>
+        <div class="row">
+          <Card
+            href='drinks/english-wine/'
+            img='drinks/english_wine.png'
+            name='English Wine'
+          />
+          <Card
+            href='drinks/watermelon-sling/'
+            img='drinks/watermelon_sling.png'
+            name='Watermelon Sling'
+          />
+          <Card
+            href='drinks/tiger-milk/'
+            img='drinks/tiger_milk.png'
+            name='Tiger Milk'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='drinks/irish-pie-toddy/'
+            img='drinks/irish_pie_toddy.png'
+            name='Irish Pie Toddy'
+          />
+          <Card
+            href='drinks/blueberry-milkshake/'
+            img='drinks/blueberry_milkshake.png'
+            name='Blueberry Milkshake'
+          />
+          <Card
+            href='drinks/tasmanian-devil/'
+            img='drinks/tasmanian_devil.png'
+            name='Tasmanian Devil'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='drinks/sailor-fizz/'
+            img='drinks/sailor_fizz.png'
+            name='Sailor Fizz'
+          />
+          <Card
+            href='drinks/pina-colada/'
+            img='drinks/pina_colada.png'
+            name='Pina Colada'
+          />
+          <Card
+            href='drinks/cocktail-surprise/'
+            img='drinks/cocktail_surprise.png'
+            name='Cocktail "Surprise"'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='drinks/primavera/'
+            img='drinks/primavera.png'
+            name='Primavera'
+          />
+          <Card
+            href='drinks/blackberry-caipirinha/'
+            img='drinks/blackberry_caipirinha.png'
+            name='Blackberry Caipirinha'
+          />
+          <Card
+            href='drinks/green-fairy/'
+            img='drinks/green_fairy.png'
+            name='Green Fairy'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='drinks/orient-express/'
+            img='drinks/orient_express.png'
+            name='Orient Express'
+          />
+          <Card
+            href='drinks/monochrome/'
+            img='drinks/monochrome.png'
+            name='Monochrome'
+          />
+          <Card
+            href='drinks/blue-lagoon/'
+            img='drinks/blue_lagoon.png'
+            name='Blue Lagoon'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='drinks/devil-touch/'
+            img='drinks/devil_touch.png'
+            name='Devil Touch'
+          />
+        </div>
+      </Recipes>
+      <Recipes title='Wild Music Discs' id='ServerWildMusicDiscs' anchor='#Server-Wild-Music-Discs'>
+        <div class="row">
+          <Card
+            href='music-discs/wild/labyrinthine/'
+            img='music-discs/wild/labyrinthine.png'
+            name='Wild Music Disc Labyrinthine'
+          />
+          <Card
+            href='music-discs/wild/ancestry/'
+            img='music-discs/wild/ancestry.png'
+            name='Wild Music Disc Ancestry'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='music-discs/wild/aerie/'
+            img='music-discs/wild/aerie.png'
+            name='Wild Music Disc Aerie'
+          />
+          <Card
+            href='music-discs/wild/firebugs/'
+            img='music-discs/wild/firebugs.png'
+            name='Wild Music Disc Firebugs'
+          />
+        </div>
+      </Recipes>
+      <Recipes title='Miscellaneous' id='ServerMiscellaneous' anchor='#Server-Miscellaneous'>
+        <div class="row">
+          <Card
+            href='miscellaneous/minecoin/'
+            img='miscellaneous/minecoin.png'
+            name='Minecoin'
+          />
+          <Card
+            href='miscellaneous/diamond-from-minecoin/'
+            img='miscellaneous/diamond_from_minecoin.png'
+            name='Diamond from Minecoin'
+          />
+          <Card
+            href='miscellaneous/cartography-table-globe/'
+            img='miscellaneous/cartography_table_globe.png'
+            name='Cartography Table Globe'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='miscellaneous/pixilare-company/'
+            img='miscellaneous/pixilare_company.png'
+            name='Pixilare Company'
+          />
+          <Card
+            href='miscellaneous/pixilare-from-pixilare-company/'
+            img='miscellaneous/pixilare_from_pixilare_company.png'
+            name='Pixilare from Pixilare Company'
+          />
+        </div>
+      </Recipes>
+    </div>
+    <div class="col justify-content-center">
+      <Recipes title='zackman1291 Miniatures' id='zackman1291Miniatures' anchor='#zackman1291-Miniatures'>
+        <div class="row">
+          <Card
+            href='players/zackman1291/miniatures/headcrab/'
+            img='players/zackman1291/miniatures/headcrab.png'
+            name='Headcrab Miniature'
+          />
+          <Card
+            href='players/zackman1291/miniatures/warp-pipe/'
+            img='players/zackman1291/miniatures/warp_pipe.png'
+            name='Warp Pipe Miniature'
+          />
+          <Card
+            href='players/zackman1291/miniatures/securitron/'
+            img='players/zackman1291/miniatures/securitron.png'
+            name='Securitron Miniature'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='players/zackman1291/miniatures/gordon/'
+            img='players/zackman1291/miniatures/gordon.png'
+            name='Gordon Miniature'
+          />
+          <Card
+            href='players/zackman1291/miniatures/turret/'
+            img='players/zackman1291/miniatures/turret.png'
+            name='Turret Miniature'
+          />
+        </div>
+      </Recipes>
+      <Recipes title='zackman1291 Toys' id='zackman1291Toys' anchor='#zackman1291-Toys'>
+        <div class="row">
+          <Card
+            href='players/zackman1291/toys/blue-dildo/'
+            img='players/zackman1291/toys/blue_dildo.png'
+            name='Blue Dildo'
+          />
+          <Card
+            href='players/zackman1291/toys/green-dildo/'
+            img='players/zackman1291/toys/green_dildo.png'
+            name='Green Dildo'
+          />
+          <Card
+            href='players/zackman1291/toys/pink-dildo/'
+            img='players/zackman1291/toys/pink_dildo.png'
+            name='Pink Dildo'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='players/zackman1291/toys/purple-dildo/'
+            img='players/zackman1291/toys/purple_dildo.png'
+            name='Purple Dildo'
+          />
+          <Card
+            href='players/zackman1291/toys/red-dildo/'
+            img='players/zackman1291/toys/red_dildo.png'
+            name='Red Dildo'
+          />
+          <Card
+            href='players/zackman1291/toys/yellow-dildo/'
+            img='players/zackman1291/toys/yellow_dildo.png'
+            name='Yellow Dildo'
+          />
+        </div>
+      </Recipes>
+      <Recipes title='EggyLadd Weapons' id='EggyLaddWeapons' anchor='#EggyLadd-Weapons'>
+        <div class="row">
+          <Card
+            href='players/eggyladd/weapons/egg-gun/'
+            img='players/eggyladd/weapons/egg_gun.png'
+            name='Egg Gun'
+          />
+        </div>
+      </Recipes>
+    </div>
+    <div class="col justify-content-center">
+      <Recipes title='All Custom Items' id='AllCustomItems' anchor='#All'>
+        <div class="row">
+          <Card
+            href='utilities/working-table/'
+            img='utilities/working_table.png'
+            name='Working Table'
+          />
+          <Card
+            href='utilities/scribing-table/'
+            img='utilities/scribing_table.png'
+            name='Scribing Table'
+          />
+          <Card
+            href='utilities/voice-chat/wiretap-microphone/'
+            img='utilities/voice-chat/wiretap_microphone.png'
+            name='Wiretap & Microphone'
+          />
+        </div>
+        <div class=row>
+          <Card
+            href='utilities/voice-chat/radio/'
+            img='utilities/voice-chat/radio.png'
+            name='Radio'
+          />
+          <Card
+            href='utilities/voice-chat/music-disc/'
+            img='utilities/voice-chat/music_disc.png'
+            name='Music Disc'
+          />
+          <Card
+            href='utilities/voice-chat/goat-horn/'
+            img='utilities/voice-chat/goat_horn.png'
+            name='Goat Horn'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='food/caramel-muffin/'
+            img='food/caramel_muffin.png'
+            name='Caramel Muffin'
+          />
+          <Card
+            href='food/carrot-muffin/'
+            img='food/carrot_muffin.png'
+            name='Carrot Muffin'
+          />
+          <Card
+            href='food/chocolate-muffin/'
+            img='food/chocolate_muffin.png'
+            name='Chocolate Muffin'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='food/pumpkin-muffin/'
+            img='food/pumpkin_muffin.png'
+            name='Pumpkin Muffin'
+          />
+          <Card
+            href='food/donut/'
+            img='food/donut.png'
+            name='Donut'
+          />
+          <Card
+            href='food/doughnut/'
+            img='food/doughnut.png'
+            name='Doughnut'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='food/chocolate-donut/'
+            img='food/chocolate_donut.png'
+            name='Chocolate Donut'
+          />
+          <Card
+            href='food/jelly-donut/'
+            img='food/jelly_donut.png'
+            name='Jelly Donut'
+          />
+          <Card
+            href='drinks/english-wine/'
+            img='drinks/english_wine.png'
+            name='English Wine'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='drinks/watermelon-sling/'
+            img='drinks/watermelon_sling.png'
+            name='Watermelon Sling'
+          />
+          <Card
+            href='drinks/tiger-milk/'
+            img='drinks/tiger_milk.png'
+            name='Tiger Milk'
+          />
+          <Card
+            href='drinks/irish-pie-toddy/'
+            img='drinks/irish_pie_toddy.png'
+            name='Irish Pie Toddy'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='drinks/blueberry-milkshake/'
+            img='drinks/blueberry_milkshake.png'
+            name='Blueberry Milkshake'
+          />
+          <Card
+            href='drinks/tasmanian-devil/'
+            img='drinks/tasmanian_devil.png'
+            name='Tasmanian Devil'
+          />
+          <Card
+            href='drinks/sailor-fizz/'
+            img='drinks/sailor_fizz.png'
+            name='Sailor Fizz'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='drinks/pina-colada/'
+            img='drinks/pina_colada.png'
+            name='Pina Colada'
+          />
+          <Card
+            href='drinks/cocktail-surprise/'
+            img='drinks/cocktail_surprise.png'
+            name='Cocktail "Surprise"'
+          />
+          <Card
+            href='drinks/primavera/'
+            img='drinks/primavera.png'
+            name='Primavera'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='drinks/blackberry-caipirinha/'
+            img='drinks/blackberry_caipirinha.png'
+            name='Blackberry Caipirinha'
+          />
+          <Card
+            href='drinks/green-fairy/'
+            img='drinks/green_fairy.png'
+            name='Green Fairy'
+          />
+          <Card
+            href='drinks/orient-express/'
+            img='drinks/orient_express.png'
+            name='Orient Express'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='drinks/monochrome/'
+            img='drinks/monochrome.png'
+            name='Monochrome'
+          />
+          <Card
+            href='drinks/blue-lagoon/'
+            img='drinks/blue_lagoon.png'
+            name='Blue Lagoon'
+          />
+          <Card
+            href='drinks/devil-touch/'
+            img='drinks/devil_touch.png'
+            name='Devil Touch'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='music-discs/wild/labyrinthine/'
+            img='music-discs/wild/labyrinthine.png'
+            name='Wild Music Disc Labyrinthine'
+          />
+          <Card
+            href='music-discs/wild/ancestry/'
+            img='music-discs/wild/ancestry.png'
+            name='Wild Music Disc Ancestry'
+          />
+          <Card
+            href='music-discs/wild/aerie/'
+            img='music-discs/wild/aerie.png'
+            name='Wild Music Disc Aerie'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='music-discs/wild/firebugs/'
+            img='music-discs/wild/firebugs.png'
+            name='Wild Music Disc Firebugs'
+          />
+          <Card
+            href='miscellaneous/minecoin/'
+            img='miscellaneous/minecoin.png'
+            name='Minecoin'
+          />
+          <Card
+            href='miscellaneous/diamond-from-minecoin/'
+            img='miscellaneous/diamond_from_minecoin.png'
+            name='Diamond from Minecoin'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='miscellaneous/cartography-table-globe/'
+            img='miscellaneous/cartography_table_globe.png'
+            name='Cartography Table Globe'
+          />
+          <Card
+            href='miscellaneous/pixilare-company/'
+            img='miscellaneous/pixilare_company.png'
+            name='Pixilare Company'
+          />
+          <Card
+            href='miscellaneous/pixilare-from-pixilare-company/'
+            img='miscellaneous/pixilare_from_pixilare_company.png'
+            name='Pixilare from Pixilare Company'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='players/zackman1291/miniatures/headcrab/'
+            img='players/zackman1291/miniatures/headcrab.png'
+            name='Headcrab Miniature'
+          />
+          <Card
+            href='players/zackman1291/miniatures/warp-pipe/'
+            img='players/zackman1291/miniatures/warp_pipe.png'
+            name='Warp Pipe Miniature'
+          />
+          <Card
+            href='players/zackman1291/miniatures/securitron/'
+            img='players/zackman1291/miniatures/securitron.png'
+            name='Securitron Miniature'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='players/zackman1291/miniatures/gordon/'
+            img='players/zackman1291/miniatures/gordon.png'
+            name='Gordon Miniature'
+          />
+          <Card
+            href='players/zackman1291/miniatures/turret/'
+            img='players/zackman1291/miniatures/turret.png'
+            name='Turret Miniature'
+          />
+          <Card
+            href='players/zackman1291/toys/blue-dildo/'
+            img='players/zackman1291/toys/blue_dildo.png'
+            name='Blue Dildo'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='players/zackman1291/toys/green-dildo/'
+            img='players/zackman1291/toys/green_dildo.png'
+            name='Green Dildo'
+          />
+          <Card
+            href='players/zackman1291/toys/pink-dildo/'
+            img='players/zackman1291/toys/pink_dildo.png'
+            name='Pink Dildo'
+          />
+          <Card
+            href='players/zackman1291/toys/purple-dildo/'
+            img='players/zackman1291/toys/purple_dildo.png'
+            name='Purple Dildo'
+          />
+        </div>
+        <div class="row">
+          <Card
+            href='players/zackman1291/toys/red-dildo/'
+            img='players/zackman1291/toys/red_dildo.png'
+            name='Red Dildo'
+          />
+          <Card
+            href='players/zackman1291/toys/yellow-dildo/'
+            img='players/zackman1291/toys/yellow_dildo.png'
+            name='Yellow Dildo'
+          />
+          <Card
+            href='players/eggyladd/weapons/egg-gun/'
+            img='players/eggyladd/weapons/egg_gun.png'
+            name='Egg Gun'
+          />
+        </div>
+      </Recipes>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .primary-title {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: groove;
+    border-radius: 25px;
+    padding: 10px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+  .info {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: inset;
+    border-radius: 25px;
+    font-size: large;
+    padding: 10px;
+    margin: 5px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+  .info:last-child {
+    margin-bottom: 3em;
+  }
+
+  .center {
+    width: 50%;
+  }
+  .side {
+    max-width: 25%
+  }
+
+  .show-categories {
+    border: none;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 7px;
+    border-color: lightgray;
+    background-color: rgba(51, 51, 51, 0.1);
+    font-size: 20px;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .show-categories:first-child {
+    margin-left: 0px;
+  }
+  .show-categories:last-child {
+    margin-right: 0px;
+  }
+  .show-categories:hover {
+    background-color: rgba(51, 51, 51, 0.7);
+    color: lime;
+  }
+</style>
+
+<script>
+  //Run This Function Once The DOM Content Has Loaded.
+  document.addEventListener("DOMContentLoaded", startUp);
+
+  //Variables.
+  const AllCustomItems = document.getElementById("AllCustomItems");
+  const ServerUtilities = document.getElementById("ServerUtilities");
+  const ServerFood = document.getElementById("ServerFood");
+  const ServerDrinks = document.getElementById("ServerDrinks");
+  const ServerWildMusicDiscs = document.getElementById("ServerWildMusicDiscs");
+  const ServerMiscellaneous = document.getElementById("ServerMiscellaneous");
+  const zackman1291Miniatures = document.getElementById("zackman1291Miniatures");
+  const zackman1291Toys = document.getElementById("zackman1291Toys");
+  const EggyLaddWeapons = document.getElementById("EggyLaddWeapons");
+  
+  //OnClick events for the buttons.
+  document.getElementById("ServerUtilitiesButton").onclick = () => {
+    openClose(ServerUtilities);
+  }
+  document.getElementById("ServerFoodButton").onclick = () => {
+    openClose(ServerFood);
+  }
+  document.getElementById("ServerDrinksButton").onclick = () => {
+    openClose(ServerDrinks);
+  }
+  document.getElementById("ServerWildMusicDiscsButton").onclick = () => {
+    openClose(ServerWildMusicDiscs);
+  }
+  document.getElementById("ServerMiscellaneousButton").onclick = () => {
+    openClose(ServerMiscellaneous);
+  }
+  document.getElementById("zackman1291MiniaturesButton").onclick = () => {
+    openClose(zackman1291Miniatures);
+  }
+  document.getElementById("zackman1291ToysButton").onclick = () => {
+    openClose(zackman1291Toys);
+  }
+  document.getElementById("EggyLaddWeaponsButton").onclick = () => {
+    openClose(EggyLaddWeapons);
+  }
+
+  //Setup for the Custom Items Page.
+  function startUp() {
+    //Changing the Display value of the Elements.
+    hideBlocks();
+    ServerUtilities.style.display = "block";
+    //Checking For Valid URL Anchor.
+    anchorCheck();
+  }
+
+  //Set all Elements to be Hidden.
+  function hideBlocks() {
+    AllCustomItems.style.display = "none";
+    ServerUtilities.style.display = "none";
+    ServerFood.style.display = "none";
+    ServerDrinks.style.display = "none";
+    ServerWildMusicDiscs.style.display = "none";
+    ServerMiscellaneous.style.display = "none";
+    zackman1291Miniatures.style.display = "none";
+    zackman1291Toys.style.display = "none";
+    EggyLaddWeapons.style.display = "none";
+  }
+
+  //Change Display of One Element.
+  function openClose(name) {
+    hideBlocks();
+    if(name.style.display === "none") {
+      name.style.display = "block";
+    } else {
+      name.style.display = "none";
+    }
+  }
+
+  //Anchor Checking On Page Load.
+  function anchorCheck() {
+    //Variables.
+    let lhash = location.hash.toLocaleLowerCase();
+    let hash = lhash.replace("#", "");
+
+    //Check the anchors/hashs.
+    if(!hash) {
+      openClose(ServerUtilities);
+    } else {
+      switch(hash) {
+        case "server-utilities":
+          openClose(ServerUtilities);
+          break;
+        case "server-food":
+          openClose(ServerFood);
+          break;
+        case "server-drinks":
+          openClose(ServerDrinks);
+          break;
+        case "server-wild-music-discs":
+          openClose(ServerWildMusicDiscs);
+          break;
+        case "server-miscellaneous":
+          openClose(ServerMiscellaneous);
+          break;
+        case "zackman1291-miniatures":
+          openClose(zackman1291Miniatures);
+          break;
+        case "zackman1291-toys":
+          openClose(zackman1291Toys);
+          break;
+        case "eggyladd-weapons":
+          openClose(EggyLaddWeapons);
+          break;
+        case "all":
+          openClose(AllCustomItems);
+          break;
+        default:
+          openClose(ServerUtilities);
+      }
+    }
+  }
+</script>

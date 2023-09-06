@@ -1,0 +1,106 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(0, 3%, 20%);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 500px;
+  background: hsl(0, 1%, 28%);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 53%);
+}
+
+.pixel-craft-season-6 {
+  --dark-background: url(/images/backgrounds/pixel-craft/season-6/dark.png);
+  --light-background: url(/images/backgrounds/pixel-craft/season-6/light.png);
+}
+.pixel-craft-season-5 {
+  --dark-background: url(/images/backgrounds/pixel-craft/season-5/dark.png);
+  --light-background: url(/images/backgrounds/pixel-craft/season-5/light.png);
+}
+.pixel-craft-season-4 {
+  --dark-background: url(/images/backgrounds/pixel-craft/season-4/dark.png);
+  --light-background: url(/images/backgrounds/pixel-craft/season-4/light.png);
+}
+.pixel-craft-season-3 {
+  --dark-background: url(/images/backgrounds/pixel-craft/season-3/dark.png);
+  --light-background: url(/images/backgrounds/pixel-craft/season-3/light.png);
+}
+.pixel-craft-season-2 {
+  --dark-background: url(/images/backgrounds/pixel-craft/season-2/dark.png);
+  --light-background: url(/images/backgrounds/pixel-craft/season-2/light.png);
+}
+.pixel-craft-season-1 {
+  --dark-background: url(/images/backgrounds/pixel-craft/season-1/dark.png);
+  --light-background: url(/images/backgrounds/pixel-craft/season-1/light.png);
+}
+
+.pixel-modded-season-4 {
+  --dark-background: url(/images/backgrounds/pixel-modded/season-4/dark.png);
+  --light-background: url(/images/backgrounds/pixel-modded/season-4/light.png);
+}
+.pixel-modded-season-3 {
+  --dark-background: url(/images/backgrounds/pixel-modded/season-3/dark.png);
+  --light-background: url(/images/backgrounds/pixel-modded/season-3/light.png);
+}
+.pixel-modded-season-2 {
+  --dark-background: url(/images/backgrounds/pixel-modded/season-2/dark.png);
+  --light-background: url(/images/backgrounds/pixel-modded/season-2/light.png);
+}
+.pixel-modded-season-1 {
+  --dark-background: url(/images/backgrounds/pixel-modded/season-1/dark.png);
+  --light-background: url(/images/backgrounds/pixel-modded/season-1/light.png);
+}
+
+.dark {
+  --background: var(--dark-background);
+}
+.light {
+  --background: var(--light-background);
+}
+
+body {
+  background: var(--background);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: black;
+}
+
+.container {
+  position: absolute;
+  left: 12em;
+  top: 0em;
+  right: 0em;
+  color: white;
+  font-size: large;
+}
+.justify-content-center {
+  -webkit-box-pack: center!important;
+  -ms-flex-pack: center!important;
+  justify-content: center!important;
+}
+.text-center {
+  text-align: center!important;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}

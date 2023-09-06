@@ -1,62 +1,25 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
+import Layout from '../layouts/FrontPage.astro'
 ---
 
 <Layout title="404 - Pixel Series">
-    <Navigation/>
-	<main class="container justify-content-center text-center space-bottom">
-        <div class="col text-center">
-            <h1 class="p-title">404</h1>
-            <h2>The content you were looking for does not exist, and for that were sorry.</h2>
-            <p><a class="s-title" href="/">Click me to head back to the front page</a></p>
-        </div>
-	</main>
-    <Footer/>
+  <div class="col text-center">
+    <h1 class="primary-title">404</h1>
+    <h2>The content you were looking for does not exist, and for that were sorry.</h2>
+    <p><a class="secondary-title" href="/">Click me to head back to the front page.</a></p>
+  </div>
 </Layout>
 
 <style>
-    .container {
-        position: absolute;
-        left: 12em;
-        top: 0em;
-        right: 0em;
-        color: white;
-        font-size: large;
-    }
-    .justify-content-center {
-        -webkit-box-pack: center!important;
-        -ms-flex-pack: center!important;
-        justify-content: center!important;
-    }
-    .text-center {
-        text-align: center!important;
-    }
-
-    .col {
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        max-width: 100%;
-    }
-
-    .info {
-        color: white;
-        font-size: large;
-    }
-    .container {
-        bottom: 0em;
-    }
-    .p-title {
-        font-size: 250px;
-    }
-    .s-title {
-        color: violet;
-    }
-    .s-title:hover {
-        color: rgb(127, 90, 207);
-    }
+  .primary-title {
+    font-size: 250px;
+  }
+  .secondary-title {
+    color: violet;
+    text-decoration: none;
+  }
+  .secondary-title:hover {
+    color: rgb(127, 90, 207);
+    cursor: pointer;
+  }
 </style>

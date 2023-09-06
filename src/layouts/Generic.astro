@@ -1,0 +1,36 @@
+---
+import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation.astro';
+import Theme from '../components/Theme.astro';
+import Top from '../components/Top.astro';
+import Back from '../components/Back.astro';
+
+export interface Props {
+  title: string;
+  backPage: string;
+}
+
+const { title, backPage } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="generator" content={Astro.generator}/>
+    <link rel="icon" type="image/ico" href="/images/icons/pixelseries.ico"/>
+    <link rel="stylesheet" href="/css/global.css">
+    <title>{title}</title>
+  </head>
+  <body class="dark pixel-craft-season-6">
+    <Navigation/>
+    <Theme/>
+    <Top/>
+    <Back href={backPage}/>
+    <main class="container justify-content-center text-center">
+      <slot/>
+    </main>
+    <Footer/>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+---
+export interface Props {
+  name: string;
+  img: string;
+  href: string;
+}
+
+const { href, name, img } = Astro.props;
+---
+
+<div class="col">
+  <a class="internal-links" href=`/pixel-craft/season-6/custom-items/${href}`><img src=`/images/pixel-craft/season-6/custom-items/${img}` alt=`An image of the requirments of the ${name}`./></a>
+  <p>This is what is required to make the {name}.</p>
+</div>
+
+<style>
+  .internal-links {
+    color: rgba(9, 62, 123, 0.696);
+    text-decoration: none;
+  }
+  .internal-links:hover {
+    color: rgb(9, 62, 123);
+  }
+  .internal-links > img {
+    width: 25em;
+    height: auto;
+  }
+</style>

@@ -1,100 +1,52 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Navigation from '../../components/Navigation.astro';
-import Footer from '../../components/Footer.astro';
-import SocialLinks from '../../components/SocialLinks.astro';
-import MinecraftAvatar from '../../components/MinecraftAvatar.astro';
-import Back from '../../components/Back.astro';
-import Top from '../../components/Top.astro';
+import Layout from '../../layouts/Generic.astro';
+import MinecraftAvatar from '../../components/members/MinecraftAvatar.astro';
+import SocialLinks from '../../components/members/SocialLinks.astro';
 ---
 
-<Layout title="Stansh02 - Members - Pixel Series">
-    <Navigation/>
-    <Top/>
-    <Back href="/members/"/>
-	<main class="container justify-content-center text-center space-bottom">
-        <div class="row justify-content-center">
-            <h1 class="primary-title">About Stansh02</h1>
+<Layout title='Stansh02 - Members - Pixel Series' backPage='/members/'>
+  <div class="row justify-content-center">
+    <h1 class="primary-title">About Stansh02</h1>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col info text-center">
+      <h2>Stansh02's History</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia ac mi at sodales. Pellentesque faucibus odio eu feugiat rhoncus. Morbi semper, est sit amet porttitor congue, ligula mi auctor magna, at condimentum augue eros a orci. Aenean non erat et dui pellentesque bibendum at sit amet nulla. Nullam tincidunt malesuada lacus vitae dapibus. Donec massa eros, dapibus ut turpis ac, porttitor interdum erat. Vivamus quis tortor eros. Donec non turpis in augue efficitur ultrices ut vitae enim. Praesent et metus sem. Pellentesque vestibulum sem in dapibus lobortis. Donec eleifend ipsum sed felis elementum, et vestibulum ante accumsan. Sed sollicitudin finibus commodo. Nullam tincidunt sit amet urna sit amet feugiat. Aenean tempus luctus turpis, at convallis leo rhoncus ut.<br/><br/>Vivamus varius nibh ac ex mollis, eget fringilla libero tristique. Aliquam sodales rhoncus ligula, non fermentum nisi eleifend eget. Cras sed urna sed arcu pellentesque ultrices id vitae sem. Quisque luctus sem eu tristique elementum. Suspendisse quis nulla in lorem lacinia finibus. Nunc gravida elit nibh. Fusce quis egestas velit, eget dignissim ligula. Cras ut ante rhoncus, aliquet sem ac, aliquet leo.<br/><br/>Phasellus maximus consequat dictum. In quis nisi est. Cras porttitor pellentesque tincidunt. Praesent ac dolor sodales, efficitur tortor et, placerat sapien. Quisque fringilla efficitur nibh, id maximus turpis congue ornare. Fusce ac accumsan dolor. Nunc tempor vitae elit ac congue. Morbi ante eros, scelerisque vel hendrerit id, vestibulum ut leo. In vestibulum at felis at facilisis. Proin vel ornare metus.<br/><br/>Duis eu varius metus. Nullam interdum mi ut tortor gravida sodales. Quisque sit amet augue lacus. Aliquam dictum ex non ornare blandit. Sed tincidunt tellus id consequat dictum. Praesent rutrum magna sed tortor ullamcorper, nec sollicitudin leo tincidunt. Mauris ac tristique mauris. In cursus iaculis ultricies. Donec aliquet placerat nulla, ac convallis elit sagittis at.<br/><br/>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus at luctus sem. Integer blandit maximus sagittis. Proin fermentum neque a rhoncus mattis. In mollis nunc urna, id venenatis tortor cursus pellentesque. Vestibulum tristique orci quis ex bibendum vulputate. Pellentesque sit amet sapien id tortor mollis vehicula eget sit amet sem. Ut blandit dolor laoreet quam vulputate, a bibendum diam lobortis. Vestibulum ut lectus vel quam dignissim gravida. Sed posuere, felis at consequat gravida, libero mauris iaculis urna, et elementum orci magna eget lacus. Curabitur dictum ipsum nec erat tempor ornare. Suspendisse non commodo lorem, ut faucibus enim. Mauris eu diam est. Fusce nec lorem lacus. Ut ut magna quis ligula malesuada blandit blandit nec ante. Morbi a dui et lorem malesuada efficitur.</p>
+    </div>
+    <div class="text-center">
+      <div class="info">
+        <h2>Minecraft Accounts</h2>
+        <div class="row">
+          <MinecraftAvatar
+            name='Stansh02'
+            uuid='c938a98d-127c-40fc-9ccb-c5df2ecd2b58'
+          />
         </div>
-        <div class="row justify-content-center">
-            <div class="col info text-center">
-                <h2>Stansh02's History</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia ac mi at sodales. Pellentesque faucibus odio eu feugiat rhoncus. Morbi semper, est sit amet porttitor congue, ligula mi auctor magna, at condimentum augue eros a orci. Aenean non erat et dui pellentesque bibendum at sit amet nulla. Nullam tincidunt malesuada lacus vitae dapibus. Donec massa eros, dapibus ut turpis ac, porttitor interdum erat. Vivamus quis tortor eros. Donec non turpis in augue efficitur ultrices ut vitae enim. Praesent et metus sem. Pellentesque vestibulum sem in dapibus lobortis. Donec eleifend ipsum sed felis elementum, et vestibulum ante accumsan. Sed sollicitudin finibus commodo. Nullam tincidunt sit amet urna sit amet feugiat. Aenean tempus luctus turpis, at convallis leo rhoncus ut.<br/><br/>Vivamus varius nibh ac ex mollis, eget fringilla libero tristique. Aliquam sodales rhoncus ligula, non fermentum nisi eleifend eget. Cras sed urna sed arcu pellentesque ultrices id vitae sem. Quisque luctus sem eu tristique elementum. Suspendisse quis nulla in lorem lacinia finibus. Nunc gravida elit nibh. Fusce quis egestas velit, eget dignissim ligula. Cras ut ante rhoncus, aliquet sem ac, aliquet leo.<br/><br/>Phasellus maximus consequat dictum. In quis nisi est. Cras porttitor pellentesque tincidunt. Praesent ac dolor sodales, efficitur tortor et, placerat sapien. Quisque fringilla efficitur nibh, id maximus turpis congue ornare. Fusce ac accumsan dolor. Nunc tempor vitae elit ac congue. Morbi ante eros, scelerisque vel hendrerit id, vestibulum ut leo. In vestibulum at felis at facilisis. Proin vel ornare metus.<br/><br/>Duis eu varius metus. Nullam interdum mi ut tortor gravida sodales. Quisque sit amet augue lacus. Aliquam dictum ex non ornare blandit. Sed tincidunt tellus id consequat dictum. Praesent rutrum magna sed tortor ullamcorper, nec sollicitudin leo tincidunt. Mauris ac tristique mauris. In cursus iaculis ultricies. Donec aliquet placerat nulla, ac convallis elit sagittis at.<br/><br/>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus at luctus sem. Integer blandit maximus sagittis. Proin fermentum neque a rhoncus mattis. In mollis nunc urna, id venenatis tortor cursus pellentesque. Vestibulum tristique orci quis ex bibendum vulputate. Pellentesque sit amet sapien id tortor mollis vehicula eget sit amet sem. Ut blandit dolor laoreet quam vulputate, a bibendum diam lobortis. Vestibulum ut lectus vel quam dignissim gravida. Sed posuere, felis at consequat gravida, libero mauris iaculis urna, et elementum orci magna eget lacus. Curabitur dictum ipsum nec erat tempor ornare. Suspendisse non commodo lorem, ut faucibus enim. Mauris eu diam est. Fusce nec lorem lacus. Ut ut magna quis ligula malesuada blandit blandit nec ante. Morbi a dui et lorem malesuada efficitur.</p>
-            </div>
-            <div class="text-center">
-                <div class="info">
-                    <h2>Minecraft Account</h2>
-                    <div class="row">
-                        <MinecraftAvatar
-                            name="Stansh02"
-                            img="https://mc-heads.net/body/c938a98d-127c-40fc-9ccb-c5df2ecd2b58/left.png"
-                            href="https://namemc.com/profile/c938a98d-127c-40fc-9ccb-c5df2ecd2b58"
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
-	</main>
-    <Footer/>
+      </div>
+    </div>
+  </div>
 </Layout>
 
 <style>
-    .container {
-        position: absolute;
-        left: 12em;
-        top: 0em;
-        right: 0em;
-        color: white;
-        font-size: large;
-    }
-    .justify-content-center {
-        -webkit-box-pack: center!important;
-        -ms-flex-pack: center!important;
-        justify-content: center!important;
-    }
-    .text-center {
-        text-align: center!important;
-    }
-
-    .row {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin-right: 15px;
-        margin-left: 15px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .col {
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        max-width: 100%;
-    }
-
-    .info {
-        border: 3px;
-        border-color: lightslategray;
-        border-style: inset;
-        border-radius: 25px;
-        font-size: large;
-        padding: 10px;
-        margin: 5px;
-        background-color: rgba(51, 51, 51, 0.5);
-    }
-    .space-bottom {
-        padding-bottom: 3em;
-    }
-    .primary-title {
-        border: 3px;
-        border-color: lightslategray;
-        border-style: groove;
-        border-radius: 25px;
-        padding: 10px;
-        background-color: rgba(51, 51, 51, 0.5);
-    }
+  .primary-title {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: groove;
+    border-radius: 25px;
+    padding: 10px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+  .info {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: inset;
+    border-radius: 25px;
+    font-size: large;
+    padding: 10px;
+    margin: 5px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+  .info:last-child {
+    margin-bottom: 3em;
+  }
 </style>

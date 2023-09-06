@@ -1,0 +1,54 @@
+---
+export interface Props {
+  item1: string;
+  item2: string;
+  item3: string;
+  item4: string;
+  item5: string;
+  item6: string;
+  item7: string;
+  item8: string;
+  item9: string;
+}
+
+const { item1, item2, item3, item4, item5, item6, item7, item8, item9 } = Astro.props;
+---
+
+<div class="text-center">
+  <h3>Working Table</h3>
+  <div class="row text-left">
+    <ul class="required-items">
+      <li>{item1}</li>
+      <li>{item4}</li>
+      <li>{item7}</li>
+    </ul>
+    <ul class="required-items">
+      <li>{item2}</li>
+      <li>{item5}</li>
+      <li>{item8}</li>
+    </ul>
+    <ul class="required-items">
+      <li>{item3}</li>
+      <li>{item6}</li>
+      <li>{item9}</li>
+    </ul>
+  </div>
+</div>
+
+<style>
+  .required-items {
+    list-style: none;
+    max-width: 26em;
+  }
+  .text-left {
+    text-align: left;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .text-left:first-child {
+    margin-left: 0em;
+  }
+  .text-left:last-child {
+    margin-right: 0em;
+  }
+</style>

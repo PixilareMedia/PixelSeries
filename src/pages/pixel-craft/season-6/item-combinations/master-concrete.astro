@@ -1,152 +1,105 @@
 ---
-import Layout from '../../../../layouts/Layout.astro';
-import Navigation from '../../../../components/Navigation.astro';
-import Footer from '../../../../components/Footer.astro';
-import ImageLinks from '../../../../components/ImageLinks.astro';
-import Back from '../../../../components/Back.astro';
-import Top from '../../../../components/Top.astro';
+import Layout from '../../../../layouts/Generic.astro';
+import Image from '../../../../components/seasons/ImageLinks.astro';
 ---
 
-<Layout title="Master Concrete - Item Combinations - Season #6 - Pixel Craft - Pixel Series">
-    <Navigation/>
-    <Top/>
-    <Back href="/pixel-craft/season-6/item-combinations/"/>
-	<main class="container justify-content-center text-center space-bottom">
-        <div class="row justify-content-center">
-            <h1 class="primary-title">Pixel Craft Season #6</h1>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col info text-center">
-                <h2>Master Concrete Item Combination</h2>
-                <p>To create the Master Concrete item for the unlock rituals.</p>
-                <p>The images can be clicked on for more information about the items in that go into the barrels. If any enchantments are mentioned they are in the order they are mentioned.</p>
-                <div class="row justify-content-center">
-                    <ImageLinks
-                        href="/pixel-craft/season-6/item-combinations/master-concrete/floor-barrel/"
-                        img="/images/pixel-craft/season-6/item-combinations/master-concrete/floor_barrel.png"
-                        alt="An image of the contents of the floor barrel to create the Master Concrete."
-                        desc="This is what is required for the floor barrel to create the Master Concrete."
-                    />
-                    <ImageLinks
-                        href="/pixel-craft/season-6/item-combinations/master-concrete/roof-barrel/"
-                        img="/images/pixel-craft/season-6/item-combinations/master-concrete/roof_barrel.png"
-                        alt="An image of the contents of the roof barrel to create the Master Concrete."
-                        desc="This is what is required for the roof barrel to create the Master Concrete."
-                    />
-                </div>
-                <div class="row justify-content-center">
-                    <ImageLinks
-                        href="/pixel-craft/season-6/item-combinations/master-concrete/red-shulker-box/"
-                        img="/images/pixel-craft/season-6/item-combinations/master-concrete/red_shulker_box.png"
-                        alt="An image of the contents of the red shulker box to create the Master Concrete."
-                        desc="This is what is required for the red shulker box to create the Master Concrete."
-                    />
-                    <ImageLinks
-                        href="/pixel-craft/season-6/item-combinations/master-concrete/green-shulker-box/"
-                        img="/images/pixel-craft/season-6/item-combinations/master-concrete/green_shulker_box.png"
-                        alt="An image of the contents of the green shulker box to create the Master Concrete."
-                        desc="This is what is required for the green shulker box to create the Master Concrete."
-                    />
-                    <ImageLinks
-                        href="/pixel-craft/season-6/item-combinations/master-concrete/blue-shulker-box/"
-                        img="/images/pixel-craft/season-6/item-combinations/master-concrete/blue_shulker_box.png"
-                        alt="An image of the contents of the blue shulker box to create the Master Concrete."
-                        desc="This is what is required for the blue shulker box to create the Master Concrete."
-                    />
-                    <ImageLinks
-                        href="/pixel-craft/season-6/item-combinations/master-concrete/purple-shulker-box/"
-                        img="/images/pixel-craft/season-6/item-combinations/master-concrete/purple_shulker_box.png"
-                        alt="An image of the contents of the purple shulker box to create the Master Concrete."
-                        desc="This is what is required for the purple shulker box to create the Master Concrete."
-                    />
-                    <ImageLinks
-                        href="/pixel-craft/season-6/item-combinations/master-concrete/cyan-shulker-box/"
-                        img="/images/pixel-craft/season-6/item-combinations/master-concrete/cyan_shulker_box.png"
-                        alt="An image of the contents of the cyan shulker box to create the Master Concrete."
-                        desc="This is what is required for the cyan shulker box to create the Master Concrete."
-                    />
-                    <ImageLinks
-                        href="/pixel-craft/season-6/item-combinations/master-concrete/magenta-shulker-box/"
-                        img="/images/pixel-craft/season-6/item-combinations/master-concrete/magenta_shulker_box.png"
-                        alt="An image of the contents of the magenta shulker box to create the Master Concrete."
-                        desc="This is what is required for the magenta shulker box to create the Master Concrete."
-                    />
-                    <ImageLinks
-                        href="/pixel-craft/season-6/item-combinations/master-concrete/yellow-shulker-box/"
-                        img="/images/pixel-craft/season-6/item-combinations/master-concrete/yellow_shulker_box.png"
-                        alt="An image of the contents of the yellow shulker box to create the Master Concrete."
-                        desc="This is what is required for the yellow shulker box to create the Master Concrete."
-                    />
-                    <ImageLinks
-                        href="/pixel-craft/season-6/item-combinations/master-concrete/orange-shulker-box/"
-                        img="/images/pixel-craft/season-6/item-combinations/master-concrete/orange_shulker_box.png"
-                        alt="An image of the contents of the orange shulker box to create the Master Concrete."
-                        desc="This is what is required for the orange shulker box to create the Master Concrete."
-                    />
-                </div>
-            </div>
-        </div>
-	</main>
-    <Footer/>
+<Layout title='Master Concrete - Item Combinations - Season #6 - Pixel Craft - Pixel Series' backPage='/pixel-craft/season-6/item-combinations/'>
+  <div class="row justify-content-center">
+    <h1 class="primary-title">Pixel Craft Season #6</h1>
+  </div>
+  <div class="col justify-content-center">
+    <div class="col info text-center">
+      <h2>Master Concrete Item Combination</h2>
+      <p>To create the Master Concrete item for the unlock rituals.</p>
+      <p>The images can be clicked on for more information about the items in that go into the barrels. If any enchantments are mentioned they are in the order they are mentioned.</p>
+      <div class="row justify-content-center">
+        <Image
+          href='/pixel-craft/season-6/item-combinations/master-concrete/floor-barrel/'
+          img='/images/pixel-craft/season-6/item-combinations/master-concrete/floor_barrel.png'
+          alt='An image of the contents of the floor barrel to create the Master Concrete.'
+          desc='This is what is required for the floor barrel to create the Master Concrete.'
+        />
+        <Image
+          href='/pixel-craft/season-6/item-combinations/master-concrete/roof-barrel/'
+          img='/images/pixel-craft/season-6/item-combinations/master-concrete/roof_barrel.png'
+          alt='An image of the contents of the roof barrel to create the Master Concrete.'
+          desc='This is what is required for the roof barrel to create the Master Concrete.'
+        />
+      </div>
+      <div class="row justify-content-center">
+        <Image
+          href='/pixel-craft/season-6/item-combinations/master-concrete/red-shulker-box/'
+          img='/images/pixel-craft/season-6/item-combinations/master-concrete/red_shulker_box.png'
+          alt='An image of the contents of the red shulker box to create the Master Concrete.'
+          desc='This is what is required for the red shulker box to create the Master Concrete.'
+        />
+        <Image
+          href='/pixel-craft/season-6/item-combinations/master-concrete/green-shulker-box/'
+          img='/images/pixel-craft/season-6/item-combinations/master-concrete/green_shulker_box.png'
+          alt='An image of the contents of the green shulker box to create the Master Concrete.'
+          desc='This is what is required for the green shulker box to create the Master Concrete.'
+        />
+        <Image
+          href='/pixel-craft/season-6/item-combinations/master-concrete/blue-shulker-box/'
+          img='/images/pixel-craft/season-6/item-combinations/master-concrete/blue_shulker_box.png'
+          alt='An image of the contents of the blue shulker box to create the Master Concrete.'
+          desc='This is what is required for the blue shulker box to create the Master Concrete.'
+        />
+        <Image
+          href='/pixel-craft/season-6/item-combinations/master-concrete/purple-shulker-box/'
+          img='/images/pixel-craft/season-6/item-combinations/master-concrete/purple_shulker_box.png'
+          alt='An image of the contents of the purple shulker box to create the Master Concrete.'
+          desc='This is what is required for the purple shulker box to create the Master Concrete.'
+        />
+        <Image
+          href='/pixel-craft/season-6/item-combinations/master-concrete/cyan-shulker-box/'
+          img='/images/pixel-craft/season-6/item-combinations/master-concrete/cyan_shulker_box.png'
+          alt='An image of the contents of the cyan shulker box to create the Master Concrete.'
+          desc='This is what is required for the cyan shulker box to create the Master Concrete.'
+        />
+        <Image
+          href='/pixel-craft/season-6/item-combinations/master-concrete/magenta-shulker-box/'
+          img='/images/pixel-craft/season-6/item-combinations/master-concrete/magenta_shulker_box.png'
+          alt='An image of the contents of the magenta shulker box to create the Master Concrete.'
+          desc='This is what is required for the magenta shulker box to create the Master Concrete.'
+        />
+        <Image
+          href='/pixel-craft/season-6/item-combinations/master-concrete/yellow-shulker-box/'
+          img='/images/pixel-craft/season-6/item-combinations/master-concrete/yellow_shulker_box.png'
+          alt='An image of the contents of the yellow shulker box to create the Master Concrete.'
+          desc='This is what is required for the yellow shulker box to create the Master Concrete.'
+        />
+        <Image
+          href='/pixel-craft/season-6/item-combinations/master-concrete/orange-shulker-box/'
+          img='/images/pixel-craft/season-6/item-combinations/master-concrete/orange_shulker_box.png'
+          alt='An image of the contents of the orange shulker box to create the Master Concrete.'
+          desc='This is what is required for the orange shulker box to create the Master Concrete.'
+        />
+      </div>
+    </div>
+  </div>
 </Layout>
 
 <style>
-    .container {
-        position: absolute;
-        left: 12em;
-        top: 0em;
-        right: 0em;
-        color: white;
-        font-size: large;
-    }
-    .justify-content-center {
-        -webkit-box-pack: center!important;
-        -ms-flex-pack: center!important;
-        justify-content: center!important;
-    }
-    .text-center {
-        text-align: center!important;
-    }
-
-    .row {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin-right: 15px;
-        margin-left: 15px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .col {
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        max-width: 100%;
-    }
-
-    .info {
-        border: 3px;
-        border-color: lightslategray;
-        border-style: inset;
-        border-radius: 25px;
-        font-size: large;
-        padding: 10px;
-        margin: 5px;
-        background-color: rgba(51, 51, 51, 0.5);
-    }
-    .space-bottom {
-        padding-bottom: 3em;
-    }
-    .primary-title {
-        border: 3px;
-        border-color: lightslategray;
-        border-style: groove;
-        border-radius: 25px;
-        padding: 10px;
-        background-color: rgba(51, 51, 51, 0.5);
-    }
+  .primary-title {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: groove;
+    border-radius: 25px;
+    padding: 10px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+  .info {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: inset;
+    border-radius: 25px;
+    font-size: large;
+    padding: 10px;
+    margin: 5px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+  .info:last-child {
+    margin-bottom: 3em;
+  }
 </style>

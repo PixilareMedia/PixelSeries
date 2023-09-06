@@ -1,45 +1,39 @@
 ---
 export interface Props {
-    href: string;
+  href: string;
 }
 
 const { href } = Astro.props;
 ---
 
-<a id="BackButton" href={href}>
-    <button class="back-button">
-        <h2>
-            <span>&larr;</span>
-            Back
-        </h2>
-    </button>
+<a id="backButton" href={href}>
+  <button class="back-button">
+    <h2><span>&larr;</span>Back</h2>
+  </button>
 </a>
 
 <style>
-    #BackButton {
-        position: fixed;
-        right: 2.5em;
-        bottom: 1em;
-        z-index: 98;
-    }
-
-    .back-button {
-        background: transparent;
-        color: white;
-        border: 0em;
-        font-size: .5em;
-    }
-    .back-button:hover {
-        cursor: pointer;
-    }
-
-	h2 {
-		margin: 0;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-
-	h2 span {
-		display: inline-block;
-		transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-	}
+  #backButton {
+    position: fixed;
+    right: 2.5em;
+    bottom: 1em;
+    z-index: 97;
+  }
+  .back-button {
+    background: transparent;
+    color: white;
+    border: 0em;
+    font-size: 0.5em;
+  }
+  .back-button:hover {
+    cursor: pointer;
+  }
+  .back-button > h2 {
+    margin: 0;
+    transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .back-button > h2 > span {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  }
 </style>

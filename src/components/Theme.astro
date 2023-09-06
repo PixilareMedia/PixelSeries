@@ -1,0 +1,42 @@
+<button id="themeButton" title="Switch Theme"><img src="/images/icons/theme.png" alt="The Theme Icon Button"/></button>
+
+<script>
+  const themeButton = document.getElementById("themeButton");
+  const body = document.body;
+  const theme = localStorage.getItem('theme');
+  let currentTheme = theme;
+
+  if(theme) {
+    body.classList.add(theme);
+  }
+
+  themeButton.onclick = () => {changeTheme()}
+  function changeTheme() {
+    if(currentTheme === "light") {
+      body.classList.replace('light', 'dark');
+      localStorage.setItem('theme', 'dark');
+      currentTheme = 'dark';
+    } else {
+      body.classList.replace('dark', 'light');
+      localStorage.setItem('theme', 'light');
+      currentTheme = 'light';
+    }
+  }
+</script>
+
+<style>
+  #themeButton {
+    position: fixed;
+    bottom: 0.25rem;
+    right: 0.25rem;
+    z-index: 98;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+  }
+  #themeButton > img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+</style>

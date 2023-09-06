@@ -1,113 +1,66 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import Navigation from '../../../components/Navigation.astro';
-import Footer from '../../../components/Footer.astro';
-import ImageLinks from '../../../components/ImageLinks.astro';
-import Back from '../../../components/Back.astro';
-import Top from '../../../components/Top.astro';
+import Layout from '../../../layouts/Generic.astro';
+import Image from '../../../components/seasons/ImageLinks.astro';
 ---
 
-<Layout title="Summoning Ritual - Season #6 - Pixel Craft - Pixel Series">
-    <Navigation/>
-    <Top/>
-    <Back href="/pixel-craft/season-6/"/>
-	<main class="container justify-content-center text-center space-bottom">
-        <div class="row justify-content-center">
-            <h1 class="primary-title">Pixel Craft Season #6</h1>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col info text-center">
-                <h2>Summoning Rituals</h2>
-                <p>This is a list of all the differnt Summoning Rituals that can be done on the Unlock Isles.</p>
-                <div class="row justify-content-center">
-                    <ImageLinks
-                        href="/pixel-craft/season-6/summoning-rituals/blood-moon/"
-                        img="/images/pixel-craft/season-6/summoning-rituals/blood_moon.png"
-                        alt="Images of the requirments for the Blood Moon summoning ritual."
-                        desc="This is what is required to summon a Blood Moon."
-                    />
-                    <ImageLinks
-                        href="/pixel-craft/season-6/summoning-rituals/harvest-moon/"
-                        img="/images/pixel-craft/season-6/summoning-rituals/harvest_moon.png"
-                        alt="Images of the requirments for the Harvest Moon summoning ritual."
-                        desc="This is what is required to summon a Harvest Moon."
-                    />
-                    <ImageLinks
-                        href="/pixel-craft/season-6/summoning-rituals/blue-moon/"
-                        img="/images/pixel-craft/season-6/summoning-rituals/blue_moon.png"
-                        alt="Images of the requirments for the Blue Moon summoning ritual."
-                        desc="This is what is required to summon a Blue Moon."
-                    />
-                    <ImageLinks
-                        href="/pixel-craft/season-6/summoning-rituals/thunder-storm/"
-                        img="/images/pixel-craft/season-6/summoning-rituals/thunger_storm.png"
-                        alt="Images of the requirments for the Thunder Storm summoning ritual."
-                        desc="This is what is required to summon a Thunder Storm."
-                    />
-                </div>
-            </div>
-        </div>
-	</main>
-    <Footer/>
+<Layout title='Summoning Rituals - Season #6 - Pixel Craft - Pixel Series' backPage='/pixel-craft/season-6/'>
+  <div class="row justify-content-center">
+    <h1 class="primary-title">Pixel Craft Season #6</h1>
+  </div>
+  <div class="col justify-content-center">
+    <div class="col info text-center">
+      <h2>Summoning Rituals</h2>
+      <p>This is a list of all the different Summoning Rituas that can be done on the Unlock Isles.</p>
+      <div class="row justify-content-center">
+        <Image
+          href='/pixel-craft/season-6/summoning-rituals/blood-moon/'
+          img='/images/pixel-craft/season-6/summoning-rituals/blood_moon.png'
+          alt='Images of the requirments for the Blood Moon summoning ritual.'
+          desc='This is what is required to summon a Blood Moon.'
+        />
+        <Image
+          href='/pixel-craft/season-6/summoning-rituals/harvest-moon/'
+          img='/images/pixel-craft/season-6/summoning-rituals/harvest_moon.png'
+          alt='Images of the requirments for the Harvest Moon summoning ritual.'
+          desc='This is what is required to summon a Harvest Moon.'
+        />
+        <Image
+          href='/pixel-craft/season-6/summoning-rituals/blue-moon/'
+          img='/images/pixel-craft/season-6/summoning-rituals/blue_moon.png'
+          alt='Images of the requirments for the Blue Moon summoning ritual.'
+          desc='This is what is required to summon a Blue Moon.'
+        />
+        <Image
+          href='/pixel-craft/season-6/summoning-rituals/thuner-storm/'
+          img='/images/pixel-craft/season-6/summoning-rituals/thunder_storm.png'
+          alt='Images of the requirments for the Thunder Storm summoning ritual.'
+          desc='This is what is required to summon a Thunder Storm.'
+        />
+      </div>
+    </div>
+  </div>
 </Layout>
 
 <style>
-    .container {
-        position: absolute;
-        left: 12em;
-        top: 0em;
-        right: 0em;
-        color: white;
-        font-size: large;
-    }
-    .justify-content-center {
-        -webkit-box-pack: center!important;
-        -ms-flex-pack: center!important;
-        justify-content: center!important;
-    }
-    .text-center {
-        text-align: center!important;
-    }
-
-    .row {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin-right: 15px;
-        margin-left: 15px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .col {
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        max-width: 100%;
-    }
-
-    .info {
-        border: 3px;
-        border-color: lightslategray;
-        border-style: inset;
-        border-radius: 25px;
-        font-size: large;
-        padding: 10px;
-        margin: 5px;
-        background-color: rgba(51, 51, 51, 0.5);
-    }
-    .space-bottom {
-        padding-bottom: 3em;
-    }
-    .primary-title {
-        border: 3px;
-        border-color: lightslategray;
-        border-style: groove;
-        border-radius: 25px;
-        padding: 10px;
-        background-color: rgba(51, 51, 51, 0.5);
-    }
+  .primary-title {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: groove;
+    border-radius: 25px;
+    padding: 10px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+  .info {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: inset;
+    border-radius: 25px;
+    font-size: large;
+    padding: 10px;
+    margin: 5px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+  .info:last-child {
+    margin-bottom: 3em;
+  }
 </style>

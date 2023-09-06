@@ -1,0 +1,36 @@
+---
+export interface Props {
+  item1: string;
+  item2: string;
+}
+
+const { item1, item2 } = Astro.props;
+---
+
+<div class="text-center">
+  <h3>Scribing Table</h3>
+  <div class="row text-left">
+    <ul class="required-items">
+      <li>{item1}</li>
+      <li>{item2}</li>
+    </ul>
+  </div>
+</div>
+
+<style>
+  .required-items {
+    list-style: none;
+    max-width: 26em;
+  }
+  .text-left {
+    text-align: left;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .text-left:first-child {
+    margin-left: 0em;
+  }
+  .text-left:last-child {
+    margin-right: 0em;
+  }
+</style>

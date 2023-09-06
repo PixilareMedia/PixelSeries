@@ -1,0 +1,26 @@
+---
+export interface Props {
+  name: string;
+  uuid: string;
+}
+
+const { name, uuid } = Astro.props;
+---
+
+<div class="col">
+  <h3>{name}</h3>
+  <a class="body-link" href=`https://namemc.com/profile/${uuid}` target="_blank">
+    <img class="bodys" src=`https://mc-heads.net/body/${uuid}/left.png` alt="An image of the person's Minecraft character provided by mc-heads.net"/>
+  </a>
+</div>
+
+<style>
+  .bodys {
+    width: 69%;
+    height: auto;
+  }
+  .body-link {
+    color: aqua;
+    text-decoration: none;
+  }
+</style>

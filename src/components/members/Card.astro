@@ -1,0 +1,34 @@
+---
+export interface Props {
+	name: string;
+	uuid: string;
+  href: string;
+}
+
+const { name, uuid, href } = Astro.props;
+---
+
+<div class="col text-center card-info">
+  <a class="internal-links" href=`/members/${href}/`>
+      <img class="heads" src=`https://mc-heads.net/head/${uuid}.png` alt="An image of the person's Minecraft head provided by mc-heads.net"/>
+  </a>
+  <h2 class="quaternary-title">{name}</h2>
+</div>
+
+<style>
+  .card-info {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: outset;
+    border-radius: 25px;
+    font-size: large;
+    padding: 10px;
+    margin: 5px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+
+  .heads {
+    width: 25%;
+    height: auto;
+  }
+</style>

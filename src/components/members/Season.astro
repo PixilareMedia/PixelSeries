@@ -1,0 +1,39 @@
+---
+export interface Props {
+  title: string;
+  anchor: string;
+  id: string;
+}
+
+const { id, anchor, title } = Astro.props;
+---
+
+<div id={id} class="col justify-content-center text-center season-info">
+  <h2 class="tertiary-title">{title}</h2>
+  <a class="anchor-link" href={anchor}>(Link)</a>
+  <div class="col justify-content-center">
+    <slot/>
+  </div>
+</div>
+
+<style>
+  .season-info {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: inset;
+    border-radius: 25px;
+    font-size: large;
+    padding: 10px;
+    margin: 5px;
+    background: rgba(51, 51, 51, 0.5);
+    margin-bottom: 3em;
+  }
+
+  .anchor-link {
+    color: white;
+    text-decoration: none;
+  }
+  .anchor-link:hover {
+    color: rgb(70, 33, 151);
+  }
+</style>

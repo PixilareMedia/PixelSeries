@@ -1,0 +1,77 @@
+---
+import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation.astro';
+import Theme from '../components/Theme.astro';
+import Back from '../components/Back.astro';
+
+export interface Props {
+  title: string;
+  mapPage: string;
+  backPage: string;
+}
+
+const { title, mapPage, backPage } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="generator" content={Astro.generator}/>
+    <link rel="icon" type="image/ico" href="/images/icons/pixelseries.ico"/>
+    <link rel="stylesheet" href="/css/global.css">
+    <title>{title}</title>
+  </head>
+  <body class="dark pixel-craft-season-6">
+    <Navigation/>
+    <Theme/>
+    <Back href={backPage}/>
+    <main class="container justify-content-center text-center">
+      <div class="row justify-content-center">
+        <iframe id="map" class="info" src={mapPage}></iframe>
+      </div>
+    </main>
+    <Footer/>
+  </body>
+</html>
+
+<script>
+  //Get the height & width in px of the useable page.
+  let contentBox = document.querySelector('.container');
+  let contentHeight = contentBox.clientHeight;
+  let contentWidth = contentBox.clientWidth;
+
+  //Set the map height & width in px to the useable height & with.
+  document.getElementById("map").style.height = contentHeight-104 + "px";
+  document.getElementById("map").style.width = contentWidth + "px";
+
+  //Listen for the windows resize event.
+  window.addEventListener('resize', function(event) {
+    //Re-get the useable page height & width in px.
+    let newContentHeight = contentBox.clientHeight;
+    let newContentWidth = contentBox.clientWidth;
+
+    //Re-set the Map height & width in px to the useable height & width.
+    document.getElementById("map").style.height = newContentHeight-104 + "px";
+    document.getElementById("map").style.width = newContentWidth + "px";
+  })
+</script>
+
+<style>
+  .container {
+    bottom: 0em;
+    padding-bottom: 3em;
+  }
+
+  .info {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: inset;
+    border-radius: 25px;
+    font-size: large;
+    padding: 10px;
+    margin: 5px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+</style>

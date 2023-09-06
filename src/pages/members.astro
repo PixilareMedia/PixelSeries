@@ -1,1892 +1,1853 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
-import MemberCard from '../components/MemberCard.astro';
-import MemberSeason from '../components/MemberSeason.astro';
-import Back from '../components/Back.astro';
-import Top from '../components/Top.astro';
+import Layout from '../layouts/Generic.astro';
+import Season from '../components/members/Season.astro';
+import Card from '../components/members/Card.astro';
 ---
 
-<Layout title="Members - Pixel Series">
-    <Navigation/>
-    <Top/>
-    <Back href="/"/>
-	<main class="container justify-content-center text-center space-bottom">
-        <div class="row justify-content-center">
-            <h1 class="primary-title">Members</h1>
-        </div>
-        <div class="row info justify-content-center">
-            <div class="col"></div>
-            <div class="col text-center">
-                <h2 class="tertiary-title">Pixel Craft</h2>
-                <div class="row justify-content-center">
-                    <button id="PixelCraftSeason1Button" class="showHeads">S1</button>
-                    <button id="PixelCraftSeason2Button" class="showHeads">S2</button>
-                    <button id="PixelCraftSeason3Button" class="showHeads">S3</button>
-                    <button id="PixelCraftSeason4Button" class="showHeads">S4</button>
-                    <button id="PixelCraftSeason5Button" class="showHeads">S5</button>
-                    <button id="PixelCraftSeason6Button" class="showHeads">S6</button>
-                </div>
-            </div>
-            <div class="col text-center">
-                <h2 class="tertiary-title">Pixel Modded</h2>
-                <div class="row justify-content-center">
-                    <button id="PixelModdedSeason1Button" class="showHeads">S1</button>
-                    <button id="PixelModdedSeason2Button" class="showHeads">S2</button>
-                    <button id="PixelModdedSeason3Button" class="showHeads">S3</button>
-                    <button id="PixelModdedSeason4Button" class="showHeads">S4</button>
-                </div>
-            </div>
-            <div class="col"></div>
-        </div>
-        <div class="col justify-content-center">
-            <MemberSeason title="Pixel Craft Season 6" id="PixelCraftSeason6Members" anchor="#Pixel-Craft-Season-6">
-                <div class="row">
-                    <MemberCard
-                        name="Herobrain_gamer"
-                        href="/members/herobrain_gamer/"
-                        img="https://mc-heads.net/head/c8d6aeb2-caa6-4381-8815-330fe2677c98.png"
-                    />
-                    <MemberCard
-                        name="zackman1291"
-                        href="/members/zackman1291/"
-                        img="https://mc-heads.net/head/f9fd52a3-18aa-4551-8cda-8b1c76aa44fe.png"
-                    />
-                    <MemberCard
-                        name="EggyLadd"
-                        href="/members/eggyladd/"
-                        img="https://mc-heads.net/head/8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870.png"
-                    />
-                    <MemberCard
-                        name="ComradeAutismo"
-                        href="/members/comradeautismo/"
-                        img="https://mc-heads.net/head/d7d9d2fc-e03d-42fc-b190-f141dbedd346.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="midna_87"
-                        href="/members/midna_87/"
-                        img="https://mc-heads.net/head/e157ae19-db7d-4600-aeea-b2220b60ffa3.png"
-                    />
-                    <MemberCard
-                        name="Nik_Storey"
-                        href="/members/nik_storey/"
-                        img="https://mc-heads.net/head/48dae462-73c3-4b00-bd39-2f56fd1e6499.png"
-                    />
-                    <MemberCard
-                        name="Squiggy_Cryptid"
-                        href="/members/squiggy_cryptid/"
-                        img="https://mc-heads.net/head/8431dd80-7127-456e-a581-a28d211e71b5.png"
-                    />
-                    <MemberCard
-                        name="MasterZent"
-                        href="/members/masterzent/"
-                        img="https://mc-heads.net/head/cda05d88-8138-4f9a-b94f-72ff937b6560.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="the_sharktooth"
-                        href="/members/the_sharktooth/"
-                        img="https://mc-heads.net/head/20da66b2-c0de-48a2-b57d-6e6cfe7d5a54.png"
-                    />
-                    <MemberCard
-                        name="ChaosCreature4K"
-                        href="/members/chaoscreature4k/"
-                        img="https://mc-heads.net/head/dedc3f36-bb98-49a0-a9e2-d6a474f355c5.png"
-                    />
-                    <MemberCard
-                        name="ArtisticArnie"
-                        href="/members/artisticarnie/"
-                        img="https://mc-heads.net/head/3885722f-3aab-493d-a45b-92694fd3f1a4.png"
-                    />
-                    <MemberCard
-                        name="TheTrueDuality"
-                        href="/members/thetrueduality/"
-                        img="https://mc-heads.net/head/8895c3c2-5c10-484e-bcf2-cacf971cecef.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Bear_Mohawk"
-                        href="/members/bear_mohawk/"
-                        img="https://mc-heads.net/head/59f11d94-5609-4baa-8eb4-08238f3167c6.png"
-                    />
-                    <MemberCard
-                        name="WulfDemon"
-                        href="/members/wulfdemon/"
-                        img="https://mc-heads.net/head/e9bbcd09-ea2f-4055-b39d-5f5dd0d06259.png"
-                    />
-                    <MemberCard
-                        name="TKatra"
-                        href="/members/tkatra/"
-                        img="https://mc-heads.net/head/43616ce7-c596-460e-8240-b457ccce630f.png"
-                    />
-                    <MemberCard
-                        name="Stranqe_People"
-                        href="/members/stranqe_people/"
-                        img="https://mc-heads.net/head/6ca8c783-727d-4222-a75e-ad36c0a22996.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="ApparitionX27"
-                        href="/members/apparitionx27/"
-                        img="https://mc-heads.net/head/7fcc9e0a-6b23-464a-9791-45561de304e3.png"
-                    />
-                    <MemberCard
-                        name="OGKnightBro94"
-                        href="/members/ogknightbro94/"
-                        img="https://mc-heads.net/head/7a52db1e-9209-40b7-9dbe-d8b4b2043a17.png"
-                    />
-                    <MemberCard
-                        name="Timber_Awoo"
-                        href="/members/timber_awoo/"
-                        img="https://mc-heads.net/head/93fbb9bd-16c3-4a4c-ac1f-565d717ca389.png"
-                    />
-                    <MemberCard
-                        name="X_Cygnus_X"
-                        href="/members/x_cygnus_x/"
-                        img="https://mc-heads.net/head/8ad92a3c-26e0-4b58-a464-94a0a2efd69f.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Qwispy_Spyderz"
-                        href="/members/qwispy_spyderz/"
-                        img="https://mc-heads.net/head/11011535-8cff-4c7b-944d-55c0a279e742.png"
-                    />
-                    <MemberCard
-                        name="nerdnation454"
-                        href="/members/nerdnation454/"
-                        img="https://mc-heads.net/head/7e81a4a3-08a1-431f-a515-5fa6e1fce2b9.png"
-                    />
-                    <MemberCard
-                        name="Aki_Ryuto"
-                        href="/members/aki_ryuto/"
-                        img="https://mc-heads.net/head/8346118d-296a-4e7c-a1df-3e88debefa29.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="KitteeKat115"
-                        href="/members/kitteekat115/"
-                        img="https://mc-heads.net/head/9aa71525-3097-4fc4-a9d7-3209a8cdf6fa.png"
-                    />
-                    <MemberCard
-                        name="SLRvoid"
-                        href="/members/slrvoid/"
-                        img="https://mc-heads.net/head/b0d71c73-920c-40f4-bc1a-543d00d197a8.png"
-                    />
-                    <MemberCard
-                        name="Matth3w404"
-                        href="/members/matth3w404/"
-                        img="https://mc-heads.net/head/24631263-19d9-44a1-ba2c-9f6a2c3542fa.png"
-                    />
-                    <MemberCard
-                        name="beth1qw"
-                        href="/members/beth1qw/"
-                        img="https://mc-heads.net/head/2ea5d02e-3406-416d-af29-b79b97cbe4d4.png"
-                    />
-                </div>
-            </MemberSeason>
-            <MemberSeason title="Pixel Craft Season 5" id="PixelCraftSeason5Members" anchor="#Pixel-Craft-Season-5">
-                <div class="row">
-                    <MemberCard
-                        name="Herobrain_gamer"
-                        href="/members/herobrain_gamer/"
-                        img="https://mc-heads.net/head/c8d6aeb2-caa6-4381-8815-330fe2677c98.png"
-                    />
-                    <MemberCard
-                        name="zackman1291"
-                        href="/members/zackman1291/"
-                        img="https://mc-heads.net/head/f9fd52a3-18aa-4551-8cda-8b1c76aa44fe.png"
-                    />
-                    <MemberCard
-                        name="EggyLadd"
-                        href="/members/eggyladd/"
-                        img="https://mc-heads.net/head/8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870.png"
-                    />
-                    <MemberCard
-                        name="ComradeAutismo"
-                        href="/members/comradeautismo/"
-                        img="https://mc-heads.net/head/d7d9d2fc-e03d-42fc-b190-f141dbedd346.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="TheTrueDuality"
-                        href="/members/thetrueduality/"
-                        img="https://mc-heads.net/head/8895c3c2-5c10-484e-bcf2-cacf971cecef.png"
-                    />
-                    <MemberCard
-                        name="Nik_Storey"
-                        href="/members/nik_storey/"
-                        img="https://mc-heads.net/head/48dae462-73c3-4b00-bd39-2f56fd1e6499.png"
-                    />
-                    <MemberCard
-                        name="Squiggy_Cryptid"
-                        href="/members/squiggy_cryptid/"
-                        img="https://mc-heads.net/head/8431dd80-7127-456e-a581-a28d211e71b5.png"
-                    />
-                    <MemberCard
-                        name="MasterZent"
-                        href="/members/masterzent/"
-                        img="https://mc-heads.net/head/cda05d88-8138-4f9a-b94f-72ff937b6560.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="AnnyongB"
-                        href="/members/annyongb/"
-                        img="https://mc-heads.net/head/91983e64-aca1-4cc9-a0fb-fdfbdee94513.png"
-                    />
-                    <MemberCard
-                        name="Bear_Mohawk"
-                        href="/members/bear_mohawk/"
-                        img="https://mc-heads.net/head/59f11d94-5609-4baa-8eb4-08238f3167c6.png"
-                    />
-                    <MemberCard
-                        name="WulfDemon"
-                        href="/members/wulfdemon/"
-                        img="https://mc-heads.net/head/e9bbcd09-ea2f-4055-b39d-5f5dd0d06259.png"
-                    />
-                    <MemberCard
-                        name="Stranqe_People"
-                        href="/members/stranqe_people/"
-                        img="https://mc-heads.net/head/6ca8c783-727d-4222-a75e-ad36c0a22996.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="ApparitionX27"
-                        href="/members/apparitionx27/"
-                        img="https://mc-heads.net/head/7fcc9e0a-6b23-464a-9791-45561de304e3.png"
-                    />
-                    <MemberCard
-                        name="OGKnightBro94"
-                        href="/members/ogknightbro94/"
-                        img="https://mc-heads.net/head/7a52db1e-9209-40b7-9dbe-d8b4b2043a17.png"
-                    />
-                    <MemberCard
-                        name="Timber_Awoo"
-                        href="/members/timber_awoo/"
-                        img="https://mc-heads.net/head/93fbb9bd-16c3-4a4c-ac1f-565d717ca389.png"
-                    />
-                    <MemberCard
-                        name="Dain_Fa"
-                        href="/members/dain_fa/"
-                        img="https://mc-heads.net/head/a9e46d77-f064-46f6-9dfd-c7cba268c4ed.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Zoaraym"
-                        href="/members/zoaraym/"
-                        img="https://mc-heads.net/head/3c22af25-55e8-4062-ae50-d53e7ce1fa9f.png"
-                    />
-                    <MemberCard
-                        name="Nave1803"
-                        href="/members/nave1803/"
-                        img="https://mc-heads.net/head/775fa597-bc4f-4a0c-bec6-c149b261c1be.png"
-                    />
-                    <MemberCard
-                        name="BurningOrphans"
-                        href="/members/burningorphans/"
-                        img="https://mc-heads.net/head/3e56daf4-979e-4670-9fdc-60e813437dfb.png"
-                    />
-                    <MemberCard
-                        name="CrustyBird"
-                        href="/members/crustybird/"
-                        img="https://mc-heads.net/head/3ea62c30-e9a7-4baa-80af-924a497cb37d.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="HellSubjection"
-                        href="/members/hellsubjection/"
-                        img="https://mc-heads.net/head/37fdf820-90cc-4f7e-a09a-d58279214f30.png"
-                    />
-                    <MemberCard
-                        name="PeachyPugs"
-                        href="/members/peachypugs/"
-                        img="https://mc-heads.net/head/f191626b-ff3a-455a-84dc-e4acee7a6fae.png"
-                    />
-                    <MemberCard
-                        name="Gardonn"
-                        href="/members/gardonn/"
-                        img="https://mc-heads.net/head/1f5a8782-79f2-4314-bd16-17fc3b084490.png"
-                    />
-                    <MemberCard
-                        name="seonbwii"
-                        href="/members/seonbwii/"
-                        img="https://mc-heads.net/head/16996eab-a965-4cbe-8689-c3dd44f0f7cd.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="yeahbox"
-                        href="/members/yeahbox/"
-                        img="https://mc-heads.net/head/8e956296-9ad5-4db5-804c-9ed93f858b05.png"
-                    />
-                    <MemberCard
-                        name="Butterminer200"
-                        href="/members/butterminer200/"
-                        img="https://mc-heads.net/head/802383cc-cb04-40ea-9587-4fec91de2133.png"
-                    />
-                    <MemberCard
-                        name="Stansh02"
-                        href="/members/stansh02/"
-                        img="https://mc-heads.net/head/c938a98d-127c-40fc-9ccb-c5df2ecd2b58.png"
-                    />
-                    <MemberCard
-                        name="Lucidrosez"
-                        href="/members/lucidrosez/"
-                        img="https://mc-heads.net/head/c3493741-123e-462e-882d-ce66c299201e.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="KitteeKat115"
-                        href="/members/kitteekat115/"
-                        img="https://mc-heads.net/head/9aa71525-3097-4fc4-a9d7-3209a8cdf6fa.png"
-                    />
-                    <MemberCard
-                        name="SLRvoid"
-                        href="/members/slrvoid/"
-                        img="https://mc-heads.net/head/b0d71c73-920c-40f4-bc1a-543d00d197a8.png"
-                    />
-                    <MemberCard
-                        name="Matth3w404"
-                        href="/members/matth3w404/"
-                        img="https://mc-heads.net/head/24631263-19d9-44a1-ba2c-9f6a2c3542fa.png"
-                    />
-                    <MemberCard
-                        name="beth1qw"
-                        href="/members/beth1qw/"
-                        img="https://mc-heads.net/head/2ea5d02e-3406-416d-af29-b79b97cbe4d4.png"
-                    />
-                </div>
-            </MemberSeason>
-            <MemberSeason title="Pixel Craft Season 4" id="PixelCraftSeason4Members" anchor="#Pixel-Craft-Season-4">
-                <div class="row">
-                    <MemberCard
-                        name="Herobrain_gamer"
-                        href="/members/herobrain_gamer/"
-                        img="https://mc-heads.net/head/c8d6aeb2-caa6-4381-8815-330fe2677c98.png"
-                    />
-                    <MemberCard
-                        name="Gardonn"
-                        href="/members/gardonn/"
-                        img="https://mc-heads.net/head/1f5a8782-79f2-4314-bd16-17fc3b084490.png"
-                    />
-                    <MemberCard
-                        name="EggyLadd"
-                        href="/members/eggyladd/"
-                        img="https://mc-heads.net/head/8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870.png"
-                    />
-                    <MemberCard
-                        name="zackman1291"
-                        href="/members/zackman1291/"
-                        img="https://mc-heads.net/head/f9fd52a3-18aa-4551-8cda-8b1c76aa44fe.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="seonbwii"
-                        href="/members/seonbwii/"
-                        img="https://mc-heads.net/head/16996eab-a965-4cbe-8689-c3dd44f0f7cd.png"
-                    />
-                    <MemberCard
-                        name="ComradeAutismo"
-                        href="/members/comradeautismo/"
-                        img="https://mc-heads.net/head/d7d9d2fc-e03d-42fc-b190-f141dbedd346.png"
-                    />
-                    <MemberCard
-                        name="Nik_Storey"
-                        href="/members/nik_storey/"
-                        img="https://mc-heads.net/head/48dae462-73c3-4b00-bd39-2f56fd1e6499.png"
-                    />
-                    <MemberCard
-                        name="KatieBear88"
-                        href="/members/katiebear88/"
-                        img="https://mc-heads.net/head/5cc9b9c3-3983-4f86-930c-31e67977a4eb.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Tiwborn"
-                        href="/members/tiwborn/"
-                        img="https://mc-heads.net/head/e91db4f9-dd51-48b1-a421-5a131847659e.png"
-                    />
-                    <MemberCard
-                        name="Bear_Mohawk"
-                        href="/members/bear_mohawk/"
-                        img="https://mc-heads.net/head/59f11d94-5609-4baa-8eb4-08238f3167c6.png"
-                    />
-                    <MemberCard
-                        name="Stranqe_People"
-                        href="/members/stranqe_people/"
-                        img="https://mc-heads.net/head/6ca8c783-727d-4222-a75e-ad36c0a22996.png"
-                    />
-                    <MemberCard
-                        name="WulfDemon"
-                        href="/members/wulfdemon/"
-                        img="https://mc-heads.net/head/e9bbcd09-ea2f-4055-b39d-5f5dd0d06259.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="HellSubjection"
-                        href="/members/hellsubjection/"
-                        img="https://mc-heads.net/head/37fdf820-90cc-4f7e-a09a-d58279214f30.png"
-                    />
-                    <MemberCard
-                        name="Butterminer200"
-                        href="/members/butterminer200/"
-                        img="https://mc-heads.net/head/802383cc-cb04-40ea-9587-4fec91de2133.png"
-                    />
-                    <MemberCard
-                        name="SKstarbreaker"
-                        href="/members/skstarbreaker/"
-                        img="https://mc-heads.net/head/729b7d68-e3b8-429a-90f6-ccf67fb9b6a8.png"
-                    />
-                    <MemberCard
-                        name="GeorgeWBush1946"
-                        href="/members/georgewbush1946/"
-                        img="https://mc-heads.net/head/23cc19ab-6b90-4139-8f7a-7e76d5cb3267.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="czerczer"
-                        href="/members/czerczer/"
-                        img="https://mc-heads.net/head/b985cbd4-4ed5-4248-a7bb-c36484cc5940.png"
-                    />
-                    <MemberCard
-                        name="xqcL"
-                        href="/members/xqcl/"
-                        img="https://mc-heads.net/head/9c5d9dc3-4ed5-443f-be7f-b981d256bf63.png"
-                    />
-                    <MemberCard
-                        name="nerdnation454"
-                        href="/members/nerdnation454/"
-                        img="https://mc-heads.net/head/7e81a4a3-08a1-431f-a515-5fa6e1fce2b9.png"
-                    />
-                    <MemberCard
-                        name="MasterZent"
-                        href="/members/masterzent/"
-                        img="https://mc-heads.net/head/cda05d88-8138-4f9a-b94f-72ff937b6560.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="TooMuchStag"
-                        href="/members/toomuchstag/"
-                        img="https://mc-heads.net/head/9763f232-29d8-48b9-a2b0-8eba73033778.png"
-                    />
-                    <MemberCard
-                        name="MainManQuince"
-                        href="/members/mainmanquince/"
-                        img="https://mc-heads.net/head/0a61ee20-8996-436b-b27f-70b8e0d8118c.png"
-                    />
-                    <MemberCard
-                        name="Lemayz"
-                        href="/members/lemayz/"
-                        img="https://mc-heads.net/head/20195512-068d-4949-815e-8b378dcd0d19.png"
-                    />
-                    <MemberCard
-                        name="PeachyPugs"
-                        href="/members/peachypugs/"
-                        img="https://mc-heads.net/head/f191626b-ff3a-455a-84dc-e4acee7a6fae.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Chroifala"
-                        href="/members/chroifala/"
-                        img="https://mc-heads.net/head/257d3052-560a-4f97-8265-b24bb07855f0.png"
-                    />
-                    <MemberCard
-                        name="BurningOrphans"
-                        href="/members/burningorphans/"
-                        img="https://mc-heads.net/head/3e56daf4-979e-4670-9fdc-60e813437dfb.png"
-                    />
-                    <MemberCard
-                        name="TheTrueDuality"
-                        href="/members/thetrueduality/"
-                        img="https://mc-heads.net/head/8895c3c2-5c10-484e-bcf2-cacf971cecef.png"
-                    />
-                    <MemberCard
-                        name="AnnyongB"
-                        href="/members/annyongb/"
-                        img="https://mc-heads.net/head/91983e64-aca1-4cc9-a0fb-fdfbdee94513.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="KitteeKat115"
-                        href="/members/kitteekat115/"
-                        img="https://mc-heads.net/head/9aa71525-3097-4fc4-a9d7-3209a8cdf6fa.png"
-                    />
-                    <MemberCard
-                        name="SLRvoid"
-                        href="/members/slrvoid/"
-                        img="https://mc-heads.net/head/b0d71c73-920c-40f4-bc1a-543d00d197a8.png"
-                    />
-                    <MemberCard
-                        name="Matth3w404"
-                        href="/members/matth3w404/"
-                        img="https://mc-heads.net/head/24631263-19d9-44a1-ba2c-9f6a2c3542fa.png"
-                    />
-                    <MemberCard
-                        name="beth1qw"
-                        href="/members/beth1qw/"
-                        img="https://mc-heads.net/head/2ea5d02e-3406-416d-af29-b79b97cbe4d4.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Squiggy_Cryptid"
-                        href="/members/squiggy_cryptid/"
-                        img="https://mc-heads.net/head/8431dd80-7127-456e-a581-a28d211e71b5.png"
-                    />
-                    <MemberCard
-                        name="ThermalBucket41"
-                        href="/members/thermalbucket41/"
-                        img="https://mc-heads.net/head/c9dc009c-862e-4386-a61d-618a0a432ad5.png"
-                    />
-                    <MemberCard
-                        name="yeahbox"
-                        href="/members/yeahbox/"
-                        img="https://mc-heads.net/head/8e956296-9ad5-4db5-804c-9ed93f858b05.png"
-                    />
-                </div>
-            </MemberSeason>
-            <MemberSeason title="Pixel Craft Season 3" id="PixelCraftSeason3Members" anchor="#Pixel-Craft-Season-3">
-                <div class="row">
-                    <MemberCard
-                        name="Herobrain_gamer"
-                        href="/members/herobrain_gamer/"
-                        img="https://mc-heads.net/head/c8d6aeb2-caa6-4381-8815-330fe2677c98.png"
-                    />
-                    <MemberCard
-                        name="Gardonn"
-                        href="/members/gardonn/"
-                        img="https://mc-heads.net/head/1f5a8782-79f2-4314-bd16-17fc3b084490.png"
-                    />
-                    <MemberCard
-                        name="EggyLadd"
-                        href="/members/eggyladd/"
-                        img="https://mc-heads.net/head/8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870.png"
-                    />
-                    <MemberCard
-                        name="TheTrueDuality"
-                        href="/members/thetrueduality/"
-                        img="https://mc-heads.net/head/8895c3c2-5c10-484e-bcf2-cacf971cecef.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="zackman1291"
-                        href="/members/zackman1291/"
-                        img="https://mc-heads.net/head/f9fd52a3-18aa-4551-8cda-8b1c76aa44fe.png"
-                    />
-                    <MemberCard
-                        name="midna_87"
-                        href="/members/midna_87/"
-                        img="https://mc-heads.net/head/e157ae19-db7d-4600-aeea-b2220b60ffa3.png"
-                    />
-                    <MemberCard
-                        name="HellSubjection"
-                        href="/members/hellsubjection/"
-                        img="https://mc-heads.net/head/37fdf820-90cc-4f7e-a09a-d58279214f30.png"
-                    />
-                    <MemberCard
-                        name="Butterminer200"
-                        href="/members/butterminer200/"
-                        img="https://mc-heads.net/head/802383cc-cb04-40ea-9587-4fec91de2133.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="KatieBear88"
-                        href="/members/katiebear88/"
-                        img="https://mc-heads.net/head/5cc9b9c3-3983-4f86-930c-31e67977a4eb.png"
-                    />
-                    <MemberCard
-                        name="Bear_Mohawk"
-                        href="/members/bear_mohawk/"
-                        img="https://mc-heads.net/head/59f11d94-5609-4baa-8eb4-08238f3167c6.png"
-                    />
-                    <MemberCard
-                        name="Stranqe_People"
-                        href="/members/stranqe_people/"
-                        img="https://mc-heads.net/head/6ca8c783-727d-4222-a75e-ad36c0a22996.png"
-                    />
-                    <MemberCard
-                        name="WulfDemon"
-                        href="/members/wulfdemon/"
-                        img="https://mc-heads.net/head/e9bbcd09-ea2f-4055-b39d-5f5dd0d06259.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Chroifala"
-                        href="/members/chroifala/"
-                        img="https://mc-heads.net/head/257d3052-560a-4f97-8265-b24bb07855f0.png"
-                    />
-                    <MemberCard
-                        name="MasterZent"
-                        href="/members/masterzent/"
-                        img="https://mc-heads.net/head/cda05d88-8138-4f9a-b94f-72ff937b6560.png"
-                    />
-                    <MemberCard
-                        name="BurningOrphans"
-                        href="/members/burningorphans/"
-                        img="https://mc-heads.net/head/3e56daf4-979e-4670-9fdc-60e813437dfb.png"
-                    />
-                    <MemberCard
-                        name="TooMuchStag"
-                        href="/members/toomuchstag/"
-                        img="https://mc-heads.net/head/9763f232-29d8-48b9-a2b0-8eba73033778.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="AnnyongB"
-                        href="/members/annyongb/"
-                        img="https://mc-heads.net/head/91983e64-aca1-4cc9-a0fb-fdfbdee94513.png"
-                    />
-                    <MemberCard
-                        name="SKstarbreaker"
-                        href="/members/skstarbreaker/"
-                        img="https://mc-heads.net/head/729b7d68-e3b8-429a-90f6-ccf67fb9b6a8.png"
-                    />
-                    <MemberCard
-                        name="GeorgeWBush1946"
-                        href="/members/georgewbush1946/"
-                        img="https://mc-heads.net/head/23cc19ab-6b90-4139-8f7a-7e76d5cb3267.png"
-                    />
-                    <MemberCard
-                        name="xqcL"
-                        href="/members/xqcl/"
-                        img="https://mc-heads.net/head/9c5d9dc3-4ed5-443f-be7f-b981d256bf63.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Zyfur"
-                        href="/members/zyfur/"
-                        img="https://mc-heads.net/head/e85270fe-1e82-4bdc-aed0-1c541f572159.png"
-                    />
-                    <MemberCard
-                        name="_Pengu__"
-                        href="/members/pengu/"
-                        img="https://mc-heads.net/head/6440d46c-1bc3-4305-9819-d9da36699ce8.png"
-                    />
-                    <MemberCard
-                        name="chuzubb"
-                        href="/members/chuzubb/"
-                        img="https://mc-heads.net/head/6ac9c15f-6c31-473e-b14a-c7d48d0ea12f.png"
-                    />
-                    <MemberCard
-                        name="Kaidonn"
-                        href="/members/kaidonn/"
-                        img="https://mc-heads.net/head/164917c2-9e5d-4d59-836c-30f7796b7fe0.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="igomigo"
-                        href="/members/igomigo/"
-                        img="https://mc-heads.net/head/42eb5aef-7300-41e9-b8cc-66287ce874ed.png"
-                    />
-                    <MemberCard
-                        name="muttonbuster8"
-                        href="/members/muttonbuster8/"
-                        img="https://mc-heads.net/head/b98b4bbe-7f5d-42b9-b9e0-4bc6afb5f6ec.png"
-                    />
-                    <MemberCard
-                        name="McLukers"
-                        href="/members/mclukers/"
-                        img="https://mc-heads.net/head/1233064a-3f2c-4ba0-8326-69aec5f039c3.png"
-                    />
-                    <MemberCard
-                        name="Foughtful"
-                        href="/members/foughtful/"
-                        img="https://mc-heads.net/head/6831f270-5816-490d-a21e-fc59a6504bb3.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="awoah"
-                        href="/members/awoah/"
-                        img="https://mc-heads.net/head/21f226ee-52b1-4117-9a57-ef2047bc3da6.png"
-                    />
-                    <MemberCard
-                        name="Perry____"
-                        href="/members/perry____/"
-                        img="https://mc-heads.net/head/bf622a6b-8c70-4f43-81e0-d6db44c60f73.png"
-                    />
-                    <MemberCard
-                        name="TypicalDude"
-                        href="/members/typicaldude/"
-                        img="https://mc-heads.net/head/5a631d3a-c62e-40ff-a957-fd69ace60f40.png"
-                    />
-                    <MemberCard
-                        name="7r1"
-                        href="/members/7r1/"
-                        img="https://mc-heads.net/head/f6721bb1-7cb2-4e98-ae03-a3502875d5f8.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Pskett"
-                        href="/members/pskett/"
-                        img="https://mc-heads.net/head/d3111acc-1c23-49da-99c0-ac7005e54c47.png"
-                    />
-                    <MemberCard
-                        name="franko27"
-                        href="/members/franko27/"
-                        img="https://mc-heads.net/head/25f16e1a-712c-4746-8cda-73ac629adf3e.png"
-                    />
-                    <MemberCard
-                        name="__Guard1an__"
-                        href="/members/guard1an/"
-                        img="https://mc-heads.net/head/1983dc35-375d-4392-9e6f-deac0ce543d5.png"
-                    />
-                    <MemberCard
-                        name="ThatOtherPeep"
-                        href="/members/thatotherpeep/"
-                        img="https://mc-heads.net/head/627e9ff0-6889-41fc-9e1f-1b8918b54356.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Diamond_Miner245"
-                        href="/members/diamond_miner245/"
-                        img="https://mc-heads.net/head/c0fa0d9c-9979-4f63-a51e-1fda853489cb.png"
-                    />
-                    <MemberCard
-                        name="BlueDiamondBoy11"
-                        href="/members/bluediamondboy11/"
-                        img="https://mc-heads.net/head/e0bf5c90-cfab-4f00-8554-24f301d3f7ce.png"
-                    />
-                    <MemberCard
-                        name="Gevans"
-                        href="/members/gevans/"
-                        img="https://mc-heads.net/head/c1d4c1ed-fdf7-4654-8ebe-86febc25ea7a.png"
-                    />
-                    <MemberCard
-                        name="ArmoredExplosive"
-                        href="/members/armoredexplosive/"
-                        img="https://mc-heads.net/head/f367c16c-aa99-406f-879c-92712cd0c646.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="_Macspy_"
-                        href="/members/macspy/"
-                        img="https://mc-heads.net/head/ed31a83a-1855-4a9b-92d2-eaff7f700230.png"
-                    />
-                    <MemberCard
-                        name="dmanPL"
-                        href="/members/dmanpl/"
-                        img="https://mc-heads.net/head/7205f4fb-6cab-4b5e-b2f6-c8d1fcff40c6.png"
-                    />
-                    <MemberCard
-                        name="BugoutBoi"
-                        href="/members/bugoutboi/"
-                        img="https://mc-heads.net/head/603f9ea4-a88f-439c-9e85-8c670a310d4a.png"
-                    />
-                    <MemberCard
-                        name="Rnad"
-                        href="/members/rnad/"
-                        img="https://mc-heads.net/head/d8623155-320f-4c09-a309-99961ae753d7.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Frost780"
-                        href="/members/frost780/"
-                        img="https://mc-heads.net/head/5e7dafca-ac46-47b0-a6f2-c0fd2ccfff60.png"
-                    />
-                    <MemberCard
-                        name="KigMD"
-                        href="/members/kigmd/"
-                        img="https://mc-heads.net/head/eaa978a0-b9d9-4eb0-8323-dff468677a96.png"
-                    />
-                    <MemberCard
-                        name="jamacias19"
-                        href="/members/jamacias19/"
-                        img="https://mc-heads.net/head/a903d356-9d5a-4ba1-94e3-acf0967d70e7.png"
-                    />
-                    <MemberCard
-                        name="Zoreon_Zen"
-                        href="/members/zoreon_zen/"
-                        img="https://mc-heads.net/head/55d6be4f-c79b-450d-8a83-e1a955410617.png"
-                    />
-                </div>
-            </MemberSeason>
-            <MemberSeason title="Pixel Craft Season 2" id="PixelCraftSeason2Members" anchor="#Pixel-Craft-Season-2">
-                <div class="row">
-                    <MemberCard
-                        name="Herobrain_gamer"
-                        href="/members/herobrain_gamer/"
-                        img="https://mc-heads.net/head/c8d6aeb2-caa6-4381-8815-330fe2677c98.png"
-                    />
-                    <MemberCard
-                        name="Gardonn"
-                        href="/members/gardonn/"
-                        img="https://mc-heads.net/head/1f5a8782-79f2-4314-bd16-17fc3b084490.png"
-                    />
-                    <MemberCard
-                        name="EggyLadd"
-                        href="/members/eggyladd/"
-                        img="https://mc-heads.net/head/8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870.png"
-                    />
-                    <MemberCard
-                        name="TheTrueDuality"
-                        href="/members/thetrueduality/"
-                        img="https://mc-heads.net/head/8895c3c2-5c10-484e-bcf2-cacf971cecef.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="TooMuchStag"
-                        href="/members/toomuchstag/"
-                        img="https://mc-heads.net/head/9763f232-29d8-48b9-a2b0-8eba73033778.png"
-                    />
-                    <MemberCard
-                        name="AnnyongB"
-                        href="/members/annyongb/"
-                        img="https://mc-heads.net/head/91983e64-aca1-4cc9-a0fb-fdfbdee94513.png"
-                    />
-                    <MemberCard
-                        name="Butterminer200"
-                        href="/members/butterminer200/"
-                        img="https://mc-heads.net/head/802383cc-cb04-40ea-9587-4fec91de2133.png"
-                    />
-                    <MemberCard
-                        name="midna_87"
-                        href="/members/midna_87/"
-                        img="https://mc-heads.net/head/e157ae19-db7d-4600-aeea-b2220b60ffa3.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Tanner_Marco"
-                        href="/members/tanner_marco/"
-                        img="https://mc-heads.net/head/706ef746-4c6c-4643-ba65-ed4f4c51836b.png"
-                    />
-                    <MemberCard
-                        name="Iruka77"
-                        href="/members/iruka77/"
-                        img="https://mc-heads.net/head/fc19ba96-638c-4cbb-99a6-2e681dd802c8.png"
-                    />
-                    <MemberCard
-                        name="CatSandWich999"
-                        href="/members/catsandwich999/"
-                        img="https://mc-heads.net/head/a6128257-d54b-4050-b0e3-659398331b8a.png"
-                    />
-                    <MemberCard
-                        name="IItsBradyy"
-                        href="/members/iitsbradyy/"
-                        img="https://mc-heads.net/head/2ca5a0dc-ed41-4567-9b98-dab608e794a1.png"
-                    />
-                    <MemberCard
-                        name="_Blaze_"
-                        href="/members/blaze/"
-                        img="https://mc-heads.net/head/497c2831-4d6b-49e7-a6c9-181c95840fea.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="dieing"
-                        href="/members/dieing/"
-                        img="https://mc-heads.net/head/d027a9f7-666d-4cf1-91f7-63457606b4ed.png"
-                    />
-                    <MemberCard
-                        name="SkyPixels21"
-                        href="/members/skypixels21/"
-                        img="https://mc-heads.net/head/f42b4c98-a6c3-43d0-b225-b4ce98d5aa75.png"
-                    />
-                    <MemberCard
-                        name="iSkygraphics"
-                        href="/members/iskygraphics/"
-                        img="https://mc-heads.net/head/e6883d30-2a3e-471c-9842-00348ba128c4.png"
-                    />
-                    <MemberCard
-                        name="Livvie24"
-                        href="/members/livvie24/"
-                        img="https://mc-heads.net/head/46671793-2693-4345-a1db-e0c58f198ba0.png"
-                    />
-                    <MemberCard
-                        name="sparklevamp02"
-                        href="/members/sparklevamp02/"
-                        img="https://mc-heads.net/head/b9cb97d7-fefc-46f7-a7d1-a6600439dd8b.png"
-                    />
-                </div>
-            </MemberSeason>
-            <MemberSeason title="Pixel Craft Season 1" id="PixelCraftSeason1Members" anchor="#Pixel-Craft-Season-1">
-                <div class="row">
-                    <MemberCard
-                        name="Herobrain_gamer"
-                        href="/members/herobrain_gamer/"
-                        img="https://mc-heads.net/head/c8d6aeb2-caa6-4381-8815-330fe2677c98.png"
-                    />
-                    <MemberCard
-                        name="midna_87"
-                        href="/members/midna_87/"
-                        img="https://mc-heads.net/head/e157ae19-db7d-4600-aeea-b2220b60ffa3.png"
-                    />
-                    <MemberCard
-                        name="Gardonn"
-                        href="/members/gardonn/"
-                        img="https://mc-heads.net/head/1f5a8782-79f2-4314-bd16-17fc3b084490.png"
-                    />
-                    <MemberCard
-                        name="EggyLadd"
-                        href="/members/eggyladd/"
-                        img="https://mc-heads.net/head/8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870.png"
-                    />
-                </div>
-            </MemberSeason>
-        </div>
-        <div class="col justify-content-center">
-            <MemberSeason title="Pixel Modded Season 4" id="PixelModdedSeason4Members" anchor="#Pixel-Modded-Season-4">
-                <div class="row">
-                    <MemberCard
-                        name="Herobrain_gamer"
-                        href="/members/herobrain_gamer/"
-                        img="https://mc-heads.net/head/c8d6aeb2-caa6-4381-8815-330fe2677c98.png"
-                    />
-                    <MemberCard
-                        name="EggyLadd"
-                        href="/members/eggyladd/"
-                        img="https://mc-heads.net/head/8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870.png"
-                    />
-                    <MemberCard
-                        name="zackman1291"
-                        href="/members/zackman1291/"
-                        img="https://mc-heads.net/head/f9fd52a3-18aa-4551-8cda-8b1c76aa44fe.png"
-                    />
-                    <MemberCard
-                        name="Nik_Storey"
-                        href="/members/nik_storey/"
-                        img="https://mc-heads.net/head/48dae462-73c3-4b00-bd39-2f56fd1e6499.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="ComradeAutismo"
-                        href="/members/comradeautismo/"
-                        img="https://mc-heads.net/head/d7d9d2fc-e03d-42fc-b190-f141dbedd346.png"
-                    />
-                    <MemberCard
-                        name="Gardonn"
-                        href="/members/gardonn/"
-                        img="https://mc-heads.net/head/1f5a8782-79f2-4314-bd16-17fc3b084490.png"
-                    />
-                    <MemberCard
-                        name="seonbwii"
-                        href="/members/seonbwii/"
-                        img="https://mc-heads.net/head/16996eab-a965-4cbe-8689-c3dd44f0f7cd.png"
-                    />
-                    <MemberCard
-                        name="TheTrueDuality"
-                        href="/members/thetrueduality/"
-                        img="https://mc-heads.net/head/8895c3c2-5c10-484e-bcf2-cacf971cecef.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="oDdLy_eNdEd"
-                        href="/members/oddly_ended"
-                        img="https://mc-heads.net/head/88155d9e-fe23-4bc6-99e7-4509ff9e4b18.png"
-                    />
-                    <MemberCard
-                        name="Radical_MC"
-                        href="/members/radical_mc"
-                        img="https://mc-heads.net/head/e3e955d3-0de4-4597-8b89-56999cc16575.png"
-                    />
-                    <MemberCard
-                        name="Squiggy_Cryptid"
-                        href="/members/squiggy_cryptid/"
-                        img="https://mc-heads.net/head/8431dd80-7127-456e-a581-a28d211e71b5.png"
-                    />
-                </div>
-            </MemberSeason>
-            <MemberSeason title="Pixel Modded Season 3" id="PixelModdedSeason3Members" anchor="#Pixel-Modded-Season-3">
-                <div class="row">
-                    <MemberCard
-                        name="Herobrain_gamer"
-                        href="/members/herobrain_gamer/"
-                        img="https://mc-heads.net/head/c8d6aeb2-caa6-4381-8815-330fe2677c98.png"
-                    />
-                    <MemberCard
-                        name="EggyLadd"
-                        href="/members/eggyladd/"
-                        img="https://mc-heads.net/head/8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870.png"
-                    />
-                    <MemberCard
-                        name="zackman1291"
-                        href="/members/zackman1291/"
-                        img="https://mc-heads.net/head/f9fd52a3-18aa-4551-8cda-8b1c76aa44fe.png"
-                    />
-                    <MemberCard
-                        name="AnnyongB"
-                        href="/members/annyongb/"
-                        img="https://mc-heads.net/head/91983e64-aca1-4cc9-a0fb-fdfbdee94513.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Bear_Mohawk"
-                        href="/members/bear_mohawk/"
-                        img="https://mc-heads.net/head/59f11d94-5609-4baa-8eb4-08238f3167c6.png"
-                    />
-                    <MemberCard
-                        name="Stranqe_People"
-                        href="/members/stranqe_people/"
-                        img="https://mc-heads.net/head/6ca8c783-727d-4222-a75e-ad36c0a22996.png"
-                    />
-                    <MemberCard
-                        name="WulfDemon"
-                        href="/members/wulfdemon/"
-                        img="https://mc-heads.net/head/e9bbcd09-ea2f-4055-b39d-5f5dd0d06259.png"
-                    />
-                    <MemberCard
-                        name="Nik_Storey"
-                        href="/members/nik_storey/"
-                        img="https://mc-heads.net/head/48dae462-73c3-4b00-bd39-2f56fd1e6499.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="ComradeAutismo"
-                        href="/members/comradeautismo/"
-                        img="https://mc-heads.net/head/d7d9d2fc-e03d-42fc-b190-f141dbedd346.png"
-                    />
-                    <MemberCard
-                        name="Gardonn"
-                        href="/members/gardonn/"
-                        img="https://mc-heads.net/head/1f5a8782-79f2-4314-bd16-17fc3b084490.png"
-                    />
-                    <MemberCard
-                        name="seonbwii"
-                        href="/members/seonbwii/"
-                        img="https://mc-heads.net/head/16996eab-a965-4cbe-8689-c3dd44f0f7cd.png"
-                    />
-                </div>
-            </MemberSeason>
-            <MemberSeason title="Pixel Modded Season 2" id="PixelModdedSeason2Members" anchor="#Pixel-Modded-Season-2">
-                <div class="row">
-                    <MemberCard
-                        name="Herobrain_gamer"
-                        href="/members/herobrain_gamer/"
-                        img="https://mc-heads.net/head/c8d6aeb2-caa6-4381-8815-330fe2677c98.png"
-                    />
-                    <MemberCard
-                        name="EggyLadd"
-                        href="/members/eggyladd/"
-                        img="https://mc-heads.net/head/8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870.png"
-                    />
-                    <MemberCard
-                        name="zackman1291"
-                        href="/members/zackman1291/"
-                        img="https://mc-heads.net/head/f9fd52a3-18aa-4551-8cda-8b1c76aa44fe.png"
-                    />
-                    <MemberCard
-                        name="Gardonn"
-                        href="/members/gardonn/"
-                        img="https://mc-heads.net/head/1f5a8782-79f2-4314-bd16-17fc3b084490.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="ComradeAutismo"
-                        href="/members/comradeautismo/"
-                        img="https://mc-heads.net/head/d7d9d2fc-e03d-42fc-b190-f141dbedd346.png"
-                    />
-                    <MemberCard
-                        name="TheTrueDuality"
-                        href="/members/thetrueduality/"
-                        img="https://mc-heads.net/head/8895c3c2-5c10-484e-bcf2-cacf971cecef.png"
-                    />
-                    <MemberCard
-                        name="Cool_Rock_Pic"
-                        href="/members/cool_rock_pic/"
-                        img="https://mc-heads.net/head/b2c7df75-f93f-4281-b595-27e163bee316.png"
-                    />
-                    <MemberCard
-                        name="Phroggers_MC"
-                        href="/members/phroggers_mc/"
-                        img="https://mc-heads.net/head/82ed6162-180f-4010-8965-4f9d0c62b775.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="KatieBear88"
-                        href="/members/katiebear88/"
-                        img="https://mc-heads.net/head/5cc9b9c3-3983-4f86-930c-31e67977a4eb.png"
-                    />
-                    <MemberCard
-                        name="Tiwborn"
-                        href="/members/tiwborn/"
-                        img="https://mc-heads.net/head/e91db4f9-dd51-48b1-a421-5a131847659e.png"
-                    />
-                    <MemberCard
-                        name="Bear_Mohawk"
-                        href="/members/bear_mohawk/"
-                        img="https://mc-heads.net/head/59f11d94-5609-4baa-8eb4-08238f3167c6.png"
-                    />
-                    <MemberCard
-                        name="Stranqe_People"
-                        href="/members/stranqe_people/"
-                        img="https://mc-heads.net/head/6ca8c783-727d-4222-a75e-ad36c0a22996.png"
-                    />
-                    <MemberCard
-                        name="WulfDemon"
-                        href="/members/wulfdemon/"
-                        img="https://mc-heads.net/head/e9bbcd09-ea2f-4055-b39d-5f5dd0d06259.png"
-                    />
-                </div>
-            </MemberSeason>
-            <MemberSeason title="Pixel Modded Season 1" id="PixelModdedSeason1Members" anchor="#Pixel-Modded-Season-1">
-                <div class="row">
-                    <MemberCard
-                        name="Herobrain_gamer"
-                        href="/members/herobrain_gamer/"
-                        img="https://mc-heads.net/head/c8d6aeb2-caa6-4381-8815-330fe2677c98.png"
-                    />
-                    <MemberCard
-                        name="IItsBradyy"
-                        href="/members/iitsbradyy/"
-                        img="https://mc-heads.net/head/2ca5a0dc-ed41-4567-9b98-dab608e794a1.png"
-                    />
-                    <MemberCard
-                        name="midna_87"
-                        href="/members/midna_87/"
-                        img="https://mc-heads.net/head/e157ae19-db7d-4600-aeea-b2220b60ffa3.png"
-                    />
-                </div>
-            </MemberSeason>
-        </div>
-        <div class="col justify-content-center">
-            <MemberSeason title="All Pixel Series" id="PixelSeriesAllMembers" anchor="#All">
-                <div class="row">
-                    <MemberCard
-                        name="Herobrain_gamer"
-                        href="/members/herobrain_gamer/"
-                        img="https://mc-heads.net/head/c8d6aeb2-caa6-4381-8815-330fe2677c98.png"
-                    />
-                    <MemberCard
-                        name="IItsBradyy"
-                        href="/members/iitsbradyy/"
-                        img="https://mc-heads.net/head/2ca5a0dc-ed41-4567-9b98-dab608e794a1.png"
-                    />
-                    <MemberCard
-                        name="midna_87"
-                        href="/members/midna_87/"
-                        img="https://mc-heads.net/head/e157ae19-db7d-4600-aeea-b2220b60ffa3.png"
-                    />
-                    <MemberCard
-                        name="Gardonn"
-                        href="/members/gardonn/"
-                        img="https://mc-heads.net/head/1f5a8782-79f2-4314-bd16-17fc3b084490.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="EggyLadd"
-                        href="/members/eggyladd/"
-                        img="https://mc-heads.net/head/8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870.png"
-                    />
-                    <MemberCard
-                        name="TheTrueDuality"
-                        href="/members/thetrueduality/"
-                        img="https://mc-heads.net/head/8895c3c2-5c10-484e-bcf2-cacf971cecef.png"
-                    />
-                    <MemberCard
-                        name="TooMuchStag"
-                        href="/members/toomuchstag/"
-                        img="https://mc-heads.net/head/9763f232-29d8-48b9-a2b0-8eba73033778.png"
-                    />
-                    <MemberCard
-                        name="AnnyongB"
-                        href="/members/annyongb/"
-                        img="https://mc-heads.net/head/91983e64-aca1-4cc9-a0fb-fdfbdee94513.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Butterminer200"
-                        href="/members/butterminer200/"
-                        img="https://mc-heads.net/head/802383cc-cb04-40ea-9587-4fec91de2133.png"
-                    />
-                    <MemberCard
-                        name="Tanner_Marco"
-                        href="/members/tanner_marco/"
-                        img="https://mc-heads.net/head/706ef746-4c6c-4643-ba65-ed4f4c51836b.png"
-                    />
-                    <MemberCard
-                        name="Iruka77"
-                        href="/members/iruka77/"
-                        img="https://mc-heads.net/head/fc19ba96-638c-4cbb-99a6-2e681dd802c8.png"
-                    />
-                    <MemberCard
-                        name="CatSandWich999"
-                        href="/members/catsandwich999/"
-                        img="https://mc-heads.net/head/a6128257-d54b-4050-b0e3-659398331b8a.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="_Blaze_"
-                        href="/members/blaze/"
-                        img="https://mc-heads.net/head/497c2831-4d6b-49e7-a6c9-181c95840fea.png"
-                    />
-                    <MemberCard
-                        name="dieing"
-                        href="/members/dieing/"
-                        img="https://mc-heads.net/head/d027a9f7-666d-4cf1-91f7-63457606b4ed.png"
-                    />
-                    <MemberCard
-                        name="SkyPixels21"
-                        href="/members/skypixels21/"
-                        img="https://mc-heads.net/head/f42b4c98-a6c3-43d0-b225-b4ce98d5aa75.png"
-                    />
-                    <MemberCard
-                        name="iSkygraphics"
-                        href="/members/iskygraphics/"
-                        img="https://mc-heads.net/head/e6883d30-2a3e-471c-9842-00348ba128c4.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Livvie24"
-                        href="/members/livvie24/"
-                        img="https://mc-heads.net/head/46671793-2693-4345-a1db-e0c58f198ba0.png"
-                    />
-                    <MemberCard
-                        name="sparklevamp02"
-                        href="/members/sparklevamp02/"
-                        img="https://mc-heads.net/head/b9cb97d7-fefc-46f7-a7d1-a6600439dd8b.png"
-                    />
-                    <MemberCard
-                        name="zackman1291"
-                        href="/members/zackman1291/"
-                        img="https://mc-heads.net/head/f9fd52a3-18aa-4551-8cda-8b1c76aa44fe.png"
-                    />
-                    <MemberCard
-                        name="HellSubjection"
-                        href="/members/hellsubjection/"
-                        img="https://mc-heads.net/head/37fdf820-90cc-4f7e-a09a-d58279214f30.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="KatieBear88"
-                        href="/members/katiebear88/"
-                        img="https://mc-heads.net/head/5cc9b9c3-3983-4f86-930c-31e67977a4eb.png"
-                    />
-                    <MemberCard
-                        name="Bear_Mohawk"
-                        href="/members/bear_mohawk/"
-                        img="https://mc-heads.net/head/59f11d94-5609-4baa-8eb4-08238f3167c6.png"
-                    />
-                    <MemberCard
-                        name="Stranqe_People"
-                        href="/members/stranqe_people/"
-                        img="https://mc-heads.net/head/6ca8c783-727d-4222-a75e-ad36c0a22996.png"
-                    />
-                    <MemberCard
-                        name="WulfDemon"
-                        href="/members/wulfdemon/"
-                        img="https://mc-heads.net/head/e9bbcd09-ea2f-4055-b39d-5f5dd0d06259.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Chroifala"
-                        href="/members/chroifala/"
-                        img="https://mc-heads.net/head/257d3052-560a-4f97-8265-b24bb07855f0.png"
-                    />
-                    <MemberCard
-                        name="MasterZent"
-                        href="/members/masterzent/"
-                        img="https://mc-heads.net/head/cda05d88-8138-4f9a-b94f-72ff937b6560.png"
-                    />
-                    <MemberCard
-                        name="BurningOrphans"
-                        href="/members/burningorphans/"
-                        img="https://mc-heads.net/head/3e56daf4-979e-4670-9fdc-60e813437dfb.png"
-                    />
-                    <MemberCard
-                        name="SKstarbreaker"
-                        href="/members/skstarbreaker/"
-                        img="https://mc-heads.net/head/729b7d68-e3b8-429a-90f6-ccf67fb9b6a8.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="GeorgeWBush1946"
-                        href="/members/georgewbush1946/"
-                        img="https://mc-heads.net/head/23cc19ab-6b90-4139-8f7a-7e76d5cb3267.png"
-                    />
-                    <MemberCard
-                        name="xqcL"
-                        href="/members/xqcl/"
-                        img="https://mc-heads.net/head/9c5d9dc3-4ed5-443f-be7f-b981d256bf63.png"
-                    />
-                    <MemberCard
-                        name="Zyfur"
-                        href="/members/zyfur/"
-                        img="https://mc-heads.net/head/e85270fe-1e82-4bdc-aed0-1c541f572159.png"
-                    />
-                    <MemberCard
-                        name="_Pengu__"
-                        href="/members/pengu/"
-                        img="https://mc-heads.net/head/6440d46c-1bc3-4305-9819-d9da36699ce8.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="chuzubb"
-                        href="/members/chuzubb/"
-                        img="https://mc-heads.net/head/6ac9c15f-6c31-473e-b14a-c7d48d0ea12f.png"
-                    />
-                    <MemberCard
-                        name="Kaidonn"
-                        href="/members/kaidonn/"
-                        img="https://mc-heads.net/head/164917c2-9e5d-4d59-836c-30f7796b7fe0.png"
-                    />
-                    <MemberCard
-                        name="igomigo"
-                        href="/members/igomigo/"
-                        img="https://mc-heads.net/head/42eb5aef-7300-41e9-b8cc-66287ce874ed.png"
-                    />
-                    <MemberCard
-                        name="muttonbuster8"
-                        href="/members/muttonbuster8/"
-                        img="https://mc-heads.net/head/b98b4bbe-7f5d-42b9-b9e0-4bc6afb5f6ec.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="McLukers"
-                        href="/members/mclukers/"
-                        img="https://mc-heads.net/head/1233064a-3f2c-4ba0-8326-69aec5f039c3.png"
-                    />
-                    <MemberCard
-                        name="Foughtful"
-                        href="/members/foughtful/"
-                        img="https://mc-heads.net/head/6831f270-5816-490d-a21e-fc59a6504bb3.png"
-                    />
-                    <MemberCard
-                        name="awoah"
-                        href="/members/awoah/"
-                        img="https://mc-heads.net/head/21f226ee-52b1-4117-9a57-ef2047bc3da6.png"
-                    />
-                    <MemberCard
-                        name="Perry____"
-                        href="/members/perry____/"
-                        img="https://mc-heads.net/head/bf622a6b-8c70-4f43-81e0-d6db44c60f73.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="TypicalDude"
-                        href="/members/typicaldude/"
-                        img="https://mc-heads.net/head/5a631d3a-c62e-40ff-a957-fd69ace60f40.png"
-                    />
-                    <MemberCard
-                        name="7r1"
-                        href="/members/7r1/"
-                        img="https://mc-heads.net/head/f6721bb1-7cb2-4e98-ae03-a3502875d5f8.png"
-                    />
-                    <MemberCard
-                        name="Pskett"
-                        href="/members/pskett/"
-                        img="https://mc-heads.net/head/d3111acc-1c23-49da-99c0-ac7005e54c47.png"
-                    />
-                    <MemberCard
-                        name="franko27"
-                        href="/members/franko27/"
-                        img="https://mc-heads.net/head/25f16e1a-712c-4746-8cda-73ac629adf3e.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="__Guard1an__"
-                        href="/members/guard1an/"
-                        img="https://mc-heads.net/head/1983dc35-375d-4392-9e6f-deac0ce543d5.png"
-                    />
-                    <MemberCard
-                        name="ThatOtherPeep"
-                        href="/members/thatotherpeep/"
-                        img="https://mc-heads.net/head/627e9ff0-6889-41fc-9e1f-1b8918b54356.png"
-                    />
-                    <MemberCard
-                        name="Diamond_Miner245"
-                        href="/members/diamond_miner245/"
-                        img="https://mc-heads.net/head/c0fa0d9c-9979-4f63-a51e-1fda853489cb.png"
-                    />
-                    <MemberCard
-                        name="BlueDiamondBoy11"
-                        href="/members/bluediamondboy11/"
-                        img="https://mc-heads.net/head/e0bf5c90-cfab-4f00-8554-24f301d3f7ce.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Gevans"
-                        href="/members/gevans/"
-                        img="https://mc-heads.net/head/c1d4c1ed-fdf7-4654-8ebe-86febc25ea7a.png"
-                    />
-                    <MemberCard
-                        name="ArmoredExplosive"
-                        href="/members/armoredexplosive/"
-                        img="https://mc-heads.net/head/f367c16c-aa99-406f-879c-92712cd0c646.png"
-                    />
-                    <MemberCard
-                        name="_Macspy_"
-                        href="/members/macspy/"
-                        img="https://mc-heads.net/head/ed31a83a-1855-4a9b-92d2-eaff7f700230.png"
-                    />
-                    <MemberCard
-                        name="dmanPL"
-                        href="/members/dmanpl/"
-                        img="https://mc-heads.net/head/7205f4fb-6cab-4b5e-b2f6-c8d1fcff40c6.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="BugoutBoi"
-                        href="/members/bugoutboi/"
-                        img="https://mc-heads.net/head/603f9ea4-a88f-439c-9e85-8c670a310d4a.png"
-                    />
-                    <MemberCard
-                        name="Rnad"
-                        href="/members/rnad/"
-                        img="https://mc-heads.net/head/d8623155-320f-4c09-a309-99961ae753d7.png"
-                    />
-                    <MemberCard
-                        name="Frost780"
-                        href="/members/frost780/"
-                        img="https://mc-heads.net/head/5e7dafca-ac46-47b0-a6f2-c0fd2ccfff60.png"
-                    />
-                    <MemberCard
-                        name="KigMD"
-                        href="/members/kigmd/"
-                        img="https://mc-heads.net/head/eaa978a0-b9d9-4eb0-8323-dff468677a96.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="jamacias19"
-                        href="/members/jamacias19/"
-                        img="https://mc-heads.net/head/a903d356-9d5a-4ba1-94e3-acf0967d70e7.png"
-                    />
-                    <MemberCard
-                        name="Zoreon_Zen"
-                        href="/members/zoreon_zen/"
-                        img="https://mc-heads.net/head/55d6be4f-c79b-450d-8a83-e1a955410617.png"
-                    />
-                    <MemberCard
-                        name="ComradeAutismo"
-                        href="/members/comradeautismo/"
-                        img="https://mc-heads.net/head/d7d9d2fc-e03d-42fc-b190-f141dbedd346.png"
-                    />
-                    <MemberCard
-                        name="Cool_Rock_Pic"
-                        href="/members/cool_rock_pic/"
-                        img="https://mc-heads.net/head/b2c7df75-f93f-4281-b595-27e163bee316.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Phroggers_MC"
-                        href="/members/phroggers_mc/"
-                        img="https://mc-heads.net/head/82ed6162-180f-4010-8965-4f9d0c62b775.png"
-                    />
-                    <MemberCard
-                        name="Tiwborn"
-                        href="/members/tiwborn/"
-                        img="https://mc-heads.net/head/e91db4f9-dd51-48b1-a421-5a131847659e.png"
-                    />
-                    <MemberCard
-                        name="Nik_Storey"
-                        href="/members/nik_storey/"
-                        img="https://mc-heads.net/head/48dae462-73c3-4b00-bd39-2f56fd1e6499.png"
-                    />
-                    <MemberCard
-                        name="seonbwii"
-                        href="/members/seonbwii/"
-                        img="https://mc-heads.net/head/16996eab-a965-4cbe-8689-c3dd44f0f7cd.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="czerczer"
-                        href="/members/czerczer/"
-                        img="https://mc-heads.net/head/b985cbd4-4ed5-4248-a7bb-c36484cc5940.png"
-                    />
-                    <MemberCard
-                        name="nerdnation454"
-                        href="/members/nerdnation454/"
-                        img="https://mc-heads.net/head/7e81a4a3-08a1-431f-a515-5fa6e1fce2b9.png"
-                    />
-                    <MemberCard
-                        name="MainManQuince"
-                        href="/members/mainmanquince/"
-                        img="https://mc-heads.net/head/0a61ee20-8996-436b-b27f-70b8e0d8118c.png"
-                    />
-                    <MemberCard
-                        name="Lemayz"
-                        href="/members/lemayz/"
-                        img="https://mc-heads.net/head/20195512-068d-4949-815e-8b378dcd0d19.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="PeachyPugs"
-                        href="/members/peachypugs/"
-                        img="https://mc-heads.net/head/f191626b-ff3a-455a-84dc-e4acee7a6fae.png"
-                    />
-                    <MemberCard
-                        name="SLRvoid"
-                        href="/members/slrvoid/"
-                        img="https://mc-heads.net/head/b0d71c73-920c-40f4-bc1a-543d00d197a8.png"
-                    />
-                    <MemberCard
-                        name="Matth3w404"
-                        href="/members/matth3w404/"
-                        img="https://mc-heads.net/head/24631263-19d9-44a1-ba2c-9f6a2c3542fa.png"
-                    />
-                    <MemberCard
-                        name="beth1qw"
-                        href="/members/beth1qw/"
-                        img="https://mc-heads.net/head/2ea5d02e-3406-416d-af29-b79b97cbe4d4.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="KitteeKat115"
-                        href="/members/kitteekat115/"
-                        img="https://mc-heads.net/head/9aa71525-3097-4fc4-a9d7-3209a8cdf6fa.png"
-                    />
-                    <MemberCard
-                        name="Squiggy_Cryptid"
-                        href="/members/squiggy_cryptid/"
-                        img="https://mc-heads.net/head/8431dd80-7127-456e-a581-a28d211e71b5.png"
-                    />
-                    <MemberCard
-                        name="ThermalBucket41"
-                        href="/members/thermalbucket41/"
-                        img="https://mc-heads.net/head/c9dc009c-862e-4386-a61d-618a0a432ad5.png"
-                    />
-                    <MemberCard
-                        name="yeahbox"
-                        href="/members/yeahbox/"
-                        img="https://mc-heads.net/head/8e956296-9ad5-4db5-804c-9ed93f858b05.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Nave1803"
-                        href="/members/nave1803/"
-                        img="https://mc-heads.net/head/775fa597-bc4f-4a0c-bec6-c149b261c1be.png"
-                    />
-                    <MemberCard
-                        name="Stansh02"
-                        href="/members/stansh02/"
-                        img="https://mc-heads.net/head/c938a98d-127c-40fc-9ccb-c5df2ecd2b58.png"
-                    />
-                    <MemberCard
-                        name="Lucidrosez"
-                        href="/members/lucidrosez/"
-                        img="https://mc-heads.net/head/c3493741-123e-462e-882d-ce66c299201e.png"
-                    />
-                    <MemberCard
-                        name="Dain_Fa"
-                        href="/members/dain_fa/"
-                        img="https://mc-heads.net/head/a9e46d77-f064-46f6-9dfd-c7cba268c4ed.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Zoaraym"
-                        href="/members/zoaraym/"
-                        img="https://mc-heads.net/head/3c22af25-55e8-4062-ae50-d53e7ce1fa9f.png"
-                    />
-                    <MemberCard
-                        name="CrustyBird"
-                        href="/members/crustybird/"
-                        img="https://mc-heads.net/head/3ea62c30-e9a7-4baa-80af-924a497cb37d.png"
-                    />
-                    <MemberCard
-                        name="ApparitionX27"
-                        href="/members/apparitionx27/"
-                        img="https://mc-heads.net/head/7fcc9e0a-6b23-464a-9791-45561de304e3.png"
-                    />
-                    <MemberCard
-                        name="OGKnightBro94"
-                        href="/members/ogknightbro94/"
-                        img="https://mc-heads.net/head/7a52db1e-9209-40b7-9dbe-d8b4b2043a17.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="Timber_Awoo"
-                        href="/members/timber_awoo/"
-                        img="https://mc-heads.net/head/93fbb9bd-16c3-4a4c-ac1f-565d717ca389.png"
-                    />
-                    <MemberCard
-                        name="X_Cygnus_X"
-                        href="/members/x_cygnus_x/"
-                        img="https://mc-heads.net/head/8ad92a3c-26e0-4b58-a464-94a0a2efd69f.png"
-                    />
-                    <MemberCard
-                        name="TKatra"
-                        href="/members/tkatra/"
-                        img="https://mc-heads.net/head/43616ce7-c596-460e-8240-b457ccce630f.png"
-                    />
-                    <MemberCard
-                        name="Qwispy_Spyderz"
-                        href="/members/qwispy_spyderz/"
-                        img="https://mc-heads.net/head/11011535-8cff-4c7b-944d-55c0a279e742.png"
-                    />
-                </div>
-                <div class="row">
-                    <MemberCard
-                        name="the_sharktooth"
-                        href="/members/the_sharktooth/"
-                        img="https://mc-heads.net/head/20da66b2-c0de-48a2-b57d-6e6cfe7d5a54.png"
-                    />
-                    <MemberCard
-                        name="Aki_Ryuto"
-                        href="/members/aki_ryuto/"
-                        img="https://mc-heads.net/head/8346118d-296a-4e7c-a1df-3e88debefa29.png"
-                    />
-                    <MemberCard
-                        name="ChaosCreature4K"
-                        href="/members/chaoscreature4k/"
-                        img="https://mc-heads.net/head/dedc3f36-bb98-49a0-a9e2-d6a474f355c5.png"
-                    />
-                    <MemberCard
-                        name="ArtisticArnie"
-                        href="/members/artisticarnie/"
-                        img="https://mc-heads.net/head/3885722f-3aab-493d-a45b-92694fd3f1a4.png"
-                    />
-                </div>
-            </MemberSeason>
-        </div>
-	</main>
-    <Footer/>
+<Layout title='Members - Pixel Series' backPage='/'>
+  <div class="row justify-content-center">
+    <h1 class="primary-title">Members</h1>
+  </div>
+  <div class="row info justify-content-center">
+    <div class="col"></div>
+    <div class="col text-center">
+      <h2 class="secondary-title">Pixel Craft</h2>
+      <div class="row justify-content-center">
+        <button id="PixelCraftSeason1Button" class="showHeads">S1</button>
+        <button id="PixelCraftSeason2Button" class="showHeads">S2</button>
+        <button id="PixelCraftSeason3Button" class="showHeads">S3</button>
+        <button id="PixelCraftSeason4Button" class="showHeads">S4</button>
+        <button id="PixelCraftSeason5Button" class="showHeads">S5</button>
+        <button id="PixelCraftSeason6Button" class="showHeads">S6</button>
+      </div>
+    </div>
+    <div class="col text-center">
+      <h2 class="secondary-title">Pixel Modded</h2>
+      <div class="row justify-content-center">
+        <button id="PixelModdedSeason1Button" class="showHeads">S1</button>
+        <button id="PixelModdedSeason2Button" class="showHeads">S2</button>
+        <button id="PixelModdedSeason3Button" class="showHeads">S3</button>
+        <button id="PixelModdedSeason4Button" class="showHeads">S4</button>
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+  <div class="col justify-content-center">
+    <Season title='Pixel Craft Season 6' id='PixelCraftSeason6Members' anchor='#Pixel-Craft-Season-6'>
+      <div class="row">
+        <Card
+          name='Herobrain_gamer'
+          href='herobrain_gamer'
+          uuid='c8d6aeb2-caa6-4381-8815-330fe2677c98'
+        />
+        <Card
+          name='zackman1291'
+          href='zackman1291'
+          uuid='f9fd52a3-18aa-4551-8cda-8b1c76aa44fe'
+        />
+        <Card
+          name='EggyLadd'
+          href='eggyladd'
+          uuid='8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870'
+        />
+        <Card
+          name='ComradeAutismo'
+          href='comradeautismo'
+          uuid='d7d9d2fc-e03d-42fc-b190-f141dbedd346'
+        />
+      </div>
+      <div class="row">
+        <Card
+          name="midna_87"
+          href="midna_87"
+          uuid="e157ae19-db7d-4600-aeea-b2220b60ffa3"
+        />
+        <Card
+          name="Nik_Storey"
+          href="nik_storey"
+          uuid="48dae462-73c3-4b00-bd39-2f56fd1e6499"
+        />
+        <Card
+          name="Squiggy_Cryptid"
+          href="squiggy_cryptid"
+          uuid="8431dd80-7127-456e-a581-a28d211e71b5"
+        />
+        <Card
+          name="MasterZent"
+          href="masterzent"
+          uuid="cda05d88-8138-4f9a-b94f-72ff937b6560"
+        />
+      </div>
+      <div class="row">
+        <Card
+          name="the_sharktooth"
+          href="the_sharktooth"
+          uuid="20da66b2-c0de-48a2-b57d-6e6cfe7d5a54"
+        />
+        <Card
+          name="ChaosCreature4K"
+          href="chaoscreature4k"
+          uuid="dedc3f36-bb98-49a0-a9e2-d6a474f355c5"
+        />
+        <Card
+          name="ArtisticArnie"
+          href="artisticarnie"
+          uuid="3885722f-3aab-493d-a45b-92694fd3f1a4"
+        />
+        <Card
+          name="TheTrueDuality"
+          href="thetrueduality"
+          uuid="8895c3c2-5c10-484e-bcf2-cacf971cecef"
+        />
+      </div>
+      <div class="row">
+        <Card
+          name="Bear_Mohawk"
+          href="bear_mohawk"
+          uuid="59f11d94-5609-4baa-8eb4-08238f3167c6"
+        />
+        <Card
+          name="WulfDemon"
+          href="wulfdemon"
+          uuid="e9bbcd09-ea2f-4055-b39d-5f5dd0d06259"
+        />
+        <Card
+          name="TKatra"
+          href="tkatra"
+          uuid="43616ce7-c596-460e-8240-b457ccce630f"
+        />
+        <Card
+          name="Stranqe_People"
+          href="stranqe_people"
+          uuid="6ca8c783-727d-4222-a75e-ad36c0a22996"
+        />
+      </div>
+      <div class="row">
+        <Card
+          name="ApparitionX27"
+          href="apparitionx27"
+          uuid="7fcc9e0a-6b23-464a-9791-45561de304e3"
+        />
+        <Card
+          name="OGKnightBro94"
+          href="ogknightbro94"
+          uuid="7a52db1e-9209-40b7-9dbe-d8b4b2043a17"
+        />
+        <Card
+          name="Timber_Awoo"
+          href="timber_awoo"
+          uuid="93fbb9bd-16c3-4a4c-ac1f-565d717ca389"
+        />
+        <Card
+          name="X_Cygnus_X"
+          href="x_cygnus_x"
+          uuid="8ad92a3c-26e0-4b58-a464-94a0a2efd69f"
+        />
+      </div>
+      <div class="row">
+        <Card
+          name="Qwispy_Spyderz"
+          href="qwispy_spyderz"
+          uuid="11011535-8cff-4c7b-944d-55c0a279e742"
+        />
+        <Card
+          name="nerdnation454"
+          href="nerdnation454"
+          uuid="7e81a4a3-08a1-431f-a515-5fa6e1fce2b9"
+        />
+        <Card
+          name="Aki_Ryuto"
+          href="aki_ryuto"
+          uuid="8346118d-296a-4e7c-a1df-3e88debefa29"
+        />
+      </div>
+      <div class="row">
+        <Card
+          name="KitteeKat115"
+          href="kitteekat115"
+          uuid="9aa71525-3097-4fc4-a9d7-3209a8cdf6fa"
+        />
+        <Card
+          name="SLRvoid"
+          href="slrvoid"
+          uuid="b0d71c73-920c-40f4-bc1a-543d00d197a8"
+        />
+        <Card
+          name="Matth3w404"
+          href="matth3w404"
+          uuid="24631263-19d9-44a1-ba2c-9f6a2c3542fa"
+        />
+        <Card
+          name="beth1qw"
+          href="beth1qw"
+          uuid="2ea5d02e-3406-416d-af29-b79b97cbe4d4"
+        />
+      </div>
+    </Season>
+    <Season title='Pixel Craft Season 5' id='PixelCraftSeason5Members' anchor='#Pixel-Craft-Season-5'>
+      <div class="row">
+          <Card
+              name="Herobrain_gamer"
+              href="herobrain_gamer"
+              uuid="c8d6aeb2-caa6-4381-8815-330fe2677c98"
+          />
+          <Card
+              name="zackman1291"
+              href="zackman1291"
+              uuid="f9fd52a3-18aa-4551-8cda-8b1c76aa44fe"
+          />
+          <Card
+              name="EggyLadd"
+              href="eggyladd"
+              uuid="8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870"
+          />
+          <Card
+              name="ComradeAutismo"
+              href="comradeautismo"
+              uuid="d7d9d2fc-e03d-42fc-b190-f141dbedd346"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="TheTrueDuality"
+              href="thetrueduality"
+              uuid="8895c3c2-5c10-484e-bcf2-cacf971cecef"
+          />
+          <Card
+              name="Nik_Storey"
+              href="nik_storey"
+              uuid="48dae462-73c3-4b00-bd39-2f56fd1e6499"
+          />
+          <Card
+              name="Squiggy_Cryptid"
+              href="squiggy_cryptid"
+              uuid="8431dd80-7127-456e-a581-a28d211e71b5"
+          />
+          <Card
+              name="MasterZent"
+              href="masterzent"
+              uuid="cda05d88-8138-4f9a-b94f-72ff937b6560"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="AnnyongB"
+              href="annyongb"
+              uuid="91983e64-aca1-4cc9-a0fb-fdfbdee94513"
+          />
+          <Card
+              name="Bear_Mohawk"
+              href="bear_mohawk"
+              uuid="59f11d94-5609-4baa-8eb4-08238f3167c6"
+          />
+          <Card
+              name="WulfDemon"
+              href="wulfdemon"
+              uuid="e9bbcd09-ea2f-4055-b39d-5f5dd0d06259"
+          />
+          <Card
+              name="Stranqe_People"
+              href="stranqe_people"
+              uuid="6ca8c783-727d-4222-a75e-ad36c0a22996"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="ApparitionX27"
+              href="apparitionx27"
+              uuid="7fcc9e0a-6b23-464a-9791-45561de304e3"
+          />
+          <Card
+              name="OGKnightBro94"
+              href="ogknightbro94"
+              uuid="7a52db1e-9209-40b7-9dbe-d8b4b2043a17"
+          />
+          <Card
+              name="Timber_Awoo"
+              href="timber_awoo"
+              uuid="93fbb9bd-16c3-4a4c-ac1f-565d717ca389"
+          />
+          <Card
+              name="Dain_Fa"
+              href="dain_fa"
+              uuid="a9e46d77-f064-46f6-9dfd-c7cba268c4ed"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Zoaraym"
+              href="zoaraym"
+              uuid="3c22af25-55e8-4062-ae50-d53e7ce1fa9f"
+          />
+          <Card
+              name="Nave1803"
+              href="nave1803"
+              uuid="775fa597-bc4f-4a0c-bec6-c149b261c1be"
+          />
+          <Card
+              name="BurningOrphans"
+              href="burningorphans"
+              uuid="3e56daf4-979e-4670-9fdc-60e813437dfb"
+          />
+          <Card
+              name="CrustyBird"
+              href="crustybird"
+              uuid="3ea62c30-e9a7-4baa-80af-924a497cb37d"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="HellSubjection"
+              href="hellsubjection"
+              uuid="37fdf820-90cc-4f7e-a09a-d58279214f30"
+          />
+          <Card
+              name="PeachyPugs"
+              href="peachypugs"
+              uuid="f191626b-ff3a-455a-84dc-e4acee7a6fae"
+          />
+          <Card
+              name="Gardonn"
+              href="gardonn"
+              uuid="1f5a8782-79f2-4314-bd16-17fc3b084490"
+          />
+          <Card
+              name="seonbwii"
+              href="seonbwii"
+              uuid="16996eab-a965-4cbe-8689-c3dd44f0f7cd"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="yeahbox"
+              href="yeahbox"
+              uuid="8e956296-9ad5-4db5-804c-9ed93f858b05"
+          />
+          <Card
+              name="Butterminer200"
+              href="butterminer200"
+              uuid="802383cc-cb04-40ea-9587-4fec91de2133"
+          />
+          <Card
+              name="Stansh02"
+              href="stansh02"
+              uuid="c938a98d-127c-40fc-9ccb-c5df2ecd2b58"
+          />
+          <Card
+              name="Lucidrosez"
+              href="lucidrosez"
+              uuid="c3493741-123e-462e-882d-ce66c299201e"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="KitteeKat115"
+              href="kitteekat115"
+              uuid="9aa71525-3097-4fc4-a9d7-3209a8cdf6fa"
+          />
+          <Card
+              name="SLRvoid"
+              href="slrvoid"
+              uuid="b0d71c73-920c-40f4-bc1a-543d00d197a8"
+          />
+          <Card
+              name="Matth3w404"
+              href="matth3w404"
+              uuid="24631263-19d9-44a1-ba2c-9f6a2c3542fa"
+          />
+          <Card
+              name="beth1qw"
+              href="beth1qw"
+              uuid="2ea5d02e-3406-416d-af29-b79b97cbe4d4"
+          />
+      </div>
+    </Season>
+    <Season title='Pixel Craft Season 4' id='PixelCraftSeason4Members' anchor='#Pixel-Craft-Season-4'>
+      <div class="row">
+          <Card
+              name="Herobrain_gamer"
+              href="herobrain_gamer"
+              uuid="c8d6aeb2-caa6-4381-8815-330fe2677c98"
+          />
+          <Card
+              name="Gardonn"
+              href="gardonn"
+              uuid="1f5a8782-79f2-4314-bd16-17fc3b084490"
+          />
+          <Card
+              name="EggyLadd"
+              href="eggyladd"
+              uuid="8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870"
+          />
+          <Card
+              name="zackman1291"
+              href="zackman1291"
+              uuid="f9fd52a3-18aa-4551-8cda-8b1c76aa44fe"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="seonbwii"
+              href="seonbwii"
+              uuid="16996eab-a965-4cbe-8689-c3dd44f0f7cd"
+          />
+          <Card
+              name="ComradeAutismo"
+              href="comradeautismo"
+              uuid="d7d9d2fc-e03d-42fc-b190-f141dbedd346"
+          />
+          <Card
+              name="Nik_Storey"
+              href="nik_storey"
+              uuid="48dae462-73c3-4b00-bd39-2f56fd1e6499"
+          />
+          <Card
+              name="KatieBear88"
+              href="katiebear88"
+              uuid="5cc9b9c3-3983-4f86-930c-31e67977a4eb"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Tiwborn"
+              href="tiwborn"
+              uuid="e91db4f9-dd51-48b1-a421-5a131847659e"
+          />
+          <Card
+              name="Bear_Mohawk"
+              href="bear_mohawk"
+              uuid="59f11d94-5609-4baa-8eb4-08238f3167c6"
+          />
+          <Card
+              name="Stranqe_People"
+              href="stranqe_people"
+              uuid="6ca8c783-727d-4222-a75e-ad36c0a22996"
+          />
+          <Card
+              name="WulfDemon"
+              href="wulfdemon"
+              uuid="e9bbcd09-ea2f-4055-b39d-5f5dd0d06259"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="HellSubjection"
+              href="hellsubjection"
+              uuid="37fdf820-90cc-4f7e-a09a-d58279214f30"
+          />
+          <Card
+              name="Butterminer200"
+              href="butterminer200"
+              uuid="802383cc-cb04-40ea-9587-4fec91de2133"
+          />
+          <Card
+              name="SKstarbreaker"
+              href="skstarbreaker"
+              uuid="729b7d68-e3b8-429a-90f6-ccf67fb9b6a8"
+          />
+          <Card
+              name="GeorgeWBush1946"
+              href="georgewbush1946"
+              uuid="23cc19ab-6b90-4139-8f7a-7e76d5cb3267"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="czerczer"
+              href="czerczer"
+              uuid="b985cbd4-4ed5-4248-a7bb-c36484cc5940"
+          />
+          <Card
+              name="xqcL"
+              href="xqcl"
+              uuid="9c5d9dc3-4ed5-443f-be7f-b981d256bf63"
+          />
+          <Card
+              name="nerdnation454"
+              href="nerdnation454"
+              uuid="7e81a4a3-08a1-431f-a515-5fa6e1fce2b9"
+          />
+          <Card
+              name="MasterZent"
+              href="masterzent"
+              uuid="cda05d88-8138-4f9a-b94f-72ff937b6560"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="TooMuchStag"
+              href="toomuchstag"
+              uuid="9763f232-29d8-48b9-a2b0-8eba73033778"
+          />
+          <Card
+              name="MainManQuince"
+              href="mainmanquince"
+              uuid="0a61ee20-8996-436b-b27f-70b8e0d8118c"
+          />
+          <Card
+              name="Lemayz"
+              href="lemayz"
+              uuid="20195512-068d-4949-815e-8b378dcd0d19"
+          />
+          <Card
+              name="PeachyPugs"
+              href="peachypugs"
+              uuid="f191626b-ff3a-455a-84dc-e4acee7a6fae"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Chroifala"
+              href="chroifala"
+              uuid="257d3052-560a-4f97-8265-b24bb07855f0"
+          />
+          <Card
+              name="BurningOrphans"
+              href="burningorphans"
+              uuid="3e56daf4-979e-4670-9fdc-60e813437dfb"
+          />
+          <Card
+              name="TheTrueDuality"
+              href="thetrueduality"
+              uuid="8895c3c2-5c10-484e-bcf2-cacf971cecef"
+          />
+          <Card
+              name="AnnyongB"
+              href="annyongb"
+              uuid="91983e64-aca1-4cc9-a0fb-fdfbdee94513"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="KitteeKat115"
+              href="kitteekat115"
+              uuid="9aa71525-3097-4fc4-a9d7-3209a8cdf6fa"
+          />
+          <Card
+              name="SLRvoid"
+              href="slrvoid"
+              uuid="b0d71c73-920c-40f4-bc1a-543d00d197a8"
+          />
+          <Card
+              name="Matth3w404"
+              href="matth3w404"
+              uuid="24631263-19d9-44a1-ba2c-9f6a2c3542fa"
+          />
+          <Card
+              name="beth1qw"
+              href="beth1qw"
+              uuid="2ea5d02e-3406-416d-af29-b79b97cbe4d4"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Squiggy_Cryptid"
+              href="squiggy_cryptid"
+              uuid="8431dd80-7127-456e-a581-a28d211e71b5"
+          />
+          <Card
+              name="ThermalBucket41"
+              href="thermalbucket41"
+              uuid="c9dc009c-862e-4386-a61d-618a0a432ad5"
+          />
+          <Card
+              name="yeahbox"
+              href="yeahbox"
+              uuid="8e956296-9ad5-4db5-804c-9ed93f858b05"
+          />
+      </div>
+    </Season>
+    <Season title='Pixel Craft Season 3' id='PixelCraftSeason3Members' anchor='#Pixel-Craft-Season-3'>
+      <div class="row">
+          <Card
+              name="Herobrain_gamer"
+              href="herobrain_gamer"
+              uuid="c8d6aeb2-caa6-4381-8815-330fe2677c98"
+          />
+          <Card
+              name="Gardonn"
+              href="gardonn"
+              uuid="1f5a8782-79f2-4314-bd16-17fc3b084490"
+          />
+          <Card
+              name="EggyLadd"
+              href="eggyladd"
+              uuid="8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870"
+          />
+          <Card
+              name="TheTrueDuality"
+              href="thetrueduality"
+              uuid="8895c3c2-5c10-484e-bcf2-cacf971cecef"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="zackman1291"
+              href="zackman1291"
+              uuid="f9fd52a3-18aa-4551-8cda-8b1c76aa44fe"
+          />
+          <Card
+              name="midna_87"
+              href="midna_87"
+              uuid="e157ae19-db7d-4600-aeea-b2220b60ffa3"
+          />
+          <Card
+              name="HellSubjection"
+              href="hellsubjection"
+              uuid="37fdf820-90cc-4f7e-a09a-d58279214f30"
+          />
+          <Card
+              name="Butterminer200"
+              href="butterminer200"
+              uuid="802383cc-cb04-40ea-9587-4fec91de2133"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="KatieBear88"
+              href="katiebear88"
+              uuid="5cc9b9c3-3983-4f86-930c-31e67977a4eb"
+          />
+          <Card
+              name="Bear_Mohawk"
+              href="bear_mohawk"
+              uuid="59f11d94-5609-4baa-8eb4-08238f3167c6"
+          />
+          <Card
+              name="Stranqe_People"
+              href="stranqe_people"
+              uuid="6ca8c783-727d-4222-a75e-ad36c0a22996"
+          />
+          <Card
+              name="WulfDemon"
+              href="wulfdemon"
+              uuid="e9bbcd09-ea2f-4055-b39d-5f5dd0d06259"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Chroifala"
+              href="chroifala"
+              uuid="257d3052-560a-4f97-8265-b24bb07855f0"
+          />
+          <Card
+              name="MasterZent"
+              href="masterzent"
+              uuid="cda05d88-8138-4f9a-b94f-72ff937b6560"
+          />
+          <Card
+              name="BurningOrphans"
+              href="burningorphans"
+              uuid="3e56daf4-979e-4670-9fdc-60e813437dfb"
+          />
+          <Card
+              name="TooMuchStag"
+              href="toomuchstag"
+              uuid="9763f232-29d8-48b9-a2b0-8eba73033778"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="AnnyongB"
+              href="annyongb"
+              uuid="91983e64-aca1-4cc9-a0fb-fdfbdee94513"
+          />
+          <Card
+              name="SKstarbreaker"
+              href="skstarbreaker"
+              uuid="729b7d68-e3b8-429a-90f6-ccf67fb9b6a8"
+          />
+          <Card
+              name="GeorgeWBush1946"
+              href="georgewbush1946"
+              uuid="23cc19ab-6b90-4139-8f7a-7e76d5cb3267"
+          />
+          <Card
+              name="xqcL"
+              href="xqcl"
+              uuid="9c5d9dc3-4ed5-443f-be7f-b981d256bf63"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Zyfur"
+              href="zyfur"
+              uuid="e85270fe-1e82-4bdc-aed0-1c541f572159"
+          />
+          <Card
+              name="_Pengu__"
+              href="pengu"
+              uuid="6440d46c-1bc3-4305-9819-d9da36699ce8"
+          />
+          <Card
+              name="chuzubb"
+              href="chuzubb"
+              uuid="6ac9c15f-6c31-473e-b14a-c7d48d0ea12f"
+          />
+          <Card
+              name="Kaidonn"
+              href="kaidonn"
+              uuid="164917c2-9e5d-4d59-836c-30f7796b7fe0"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="igomigo"
+              href="igomigo"
+              uuid="42eb5aef-7300-41e9-b8cc-66287ce874ed"
+          />
+          <Card
+              name="muttonbuster8"
+              href="muttonbuster8"
+              uuid="b98b4bbe-7f5d-42b9-b9e0-4bc6afb5f6ec"
+          />
+          <Card
+              name="McLukers"
+              href="mclukers"
+              uuid="1233064a-3f2c-4ba0-8326-69aec5f039c3"
+          />
+          <Card
+              name="Foughtful"
+              href="foughtful"
+              uuid="6831f270-5816-490d-a21e-fc59a6504bb3"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="awoah"
+              href="awoah"
+              uuid="21f226ee-52b1-4117-9a57-ef2047bc3da6"
+          />
+          <Card
+              name="Perry____"
+              href="perry____"
+              uuid="bf622a6b-8c70-4f43-81e0-d6db44c60f73"
+          />
+          <Card
+              name="TypicalDude"
+              href="typicaldude"
+              uuid="5a631d3a-c62e-40ff-a957-fd69ace60f40"
+          />
+          <Card
+              name="7r1"
+              href="7r1"
+              uuid="f6721bb1-7cb2-4e98-ae03-a3502875d5f8"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Pskett"
+              href="pskett"
+              uuid="d3111acc-1c23-49da-99c0-ac7005e54c47"
+          />
+          <Card
+              name="franko27"
+              href="franko27"
+              uuid="25f16e1a-712c-4746-8cda-73ac629adf3e"
+          />
+          <Card
+              name="__Guard1an__"
+              href="guard1an"
+              uuid="1983dc35-375d-4392-9e6f-deac0ce543d5"
+          />
+          <Card
+              name="ThatOtherPeep"
+              href="thatotherpeep"
+              uuid="627e9ff0-6889-41fc-9e1f-1b8918b54356"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Diamond_Miner245"
+              href="diamond_miner245"
+              uuid="c0fa0d9c-9979-4f63-a51e-1fda853489cb"
+          />
+          <Card
+              name="BlueDiamondBoy11"
+              href="bluediamondboy11"
+              uuid="e0bf5c90-cfab-4f00-8554-24f301d3f7ce"
+          />
+          <Card
+              name="Gevans"
+              href="gevans"
+              uuid="c1d4c1ed-fdf7-4654-8ebe-86febc25ea7a"
+          />
+          <Card
+              name="ArmoredExplosive"
+              href="armoredexplosive"
+              uuid="f367c16c-aa99-406f-879c-92712cd0c646"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="_Macspy_"
+              href="macspy"
+              uuid="ed31a83a-1855-4a9b-92d2-eaff7f700230"
+          />
+          <Card
+              name="dmanPL"
+              href="dmanpl"
+              uuid="7205f4fb-6cab-4b5e-b2f6-c8d1fcff40c6"
+          />
+          <Card
+              name="BugoutBoi"
+              href="bugoutboi"
+              uuid="603f9ea4-a88f-439c-9e85-8c670a310d4a"
+          />
+          <Card
+              name="Rnad"
+              href="rnad"
+              uuid="d8623155-320f-4c09-a309-99961ae753d7"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Frost780"
+              href="frost780"
+              uuid="5e7dafca-ac46-47b0-a6f2-c0fd2ccfff60"
+          />
+          <Card
+              name="KigMD"
+              href="kigmd"
+              uuid="eaa978a0-b9d9-4eb0-8323-dff468677a96"
+          />
+          <Card
+              name="jamacias19"
+              href="jamacias19"
+              uuid="a903d356-9d5a-4ba1-94e3-acf0967d70e7"
+          />
+          <Card
+              name="Zoreon_Zen"
+              href="zoreon_zen"
+              uuid="55d6be4f-c79b-450d-8a83-e1a955410617"
+          />
+      </div>
+    </Season>
+    <Season title='Pixel Craft Season 2' id='PixelCraftSeason2Members' anchor='#Pixel-Craft-Season-2'>
+      <div class="row">
+          <Card
+              name="Herobrain_gamer"
+              href="herobrain_gamer"
+              uuid="c8d6aeb2-caa6-4381-8815-330fe2677c98"
+          />
+          <Card
+              name="Gardonn"
+              href="gardonn"
+              uuid="1f5a8782-79f2-4314-bd16-17fc3b084490"
+          />
+          <Card
+              name="EggyLadd"
+              href="eggyladd"
+              uuid="8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870"
+          />
+          <Card
+              name="TheTrueDuality"
+              href="thetrueduality"
+              uuid="8895c3c2-5c10-484e-bcf2-cacf971cecef"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="TooMuchStag"
+              href="toomuchstag"
+              uuid="9763f232-29d8-48b9-a2b0-8eba73033778"
+          />
+          <Card
+              name="AnnyongB"
+              href="annyongb"
+              uuid="91983e64-aca1-4cc9-a0fb-fdfbdee94513"
+          />
+          <Card
+              name="Butterminer200"
+              href="butterminer200"
+              uuid="802383cc-cb04-40ea-9587-4fec91de2133"
+          />
+          <Card
+              name="midna_87"
+              href="midna_87"
+              uuid="e157ae19-db7d-4600-aeea-b2220b60ffa3"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Tanner_Marco"
+              href="tanner_marco"
+              uuid="706ef746-4c6c-4643-ba65-ed4f4c51836b"
+          />
+          <Card
+              name="Iruka77"
+              href="iruka77"
+              uuid="fc19ba96-638c-4cbb-99a6-2e681dd802c8"
+          />
+          <Card
+              name="CatSandWich999"
+              href="catsandwich999"
+              uuid="a6128257-d54b-4050-b0e3-659398331b8a"
+          />
+          <Card
+              name="IItsBradyy"
+              href="iitsbradyy"
+              uuid="2ca5a0dc-ed41-4567-9b98-dab608e794a1"
+          />
+          <Card
+              name="_Blaze_"
+              href="blaze"
+              uuid="497c2831-4d6b-49e7-a6c9-181c95840fea"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="dieing"
+              href="dieing"
+              uuid="d027a9f7-666d-4cf1-91f7-63457606b4ed"
+          />
+          <Card
+              name="SkyPixels21"
+              href="skypixels21"
+              uuid="f42b4c98-a6c3-43d0-b225-b4ce98d5aa75"
+          />
+          <Card
+              name="iSkygraphics"
+              href="iskygraphics"
+              uuid="e6883d30-2a3e-471c-9842-00348ba128c4"
+          />
+          <Card
+              name="Livvie24"
+              href="livvie24"
+              uuid="46671793-2693-4345-a1db-e0c58f198ba0"
+          />
+          <Card
+              name="sparklevamp02"
+              href="sparklevamp02"
+              uuid="b9cb97d7-fefc-46f7-a7d1-a6600439dd8b"
+          />
+      </div>
+    </Season>
+    <Season title='Pixel Craft Season 1' id='PixelCraftSeason1Members' anchor='#Pixel-Craft-Season-1'>
+      <div class="row">
+          <Card
+              name="Herobrain_gamer"
+              href="herobrain_gamer"
+              uuid="c8d6aeb2-caa6-4381-8815-330fe2677c98"
+          />
+          <Card
+              name="midna_87"
+              href="midna_87"
+              uuid="e157ae19-db7d-4600-aeea-b2220b60ffa3"
+          />
+          <Card
+              name="Gardonn"
+              href="gardonn"
+              uuid="1f5a8782-79f2-4314-bd16-17fc3b084490"
+          />
+          <Card
+              name="EggyLadd"
+              href="eggyladd"
+              uuid="8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870"
+          />
+      </div>
+    </Season>
+  </div>
+  <div class="col justify-content-center">
+    <Season title='Pixel Modded Season 4' id='PixelModdedSeason4Members' anchor='#Pixel-Modded-Season-4'>
+      <div class="row">
+          <Card
+              name="Herobrain_gamer"
+              href="herobrain_gamer"
+              uuid="c8d6aeb2-caa6-4381-8815-330fe2677c98"
+          />
+          <Card
+              name="EggyLadd"
+              href="eggyladd"
+              uuid="8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870"
+          />
+          <Card
+              name="zackman1291"
+              href="zackman1291"
+              uuid="f9fd52a3-18aa-4551-8cda-8b1c76aa44fe"
+          />
+          <Card
+              name="Nik_Storey"
+              href="nik_storey"
+              uuid="48dae462-73c3-4b00-bd39-2f56fd1e6499"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="ComradeAutismo"
+              href="comradeautismo"
+              uuid="d7d9d2fc-e03d-42fc-b190-f141dbedd346"
+          />
+          <Card
+              name="Gardonn"
+              href="gardonn"
+              uuid="1f5a8782-79f2-4314-bd16-17fc3b084490"
+          />
+          <Card
+              name="seonbwii"
+              href="seonbwii"
+              uuid="16996eab-a965-4cbe-8689-c3dd44f0f7cd"
+          />
+          <Card
+              name="TheTrueDuality"
+              href="thetrueduality"
+              uuid="8895c3c2-5c10-484e-bcf2-cacf971cecef"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="oDdLy_eNdEd"
+              href="oddly_ended"
+              uuid="88155d9e-fe23-4bc6-99e7-4509ff9e4b18"
+          />
+          <Card
+              name="Radical_MC"
+              href="radical_mc"
+              uuid="e3e955d3-0de4-4597-8b89-56999cc16575"
+          />
+          <Card
+              name="Squiggy_Cryptid"
+              href="squiggy_cryptid"
+              uuid="8431dd80-7127-456e-a581-a28d211e71b5"
+          />
+      </div>
+    </Season>
+    <Season title='Pixel Modded Season 3' id='PixelModdedSeason3Members' anchor='#Pixel-Modded-Season-3'>
+      <div class="row">
+          <Card
+              name="Herobrain_gamer"
+              href="herobrain_gamer"
+              uuid="c8d6aeb2-caa6-4381-8815-330fe2677c98"
+          />
+          <Card
+              name="EggyLadd"
+              href="eggyladd"
+              uuid="8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870"
+          />
+          <Card
+              name="zackman1291"
+              href="zackman1291"
+              uuid="f9fd52a3-18aa-4551-8cda-8b1c76aa44fe"
+          />
+          <Card
+              name="AnnyongB"
+              href="annyongb"
+              uuid="91983e64-aca1-4cc9-a0fb-fdfbdee94513"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Bear_Mohawk"
+              href="bear_mohawk"
+              uuid="59f11d94-5609-4baa-8eb4-08238f3167c6"
+          />
+          <Card
+              name="Stranqe_People"
+              href="stranqe_people"
+              uuid="6ca8c783-727d-4222-a75e-ad36c0a22996"
+          />
+          <Card
+              name="WulfDemon"
+              href="wulfdemon"
+              uuid="e9bbcd09-ea2f-4055-b39d-5f5dd0d06259"
+          />
+          <Card
+              name="Nik_Storey"
+              href="nik_storey"
+              uuid="48dae462-73c3-4b00-bd39-2f56fd1e6499"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="ComradeAutismo"
+              href="comradeautismo"
+              uuid="d7d9d2fc-e03d-42fc-b190-f141dbedd346"
+          />
+          <Card
+              name="Gardonn"
+              href="gardonn"
+              uuid="1f5a8782-79f2-4314-bd16-17fc3b084490"
+          />
+          <Card
+              name="seonbwii"
+              href="seonbwii"
+              uuid="16996eab-a965-4cbe-8689-c3dd44f0f7cd"
+          />
+      </div>
+    </Season>
+    <Season title='Pixel Modded Season 2' id='PixelModdedSeason2Members' anchor='#Pixel-Modded-Season-2'>
+      <div class="row">
+          <Card
+              name="Herobrain_gamer"
+              href="herobrain_gamer"
+              uuid="c8d6aeb2-caa6-4381-8815-330fe2677c98"
+          />
+          <Card
+              name="EggyLadd"
+              href="eggyladd"
+              uuid="8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870"
+          />
+          <Card
+              name="zackman1291"
+              href="zackman1291"
+              uuid="f9fd52a3-18aa-4551-8cda-8b1c76aa44fe"
+          />
+          <Card
+              name="Gardonn"
+              href="gardonn"
+              uuid="1f5a8782-79f2-4314-bd16-17fc3b084490"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="ComradeAutismo"
+              href="comradeautismo"
+              uuid="d7d9d2fc-e03d-42fc-b190-f141dbedd346"
+          />
+          <Card
+              name="TheTrueDuality"
+              href="thetrueduality"
+              uuid="8895c3c2-5c10-484e-bcf2-cacf971cecef"
+          />
+          <Card
+              name="Cool_Rock_Pic"
+              href="cool_rock_pic"
+              uuid="b2c7df75-f93f-4281-b595-27e163bee316"
+          />
+          <Card
+              name="Phroggers_MC"
+              href="phroggers_mc"
+              uuid="82ed6162-180f-4010-8965-4f9d0c62b775"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="KatieBear88"
+              href="katiebear88"
+              uuid="5cc9b9c3-3983-4f86-930c-31e67977a4eb"
+          />
+          <Card
+              name="Tiwborn"
+              href="tiwborn"
+              uuid="e91db4f9-dd51-48b1-a421-5a131847659e"
+          />
+          <Card
+              name="Bear_Mohawk"
+              href="bear_mohawk"
+              uuid="59f11d94-5609-4baa-8eb4-08238f3167c6"
+          />
+          <Card
+              name="Stranqe_People"
+              href="stranqe_people"
+              uuid="6ca8c783-727d-4222-a75e-ad36c0a22996"
+          />
+          <Card
+              name="WulfDemon"
+              href="wulfdemon"
+              uuid="e9bbcd09-ea2f-4055-b39d-5f5dd0d06259"
+          />
+      </div>
+    </Season>
+    <Season title='Pixel Modded Season 1' id='PixelModdedSeason1Members' anchor='#Pixel-Modded-Season-1'>
+      <div class="row">
+          <Card
+              name="Herobrain_gamer"
+              href="herobrain_gamer"
+              uuid="c8d6aeb2-caa6-4381-8815-330fe2677c98"
+          />
+          <Card
+              name="IItsBradyy"
+              href="iitsbradyy"
+              uuid="2ca5a0dc-ed41-4567-9b98-dab608e794a1"
+          />
+          <Card
+              name="midna_87"
+              href="midna_87"
+              uuid="e157ae19-db7d-4600-aeea-b2220b60ffa3"
+          />
+      </div>
+    </Season>
+  </div>
+  <div class="col justify-content-center">
+    <Season title='All Pixel Series' id='PixelSeriesAllMembers' anchor='#All'>
+      <div class="row">
+          <Card
+              name="Herobrain_gamer"
+              href="herobrain_gamer"
+              uuid="c8d6aeb2-caa6-4381-8815-330fe2677c98"
+          />
+          <Card
+              name="IItsBradyy"
+              href="iitsbradyy"
+              uuid="2ca5a0dc-ed41-4567-9b98-dab608e794a1"
+          />
+          <Card
+              name="midna_87"
+              href="midna_87"
+              uuid="e157ae19-db7d-4600-aeea-b2220b60ffa3"
+          />
+          <Card
+              name="Gardonn"
+              href="gardonn"
+              uuid="1f5a8782-79f2-4314-bd16-17fc3b084490"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="EggyLadd"
+              href="eggyladd"
+              uuid="8d87c4e6-7a31-4d2c-b07e-11ed8c4ed870"
+          />
+          <Card
+              name="TheTrueDuality"
+              href="thetrueduality"
+              uuid="8895c3c2-5c10-484e-bcf2-cacf971cecef"
+          />
+          <Card
+              name="TooMuchStag"
+              href="toomuchstag"
+              uuid="9763f232-29d8-48b9-a2b0-8eba73033778"
+          />
+          <Card
+              name="AnnyongB"
+              href="annyongb"
+              uuid="91983e64-aca1-4cc9-a0fb-fdfbdee94513"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Butterminer200"
+              href="butterminer200"
+              uuid="802383cc-cb04-40ea-9587-4fec91de2133"
+          />
+          <Card
+              name="Tanner_Marco"
+              href="tanner_marco"
+              uuid="706ef746-4c6c-4643-ba65-ed4f4c51836b"
+          />
+          <Card
+              name="Iruka77"
+              href="iruka77"
+              uuid="fc19ba96-638c-4cbb-99a6-2e681dd802c8"
+          />
+          <Card
+              name="CatSandWich999"
+              href="catsandwich999"
+              uuid="a6128257-d54b-4050-b0e3-659398331b8a"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="_Blaze_"
+              href="blaze"
+              uuid="497c2831-4d6b-49e7-a6c9-181c95840fea"
+          />
+          <Card
+              name="dieing"
+              href="dieing"
+              uuid="d027a9f7-666d-4cf1-91f7-63457606b4ed"
+          />
+          <Card
+              name="SkyPixels21"
+              href="skypixels21"
+              uuid="f42b4c98-a6c3-43d0-b225-b4ce98d5aa75"
+          />
+          <Card
+              name="iSkygraphics"
+              href="iskygraphics"
+              uuid="e6883d30-2a3e-471c-9842-00348ba128c4"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Livvie24"
+              href="livvie24"
+              uuid="46671793-2693-4345-a1db-e0c58f198ba0"
+          />
+          <Card
+              name="sparklevamp02"
+              href="sparklevamp02"
+              uuid="b9cb97d7-fefc-46f7-a7d1-a6600439dd8b"
+          />
+          <Card
+              name="zackman1291"
+              href="zackman1291"
+              uuid="f9fd52a3-18aa-4551-8cda-8b1c76aa44fe"
+          />
+          <Card
+              name="HellSubjection"
+              href="hellsubjection"
+              uuid="37fdf820-90cc-4f7e-a09a-d58279214f30"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="KatieBear88"
+              href="katiebear88"
+              uuid="5cc9b9c3-3983-4f86-930c-31e67977a4eb"
+          />
+          <Card
+              name="Bear_Mohawk"
+              href="bear_mohawk"
+              uuid="59f11d94-5609-4baa-8eb4-08238f3167c6"
+          />
+          <Card
+              name="Stranqe_People"
+              href="stranqe_people"
+              uuid="6ca8c783-727d-4222-a75e-ad36c0a22996"
+          />
+          <Card
+              name="WulfDemon"
+              href="wulfdemon"
+              uuid="e9bbcd09-ea2f-4055-b39d-5f5dd0d06259"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Chroifala"
+              href="chroifala"
+              uuid="257d3052-560a-4f97-8265-b24bb07855f0"
+          />
+          <Card
+              name="MasterZent"
+              href="masterzent"
+              uuid="cda05d88-8138-4f9a-b94f-72ff937b6560"
+          />
+          <Card
+              name="BurningOrphans"
+              href="burningorphans"
+              uuid="3e56daf4-979e-4670-9fdc-60e813437dfb"
+          />
+          <Card
+              name="SKstarbreaker"
+              href="skstarbreaker"
+              uuid="729b7d68-e3b8-429a-90f6-ccf67fb9b6a8"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="GeorgeWBush1946"
+              href="georgewbush1946"
+              uuid="23cc19ab-6b90-4139-8f7a-7e76d5cb3267"
+          />
+          <Card
+              name="xqcL"
+              href="xqcl"
+              uuid="9c5d9dc3-4ed5-443f-be7f-b981d256bf63"
+          />
+          <Card
+              name="Zyfur"
+              href="zyfur"
+              uuid="e85270fe-1e82-4bdc-aed0-1c541f572159"
+          />
+          <Card
+              name="_Pengu__"
+              href="pengu"
+              uuid="6440d46c-1bc3-4305-9819-d9da36699ce8"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="chuzubb"
+              href="chuzubb"
+              uuid="6ac9c15f-6c31-473e-b14a-c7d48d0ea12f"
+          />
+          <Card
+              name="Kaidonn"
+              href="kaidonn"
+              uuid="164917c2-9e5d-4d59-836c-30f7796b7fe0"
+          />
+          <Card
+              name="igomigo"
+              href="igomigo"
+              uuid="42eb5aef-7300-41e9-b8cc-66287ce874ed"
+          />
+          <Card
+              name="muttonbuster8"
+              href="muttonbuster8"
+              uuid="b98b4bbe-7f5d-42b9-b9e0-4bc6afb5f6ec"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="McLukers"
+              href="mclukers"
+              uuid="1233064a-3f2c-4ba0-8326-69aec5f039c3"
+          />
+          <Card
+              name="Foughtful"
+              href="foughtful"
+              uuid="6831f270-5816-490d-a21e-fc59a6504bb3"
+          />
+          <Card
+              name="awoah"
+              href="awoah"
+              uuid="21f226ee-52b1-4117-9a57-ef2047bc3da6"
+          />
+          <Card
+              name="Perry____"
+              href="perry____"
+              uuid="bf622a6b-8c70-4f43-81e0-d6db44c60f73"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="TypicalDude"
+              href="typicaldude"
+              uuid="5a631d3a-c62e-40ff-a957-fd69ace60f40"
+          />
+          <Card
+              name="7r1"
+              href="7r1"
+              uuid="f6721bb1-7cb2-4e98-ae03-a3502875d5f8"
+          />
+          <Card
+              name="Pskett"
+              href="pskett"
+              uuid="d3111acc-1c23-49da-99c0-ac7005e54c47"
+          />
+          <Card
+              name="franko27"
+              href="franko27"
+              uuid="25f16e1a-712c-4746-8cda-73ac629adf3e"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="__Guard1an__"
+              href="guard1an"
+              uuid="1983dc35-375d-4392-9e6f-deac0ce543d5"
+          />
+          <Card
+              name="ThatOtherPeep"
+              href="thatotherpeep"
+              uuid="627e9ff0-6889-41fc-9e1f-1b8918b54356"
+          />
+          <Card
+              name="Diamond_Miner245"
+              href="diamond_miner245"
+              uuid="c0fa0d9c-9979-4f63-a51e-1fda853489cb"
+          />
+          <Card
+              name="BlueDiamondBoy11"
+              href="bluediamondboy11"
+              uuid="e0bf5c90-cfab-4f00-8554-24f301d3f7ce"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Gevans"
+              href="gevans"
+              uuid="c1d4c1ed-fdf7-4654-8ebe-86febc25ea7a"
+          />
+          <Card
+              name="ArmoredExplosive"
+              href="armoredexplosive"
+              uuid="f367c16c-aa99-406f-879c-92712cd0c646"
+          />
+          <Card
+              name="_Macspy_"
+              href="macspy"
+              uuid="ed31a83a-1855-4a9b-92d2-eaff7f700230"
+          />
+          <Card
+              name="dmanPL"
+              href="dmanpl"
+              uuid="7205f4fb-6cab-4b5e-b2f6-c8d1fcff40c6"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="BugoutBoi"
+              href="bugoutboi"
+              uuid="603f9ea4-a88f-439c-9e85-8c670a310d4a"
+          />
+          <Card
+              name="Rnad"
+              href="rnad"
+              uuid="d8623155-320f-4c09-a309-99961ae753d7"
+          />
+          <Card
+              name="Frost780"
+              href="frost780"
+              uuid="5e7dafca-ac46-47b0-a6f2-c0fd2ccfff60"
+          />
+          <Card
+              name="KigMD"
+              href="kigmd"
+              uuid="eaa978a0-b9d9-4eb0-8323-dff468677a96"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="jamacias19"
+              href="jamacias19"
+              uuid="a903d356-9d5a-4ba1-94e3-acf0967d70e7"
+          />
+          <Card
+              name="Zoreon_Zen"
+              href="zoreon_zen"
+              uuid="55d6be4f-c79b-450d-8a83-e1a955410617"
+          />
+          <Card
+              name="ComradeAutismo"
+              href="comradeautismo"
+              uuid="d7d9d2fc-e03d-42fc-b190-f141dbedd346"
+          />
+          <Card
+              name="Cool_Rock_Pic"
+              href="cool_rock_pic"
+              uuid="b2c7df75-f93f-4281-b595-27e163bee316"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Phroggers_MC"
+              href="phroggers_mc"
+              uuid="82ed6162-180f-4010-8965-4f9d0c62b775"
+          />
+          <Card
+              name="Tiwborn"
+              href="tiwborn"
+              uuid="e91db4f9-dd51-48b1-a421-5a131847659e"
+          />
+          <Card
+              name="Nik_Storey"
+              href="nik_storey"
+              uuid="48dae462-73c3-4b00-bd39-2f56fd1e6499"
+          />
+          <Card
+              name="seonbwii"
+              href="seonbwii"
+              uuid="16996eab-a965-4cbe-8689-c3dd44f0f7cd"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="czerczer"
+              href="czerczer"
+              uuid="b985cbd4-4ed5-4248-a7bb-c36484cc5940"
+          />
+          <Card
+              name="nerdnation454"
+              href="nerdnation454"
+              uuid="7e81a4a3-08a1-431f-a515-5fa6e1fce2b9"
+          />
+          <Card
+              name="MainManQuince"
+              href="mainmanquince"
+              uuid="0a61ee20-8996-436b-b27f-70b8e0d8118c"
+          />
+          <Card
+              name="Lemayz"
+              href="lemayz"
+              uuid="20195512-068d-4949-815e-8b378dcd0d19"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="PeachyPugs"
+              href="peachypugs"
+              uuid="f191626b-ff3a-455a-84dc-e4acee7a6fae"
+          />
+          <Card
+              name="SLRvoid"
+              href="slrvoid"
+              uuid="b0d71c73-920c-40f4-bc1a-543d00d197a8"
+          />
+          <Card
+              name="Matth3w404"
+              href="matth3w404"
+              uuid="24631263-19d9-44a1-ba2c-9f6a2c3542fa"
+          />
+          <Card
+              name="beth1qw"
+              href="beth1qw"
+              uuid="2ea5d02e-3406-416d-af29-b79b97cbe4d4"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="KitteeKat115"
+              href="kitteekat115"
+              uuid="9aa71525-3097-4fc4-a9d7-3209a8cdf6fa"
+          />
+          <Card
+              name="Squiggy_Cryptid"
+              href="squiggy_cryptid"
+              uuid="8431dd80-7127-456e-a581-a28d211e71b5"
+          />
+          <Card
+              name="ThermalBucket41"
+              href="thermalbucket41"
+              uuid="c9dc009c-862e-4386-a61d-618a0a432ad5"
+          />
+          <Card
+              name="yeahbox"
+              href="yeahbox"
+              uuid="8e956296-9ad5-4db5-804c-9ed93f858b05"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Nave1803"
+              href="nave1803"
+              uuid="775fa597-bc4f-4a0c-bec6-c149b261c1be"
+          />
+          <Card
+              name="Stansh02"
+              href="stansh02"
+              uuid="c938a98d-127c-40fc-9ccb-c5df2ecd2b58"
+          />
+          <Card
+              name="Lucidrosez"
+              href="lucidrosez"
+              uuid="c3493741-123e-462e-882d-ce66c299201e"
+          />
+          <Card
+              name="Dain_Fa"
+              href="dain_fa"
+              uuid="a9e46d77-f064-46f6-9dfd-c7cba268c4ed"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Zoaraym"
+              href="zoaraym"
+              uuid="3c22af25-55e8-4062-ae50-d53e7ce1fa9f"
+          />
+          <Card
+              name="CrustyBird"
+              href="crustybird"
+              uuid="3ea62c30-e9a7-4baa-80af-924a497cb37d"
+          />
+          <Card
+              name="ApparitionX27"
+              href="apparitionx27"
+              uuid="7fcc9e0a-6b23-464a-9791-45561de304e3"
+          />
+          <Card
+              name="OGKnightBro94"
+              href="ogknightbro94"
+              uuid="7a52db1e-9209-40b7-9dbe-d8b4b2043a17"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="Timber_Awoo"
+              href="timber_awoo"
+              uuid="93fbb9bd-16c3-4a4c-ac1f-565d717ca389"
+          />
+          <Card
+              name="X_Cygnus_X"
+              href="x_cygnus_x"
+              uuid="8ad92a3c-26e0-4b58-a464-94a0a2efd69f"
+          />
+          <Card
+              name="TKatra"
+              href="tkatra"
+              uuid="43616ce7-c596-460e-8240-b457ccce630f"
+          />
+          <Card
+              name="Qwispy_Spyderz"
+              href="qwispy_spyderz"
+              uuid="11011535-8cff-4c7b-944d-55c0a279e742"
+          />
+      </div>
+      <div class="row">
+          <Card
+              name="the_sharktooth"
+              href="the_sharktooth"
+              uuid="20da66b2-c0de-48a2-b57d-6e6cfe7d5a54"
+          />
+          <Card
+              name="Aki_Ryuto"
+              href="aki_ryuto"
+              uuid="8346118d-296a-4e7c-a1df-3e88debefa29"
+          />
+          <Card
+              name="ChaosCreature4K"
+              href="chaoscreature4k"
+              uuid="dedc3f36-bb98-49a0-a9e2-d6a474f355c5"
+          />
+          <Card
+              name="ArtisticArnie"
+              href="artisticarnie"
+              uuid="3885722f-3aab-493d-a45b-92694fd3f1a4"
+          />
+      </div>
+    </Season>
+  </div>
 </Layout>
 
 <style>
-    .container {
-        position: absolute;
-        left: 12em;
-        top: 0em;
-        right: 0em;
-        color: white;
-        font-size: large;
-    }
-    .justify-content-center {
-        -webkit-box-pack: center!important;
-        -ms-flex-pack: center!important;
-        justify-content: center!important;
-    }
-    .text-center {
-        text-align: center!important;
-    }
+  .primary-title {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: groove;
+    border-radius: 25px;
+    padding: 10px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+  .info {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: inset;
+    border-radius: 25px;
+    font-size: large;
+    padding: 10px;
+    margin: 5px;
+    background: rgba(51, 51, 51, 0.5);
+  }
 
-    .row {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin-right: 15px;
-        margin-left: 15px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .col {
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        max-width: 100%;
-    }
-
-    .info {
-        border: 3px;
-        border-color: lightslategray;
-        border-style: inset;
-        border-radius: 25px;
-        font-size: large;
-        padding: 10px;
-        margin: 5px;
-        background-color: rgba(51, 51, 51, 0.5);
-    }
-    .showHeads {
-        border: none;
-        border-width: 3px;
-        border-style: solid;
-        border-radius: 7px;
-        border-color: lightgray;
-        background-color: rgba(51, 51, 51, 0.1);
-        font-size: 20px;
-        color: white;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .showHeads:hover {
-        background-color: rgba(51, 51, 51, 0.7);
-        color: lime;
-    }
-    .space-bottom {
-        padding-bottom: 3em;
-    }
-    .space-bottom2 {
-        padding-bottom: 15em;
-    }
-    .space-bottom3 {
-        padding-bottom: 13em;
-    }
-    .primary-title {
-        border: 3px;
-        border-color: lightslategray;
-        border-style: groove;
-        border-radius: 25px;
-        padding: 10px;
-        background-color: rgba(51, 51, 51, 0.5);
-    }
+  .showHeads {
+    border: none;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 7px;
+    border-color: lightgray;
+    background: rgba(51, 51, 51, 0.1);
+    font-size: 20px;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .showHeads:hover {
+    background: rgba(51, 51, 51, 0.7);
+    color: lime;
+  }
 </style>
 
 <script>
-    //Run This Function Once The DOM Content Has Loaded.
-    document.addEventListener("DOMContentLoaded", startUp);
+  //Run This Function Once The DOM Content Has Loaded.
+  document.addEventListener("DOMContentLoaded", startUp);
+  
+  //Variables.
+  const PixelSeriesAll = document.getElementById("PixelSeriesAllMembers");
+  const PixelCraftSeason1 = document.getElementById("PixelCraftSeason1Members");
+  const PixelCraftSeason2 = document.getElementById("PixelCraftSeason2Members");
+  const PixelCraftSeason3 = document.getElementById("PixelCraftSeason3Members");
+  const PixelCraftSeason4 = document.getElementById("PixelCraftSeason4Members");
+  const PixelCraftSeason5 = document.getElementById("PixelCraftSeason5Members");
+  const PixelCraftSeason6 = document.getElementById("PixelCraftSeason6Members");
+  const PixelModdedSeason1 = document.getElementById("PixelModdedSeason1Members");
+  const PixelModdedSeason2 = document.getElementById("PixelModdedSeason2Members");
+  const PixelModdedSeason3 = document.getElementById("PixelModdedSeason3Members");
+  const PixelModdedSeason4 = document.getElementById("PixelModdedSeason4Members");
 
+  //OnClick events for the buttons.
+  document.getElementById("PixelCraftSeason1Button").onclick = () => {
+    openClose(PixelCraftSeason1);
+  }
+  document.getElementById("PixelCraftSeason2Button").onclick = () => {
+    openClose(PixelCraftSeason2);
+  }
+  document.getElementById("PixelCraftSeason3Button").onclick = () => {
+    openClose(PixelCraftSeason3);
+  }
+  document.getElementById("PixelCraftSeason4Button").onclick = () => {
+    openClose(PixelCraftSeason4);
+  }
+  document.getElementById("PixelCraftSeason5Button").onclick = () => {
+    openClose(PixelCraftSeason5);
+  }
+  document.getElementById("PixelCraftSeason6Button").onclick = () => {
+    openClose(PixelCraftSeason6);
+  }
+  document.getElementById("PixelModdedSeason1Button").onclick = () => {
+    openClose(PixelModdedSeason1);
+  }
+  document.getElementById("PixelModdedSeason2Button").onclick = () => {
+    openClose(PixelModdedSeason2);
+  }
+  document.getElementById("PixelModdedSeason3Button").onclick = () => {
+    openClose(PixelModdedSeason3);
+  }
+  document.getElementById("PixelModdedSeason4Button").onclick = () => {
+    openClose(PixelModdedSeason4);
+  }
+
+  //Setup for the Members Page.
+  function startUp() {
+      //Changing the Display value of the Elements.
+      hideBlocks();
+      PixelCraftSeason6.style.display = "block";
+      //Checking For Valid URL Anchor.
+      anchorCheck();
+  }
+
+  //Set all Elements to be Hidden.
+  function hideBlocks() {
+    PixelSeriesAll.style.display = "none";
+    PixelCraftSeason1.style.display = "none";
+    PixelCraftSeason2.style.display = "none";
+    PixelCraftSeason3.style.display = "none";
+    PixelCraftSeason4.style.display = "none";
+    PixelCraftSeason5.style.display = "none";
+    PixelCraftSeason6.style.display = "none";
+    PixelModdedSeason1.style.display = "none";
+    PixelModdedSeason2.style.display = "none";
+    PixelModdedSeason3.style.display = "none";
+    PixelModdedSeason4.style.display = "none";
+  }
+
+  //Change Display of One Element.
+  function openClose(name) {
+    hideBlocks();
+    if(name.style.display === "none") {
+      name.style.display = "block";
+    } else {
+      name.style.display = "none";
+    }
+  }
+
+  //Anchor Checking On Page Load.
+  function anchorCheck() {
     //Variables.
-    const PixelSeriesAll = document.getElementById("PixelSeriesAllMembers");
-    const PixelCraftSeason1 = document.getElementById("PixelCraftSeason1Members");
-    const PixelCraftSeason2 = document.getElementById("PixelCraftSeason2Members");
-    const PixelCraftSeason3 = document.getElementById("PixelCraftSeason3Members");
-    const PixelCraftSeason4 = document.getElementById("PixelCraftSeason4Members");
-    const PixelCraftSeason5 = document.getElementById("PixelCraftSeason5Members");
-    const PixelCraftSeason6 = document.getElementById("PixelCraftSeason6Members");
-    const PixelModdedSeason1 = document.getElementById("PixelModdedSeason1Members");
-    const PixelModdedSeason2 = document.getElementById("PixelModdedSeason2Members");
-    const PixelModdedSeason3 = document.getElementById("PixelModdedSeason3Members");
-    const PixelModdedSeason4 = document.getElementById("PixelModdedSeason4Members");
+    let lhash = location.hash.toLocaleLowerCase();
+    let hash = lhash.replace("#", "");
 
-    //OnClick events for the buttons.
-    document.getElementById("PixelCraftSeason1Button").onclick = () => {
-        openClose(PixelCraftSeason1);
+    //Check the anchors/hashs.
+    if(!hash) {
+      openClose(PixelCraftSeason6);
+    } else {
+      switch(hash) {
+        case "pixel-craft-season-1":
+          openClose(PixelCraftSeason1);
+          break;
+        case "pixel-craft-season-2":
+          openClose(PixelCraftSeason2);
+          break;
+        case "pixel-craft-season-3":
+          openClose(PixelCraftSeason3);
+          break;
+        case "pixel-craft-season-4":
+          openClose(PixelCraftSeason4);
+          break;
+        case "pixel-craft-season-5":
+          openClose(PixelCraftSeason5);
+          break;
+        case "pixel-craft-season-6":
+          openClose(PixelCraftSeason6);
+          break;
+        case "pixel-modded-season-1":
+          openClose(PixelModdedSeason1);
+          break;
+        case "pixel-modded-season-2":
+          openClose(PixelModdedSeason2);
+          break;
+        case "pixel-modded-season-3":
+          openClose(PixelModdedSeason3);
+          break;
+        case "pixel-modded-season-4":
+          openClose(PixelModdedSeason4);
+          break;
+        case "all":
+          openClose(PixelSeriesAll);
+          break;
+        default:
+          openClose(PixelCraftSeason6);
+      }
     }
-    document.getElementById("PixelCraftSeason2Button").onclick = () => {
-        openClose(PixelCraftSeason2);
-    }
-    document.getElementById("PixelCraftSeason3Button").onclick = () => {
-        openClose(PixelCraftSeason3);
-    }
-    document.getElementById("PixelCraftSeason4Button").onclick = () => {
-        openClose(PixelCraftSeason4);
-    }
-    document.getElementById("PixelCraftSeason5Button").onclick = () => {
-        openClose(PixelCraftSeason5);
-    }
-    document.getElementById("PixelCraftSeason6Button").onclick = () => {
-        openClose(PixelCraftSeason6);
-    }
-    document.getElementById("PixelModdedSeason1Button").onclick = () => {
-        openClose(PixelModdedSeason1);
-    }
-    document.getElementById("PixelModdedSeason2Button").onclick = () => {
-        openClose(PixelModdedSeason2);
-    }
-    document.getElementById("PixelModdedSeason3Button").onclick = () => {
-        openClose(PixelModdedSeason3);
-    }
-    document.getElementById("PixelModdedSeason4Button").onclick = () => {
-        openClose(PixelModdedSeason4);
-    }
-
-    //Setup for the Members Page.
-    function startUp() {
-        //Changing the Display value of the Elements.
-        hideBlocks();
-        PixelCraftSeason6.style.display = "block";
-        //Checking For Valid URL Anchor.
-        anchorCheck();
-    }
-
-    //Set all Elements to be Hidden.
-    function hideBlocks() {
-        PixelSeriesAll.style.display = "none";
-        PixelCraftSeason1.style.display = "none";
-        PixelCraftSeason2.style.display = "none";
-        PixelCraftSeason3.style.display = "none";
-        PixelCraftSeason4.style.display = "none";
-        PixelCraftSeason5.style.display = "none";
-        PixelCraftSeason6.style.display = "none";
-        PixelModdedSeason1.style.display = "none";
-        PixelModdedSeason2.style.display = "none";
-        PixelModdedSeason3.style.display = "none";
-        PixelModdedSeason4.style.display = "none";
-    }
-
-    //Change Display of One Element.
-    function openClose(name) {
-        hideBlocks();
-        if(name.style.display === "none") {
-            name.style.display = "block";
-        } else {
-            name.style.display = "none";
-        }
-    }
-
-    //Anchor Checking On Page Load.
-    function anchorCheck() {
-        //Variables.
-        var hash = location.hash.toLocaleLowerCase();
-
-        //Pixel Craft Anchor Checks.
-        if(hash == "#pixel-craft-season-1")
-            openClose(PixelCraftSeason1);
-        if(hash == "#pixel-craft-season-2")
-            openClose(PixelCraftSeason2);
-        if(hash == "#pixel-craft-season-3")
-            openClose(PixelCraftSeason3);
-        if(hash == "#pixel-craft-season-4")
-            openClose(PixelCraftSeason4);
-        if(hash == "#pixel-craft-season-5")
-            openClose(PixelCraftSeason5);
-        if(hash == "#pixel-craft-season-6")
-            openClose(PixelCraftSeason6);
-
-        //Pixel Modded Anchor Checks.
-        if(hash == "#pixel-modded-season-1")
-            openClose(PixelModdedSeason1);
-        if(hash == "#pixel-modded-season-2")
-            openClose(PixelModdedSeason2);
-        if(hash == "#pixel-modded-season-3")
-            openClose(PixelModdedSeason3);
-        if(hash == "#pixel-modded-season-4")
-            openClose(PixelModdedSeason4);
-
-        //All Members Anchor Check.
-        if(hash == "#all")
-            openClose(PixelSeriesAll);
-    }
+  }
 </script>

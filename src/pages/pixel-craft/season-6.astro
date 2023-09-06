@@ -1,126 +1,80 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Navigation from '../../components/Navigation.astro';
-import Footer from '../../components/Footer.astro';
-import Back from '../../components/Back.astro';
-import Top from '../../components/Top.astro';
+import Layout from '../../layouts/Generic.astro';
 ---
 
-<Layout title="Season #6 - Pixel Craft - Pixel Series">
-    <Navigation/>
-    <Top/>
-    <Back href="/"/>
-	<main class="container justify-content-center text-center space-bottom">
-        <div class="row justify-content-center">
-            <h1 class="primary-title">Pixel Craft Season #6</h1>
-        </div>
-        <div class="col justify-content-center">
-            <div class="col info text-center">
-                <p>Season #6 of Pixel Craft this season we are starting in The Wild Update and playing in the same world for as long as we feel like keeping this world. We've also got a bunch of custom stuff that we are adding to the server to enhance our gameplay experience.</p>
-                <p>We have an optional things for people to use if the want and one required thing. The optional things is a Fabric client. The required thing is a Custom Resource Pack that we use for the custom things that we wanted to add to the server. You can get all of these from <a class="external-links" href="https://download.pixilaremedia.com/user/pixilare-media/pixel-craft/season-6/resource-packs" target="_blank">Resource Packs Here</a> and <a class="external-links" href="https://download.pixilaremedia.com/user/pixilare-media/pixel-craft/season-6/clients" target="_blank">Clients Here</a>.</p>
-                <p><a class="downloads" href="https://cdn.roebuck.dev/user/pixilare-media/pixel-craft/worlds/season_6_start.zip">Starting Map</a></p>
-            </div>
-            <div class="row">
-                <div class="col"></div>
-                <div class="col info text-center">
-                    <p>Some useful pages for this season.</p>
-                    <ul>
-                        <li><a class="internal-links" href="/pixel-craft/map/">Live Web Map</a></li>
-                        <li><a class="internal-links" href="/pixel-craft/season-6/shulker-box-advancements/">Shulker Box Advancements</a></li>
-                        <!--li><a class="internal-links" href="/pixel-craft/season-6/summoning-rituals/">Summoning Rituals</a></li-->
-                        <li><a class="internal-links" href="/pixel-craft/season-6/summoning-rituals/blood-moon/">Blood Moon Summoning Ritual</a></li>
-                        <li><a class="internal-links" href="/pixel-craft/season-6/item-combinations/">Item Combinations</a></li>
-                    </ul>
-                </div>
-                <div class="col"></div>
-            </div>
-        </div>
-	</main>
-    <Footer/>
+<Layout title='Season #6 - Pixel Craft - Pixel Series' backPage='/'>
+  <div class="row justify-content-center">
+    <h1 class="primary-title">Pixel Craft Season #6</h1>
+  </div>
+  <div class="col justify-content-center">
+    <div class="col info text-center">
+      <h2>Info</h2>
+      <p>Season #6 of Pixel Craft this season we are starting in The Wild Update and playing in the same world for as long as we feel like keeping this world. We've also got a bunch of custom stuff that we are adding to the server to enhance our gameplay experience.</p>
+      <p>We have an optional things for people to use if the want and one required thing. The optional things is a Fabric client. The required thing is a Custom Resource Pack that we use for the custom things that we wanted to add to the server. You can get all of these from <a class="external-links" href="https://download.pixilaremedia.com/user/pixilare-media/pixel-craft/season-6/resource-packs/" target="_blank">Resource Packs Here</a> and <a class="external-links" href="https://download.pixilaremedia.com/user/pixilare-media/pixel-craft/season-6/clients/" target="_blank">Clients Here</a>.</p>
+      <p><a class="downloads" href="https://cdn.roebuck.dev/user/pixilare-media/pixel-series/pixel-craft/season-6/worlds/pixel-craft-season-6-starting-map.zip">Starting Map</a></p>
+    </div>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col info text-center">
+        <p>Some useful pages for this season.</p>
+        <ul>
+          <li><a class="internal-links" href="/pixel-craft/map/">Live Web Map</a></li>
+          <li><a class="internal-links" href="/pixel-craft/season-6/shulker-box-advancements/">Shulker Box Advancements</a></li>
+          <!--li><a class="internal-links" href="/pixel-craft/season-6/summoning-rituals/">Summoning Rituals</a></li-->
+          <li><a class="internal-links" href="/pixel-craft/season-6/summoning-rituals/blood-moon/">Blood Moon Summoning Ritual</a></li>
+          <li><a class="internal-links" href="/pixel-craft/season-6/item-combinations/">Item Combinations</a></li>
+          <li><a class="internal-links" href="/pixel-craft/season-6/custom-items/">Custom Items</a></li>
+        </ul>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
 </Layout>
 
 <style>
-    .container {
-        position: absolute;
-        left: 12em;
-        top: 0em;
-        right: 0em;
-        color: white;
-        font-size: large;
-    }
-    .justify-content-center {
-        -webkit-box-pack: center!important;
-        -ms-flex-pack: center!important;
-        justify-content: center!important;
-    }
-    .text-center {
-        text-align: center!important;
-    }
-
-    .row {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin-right: 15px;
-        margin-left: 15px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .col {
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        max-width: 100%;
-    }
-
-    ul {
-        list-style: none;
-    }
-
-    .info {
-        border: 3px;
-        border-color: lightslategray;
-        border-style: inset;
-        border-radius: 25px;
-        font-size: large;
-        padding: 10px;
-        margin: 5px;
-        background-color: rgba(51, 51, 51, 0.5);
-    }
-    .internal-links {
-        color: aqua;
-        text-decoration: none;
-    }
-    .internal-links:hover {
-        color: rgb(72, 245, 245);
-    }
-    .downloads {
-        color: lightgreen;
-        text-decoration: none;
-    }
-    .downloads:hover {
-        color: mediumseagreen;
-    }
-    .external-links {
-        color: aqua;
-        text-decoration: none;
-    }
-    .external-links:hover {
-        color: rgb(72, 245, 245);
-    }
-    .space-bottom {
-        padding-bottom: 3em;
-    }
-    .primary-title {
-        border: 3px;
-        border-color: lightslategray;
-        border-style: groove;
-        border-radius: 25px;
-        padding: 10px;
-        background-color: rgba(51, 51, 51, 0.5);
-    }
+  .primary-title {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: groove;
+    border-radius: 25px;
+    padding: 10px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+  .info {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: inset;
+    border-radius: 25px;
+    font-size: large;
+    padding: 10px;
+    margin: 5px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+  .info:last-child {
+    margin-bottom: 3em;
+  }
+  .info > ul {
+    list-style: none;
+  }
+  .downloads {
+    color: lightgreen;
+    text-decoration: none;
+  }
+  .downloads:hover {
+    color: mediumseagreen;
+  }
+  .external-links {
+    color: aqua;
+    text-decoration: none;
+  }
+  .external-links:hover {
+    color: rgb(72, 245, 245);
+  }
+  .internal-links {
+    color: aqua;
+    text-decoration: none;
+  }
+  .internal-links:hover {
+    color: rgb(72, 245, 245);
+  }
 </style>

@@ -1,0 +1,31 @@
+---
+export interface Props {
+  company: string;
+  link: string;
+}
+
+const { link, company } = Astro.props;
+---
+
+<a class="social-links" href={link} target="_blank">
+  <img src=`/images/logos/${company}.png` alt=`The ${company} logo.`/>
+</a>
+
+<style>
+  .social-links > img {
+    width: 7.77%;
+    height: auto;
+  }
+  .social-links {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: aqua;
+    text-decoration: none;
+  }
+  .social-links:first-child {
+    margin-left: none;
+  }
+  .social-links:last-child {
+    margin-right: none;
+  }
+</style>
