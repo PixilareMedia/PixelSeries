@@ -1,0 +1,1 @@
+#topButton:where(.astro-6UZMZU6T){display:none;position:fixed;top:1em;right:1em;z-index:99;border:none;outline:none;background:rgba(71,71,71,.7);color:#fff;cursor:pointer;padding:.5em;border-radius:10px;font-size:1em}#topButton:where(.astro-6UZMZU6T):hover{background:rgb(51,51,51)}

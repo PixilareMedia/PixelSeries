@@ -1,1 +1,0 @@
-const o=document.getElementById("TopButton");window.onscroll=function(){n()};function n(){document.body.scrollTop>20||document.documentElement.scrollTop>20?o.style.display="block":o.style.display="none"}o.onclick=()=>{t()};function t(){document.body.scrollTop=0,document.documentElement.scrollTop=0}
