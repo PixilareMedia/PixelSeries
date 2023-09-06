@@ -7,7 +7,8 @@ export default defineConfig({
   output: 'static',
   compressHTML: true,
   build: {
-    format: 'directory'
+    format: 'directory',
+    assets: 'astro'
   },
   server: {
     port: 8083,
