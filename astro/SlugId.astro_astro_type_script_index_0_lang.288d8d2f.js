@@ -1,0 +1,1 @@
+const e=document.getElementById("idButton"),c=document.getElementById("slugButton");e.onclick=()=>{o(document.getElementById("idAnchorCopy").innerHTML)};c.onclick=()=>{o(document.getElementById("slugAnchorCopy").innerHTML)};async function o(n){try{let t=location.origin+"/u/#"+n;await navigator.clipboard.writeText(t)}catch(t){console.error("Failed to copy: ",t)}}
