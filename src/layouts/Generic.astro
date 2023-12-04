@@ -4,13 +4,16 @@ import Navigation from '../components/Navigation.astro';
 import Theme from '../components/Theme.astro';
 import Top from '../components/Top.astro';
 import Back from '../components/Back.astro';
+import SlugId from '../components/SlugId.astro';
 
 export interface Props {
   title: string;
   backPage: string;
+  id: string;
+  slug: string;
 }
 
-const { title, backPage } = Astro.props;
+const { title, backPage, id, slug } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -28,6 +31,7 @@ const { title, backPage } = Astro.props;
     <Theme/>
     <Top/>
     <Back href={backPage}/>
+    <SlugId id={id} slug={slug}/>
     <main class="container justify-content-center text-center">
       <slot/>
     </main>

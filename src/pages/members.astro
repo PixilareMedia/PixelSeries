@@ -4,7 +4,7 @@ import Season from '../components/members/Season.astro';
 import Card from '../components/members/Card.astro';
 ---
 
-<Layout title='Members - Pixel Series' backPage='/'>
+<Layout title='Members - Pixel Series' backPage='/' id='PpsZt' slug='Members'>
   <div class="row justify-content-center">
     <h1 class="primary-title">Members</h1>
   </div>
@@ -1774,6 +1774,7 @@ import Card from '../components/members/Card.astro';
       PixelCraftSeason6.style.display = "block";
       //Checking For Valid URL Anchor.
       anchorCheck();
+      console.log("There are " + document.getElementById("PixelSeriesAllMembers").getElementsByClassName("card-info").length + " members total.")
   }
 
   //Set all Elements to be Hidden.

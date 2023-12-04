@@ -31,9 +31,12 @@ import Layout from '../layouts/FrontPage.astro';
   //Checking the anchro on the page.
   function anchorCheck() {
     //Hash varaible.
-    let lhash = location.hash.toLocaleLowerCase();
-    let hash = lhash.replace("#", "");
-    console.log(hash)
+    let hash = location.hash;
+    let uuid = hash.replace("#", "");
+    let slug = hash.toLocaleLowerCase().replace("#", "");
+
+    //UUID's generated with https://shortunique.id/
+    console.log("UUID Variable", uuid, "\nSlug Variable", slug);
 
     //Check to see if there is a hash/anchor on the page.
     if(!hash) {
@@ -41,422 +44,1100 @@ import Layout from '../layouts/FrontPage.astro';
       location.replace("/");
     } else {
       //If has is found check agains our list of working hashs.
-      switch (hash) {
-        //Members Links.
-        case "herobrain_gamer":
-          location.replace("/members/herobrain_gamer/");
-          break;
-        case "willongnose":
-          location.replace("/members/herobrain_gamer/");
-          break;
-        case "iitsbradyy":
-          location.replace("/members/iitsbradyy/");
-          break;
-        case "midna_87":
-          location.replace("/members/midna_87/");
-          break;
-        case "gardonn":
-          location.replace("/members/gardonn/");
-          break;
-        case "eggyladd":
-          location.replace("/members/eggyladd/");
-          break;
-        case "thetrueduality":
-          location.replace("/members/thetrueduality/");
-          break;
-        case "wolfcat01":
-          location.replace("/members/thetrueduality/");
-          break;
-        case "toomuchstag":
-          location.replace("/members/toomuchstag/");
-          break;
-        case "annyongb":
-          location.replace("/members/annyongb/");
-          break;
-        case "butterminer200":
-          location.replace("/members/butterminer200/");
-          break;
-        case "tanner_marco":
-          location.replace("/members/tanner_marco/");
-          break;
-        case "iruka77":
-          location.replace("/members/iruka77/");
-          break;
-        case "catsandwich999":
-          location.replace("/members/catsandwich999/");
-          break;
-        case "_blaze_":
-          location.replace("/members/blaze/");
-          break;
-        case "blaze":
-          location.replace("/members/blaze/");
-          break;
-        case "dieing":
-          location.replace("/members/dieing/");
-          break;
-        case "skypixels21":
-          location.replace("/members/skypixels21/");
-          break;
-        case "thetrueduality":
-          location.replace("/members/thetrueduality/");
-          break;
-        case "iskygraphics":
-          location.replace("/members/iskygraphics/");
-          break;
-        case "livvie24":
-          location.replace("/members/livvie24/");
-          break;
-        case "sparklevamp02":
-          location.replace("/members/sparklevamp02/");
-          break;
-        case "zackman1291":
-          location.replace("/members/zackman1291/");
-          break;
-        case "zackman129":
-          location.replace("/members/zackman1291/");
-          break;
-        case "hellsubjection":
-          location.replace("/members/hellsubjection/");
-          break;
-        case "katiebear88":
-          location.replace("/members/katiebear88/");
-          break;
-        case "bear_mohawk":
-          location.replace("/members/bear_mohawk/");
-          break;
-        case "stranqe_people":
-          location.replace("/members/stranqe_people/");
-          break;
-        case "wulfdemon":
-          location.replace("/members/wulfdemon/");
-          break;
-        case "chroifala":
-          location.replace("/members/chroifala/");
-          break;
-        case "masterzent":
-          location.replace("/members/masterzent/");
-          break;
-        case "zaag97":
-          location.replace("/members/masterzent/");
-          break;
-        case "burningorphans":
-          location.replace("/members/burningorphans/");
-          break;
-        case "skstarbreaker":
-          location.replace("/members/skstarbreaker/");
-          break;
-        case "georgewbush1946":
-          location.replace("/members/georgewbush1946/");
-          break;
-        case "xqcl":
-          location.replace("/members/xqcl/");
-          break;
-        case "zyfur":
-          location.replace("/members/zyfur/");
-          break;
-        case "_pengu__":
-          location.replace("/members/pengu/");
-          break;
-        case "pengu":
-          location.replace("/members/pengu/");
-          break;
-        case "chuzubb":
-          location.replace("/members/chuzubb/");
-          break;
-        case "kaidonn":
-          location.replace("/members/kaidonn/");
-          break;
-        case "igomigo":
-          location.replace("/members/igomigo/");
-          break;
-        case "muttonbuster8":
-          location.replace("/members/muttonbuster8/");
-          break;
-        case "mclukers":
-          location.replace("/members/mclukers/");
-          break;
-        case "foughtful":
-          location.replace("/members/foughtful/");
-          break;
-        case "awoah":
-          location.replace("/members/awoah/");
-          break;
-        case "perry____":
-          location.replace("/members/perry____/");
-          break;
-        case "typicaldude":
-          location.replace("/members/typicaldude/");
-          break;
-        case "7r1":
-          location.replace("/members/7r1/");
-          break;
-        case "pskett":
-          location.replace("/members/pskett/");
-          break;
-        case "franko27":
-          location.replace("/members/franko27/");
-          break;
-        case "__guard1an__":
-          location.replace("/members/guard1an/");
-          break;
-        case "guard1an":
-          location.replace("/members/guard1an/");
-          break;
-        case "thatotherpeep":
-          location.replace("/members/thatotherpeep/");
-          break;
-        case "diamond_miner245":
-          location.replace("/members/diamond_miner245/");
-          break;
-        case "bluediamondboy11":
-          location.replace("/members/bluediamondboy11/");
-          break;
-        case "gevans":
-          location.replace("/members/gevans/");
-          break;
-        case "armoredexplosive":
-          location.replace("/members/armoredexplosive/");
-          break;
-        case "_macspy_":
-          location.replace("/members/macspy/");
-          break;
-        case "macspy":
-          location.replace("/members/macspy/");
-          break;
-        case "dmanpl":
-          location.replace("/members/dmanpl/");
-          break;
-        case "bugoutboi":
-          location.replace("/members/bugoutboi/");
-          break;
-        case "rnad":
-          location.replace("/members/rnad/");
-          break;
-        case "frost780":
-          location.replace("/members/frost780/");
-          break;
-        case "kigmd":
-          location.replace("/members/kigmd/");
-          break;
-        case "jamacias19":
-          location.replace("/members/jamacias19/");
-          break;
-        case "zoreon_zen":
-          location.replace("/members/zoreon_zen/");
-          break;
-        case "comradeautismo":
-          location.replace("/members/comradeautismo/");
-          break;
-        case "cool_rock_pic":
-          location.replace("/members/cool_rock_pic/");
-          break;
-        case "phroggers_mc":
-          location.replace("/members/phroggers_mc/");
-          break;
-        case "tiwborn":
-          location.replace("/members/tiwborn/");
-          break;
-        case "nik_storey":
-          location.replace("/members/nik_storey/");
-          break;
-        case "seonbwii":
-          location.replace("/members/seonbwii/");
-          break;
-        case "czerczer":
-          location.replace("/members/czerczer/");
-          break;
-        case "nerdnation454":
-          location.replace("/members/nerdnation454/");
-          break;
-        case "mainmanquince":
-          location.replace("/members/mainmanquince/");
-          break;
-        case "lemayz":
-          location.replace("/members/lemayz/");
-          break;
-        case "peachypugs":
-          location.replace("/members/peachypugs/");
-          break;
-        case "slrvoid":
-          location.replace("/members/slrvoid/");
-          break;
-        case "matth3w404":
-          location.replace("/members/matth3w404/");
-          break;
-        case "beth1qw":
-          location.replace("/members/beth1qw/");
-          break;
-        case "kitteekat115":
-          location.replace("/members/kitteekat115/");
-          break;
-        case "squiggy_cryptid":
-          location.replace("/members/squiggy_cryptid/");
-          break;
-        case "thermalbucket41":
-          location.replace("/members/thermalbucket41/");
-          break;
-        case "yeahbox":
-          location.replace("/members/yeahbox/");
-          break;
-        case "nave1803":
-          location.replace("/members/nave1803/");
-          break;
-        case "stansh02":
-          location.replace("/members/stansh02/");
-          break;
-        case "lucidrosez":
-          location.replace("/members/lucidrosez/");
-          break;
-        case "dain_fa":
-          location.replace("/members/dain_fa/");
-          break;
-        case "zoaraym":
-          location.replace("/members/zoaraym/");
-          break;
-        case "crustybird":
-          location.replace("/members/crustybird/");
-          break;
-        case "apparitionx27":
-          location.replace("/members/apparitionx27/");
-          break;
-        case "ogknightbro94":
-          location.replace("/members/ogknightbro94/");
-          break;
-        case "timber_awoo":
-          location.replace("/members/timber_awoo/");
-          break;
-        case "x_cygnus_x":
-          location.replace("/members/x_cygnus_x/");
-          break;
-        case "tkatra":
-          location.replace("/members/tkatra/");
-          break;
-        case "qwispy_spyderz":
-          location.replace("/members/qwispy_spyderz/");
-          break;
-        case "the_sharktooth":
-          location.replace("/members/the_sharktooth/");
-          break;
-        case "aki_ryuto":
-          location.replace("/members/aki_ryuto/");
-          break;
-        case "chaoscreature4k":
-          location.replace("/members/chaoscreature4k/");
-          break;
-        case "artisticarnie":
-          location.replace("/members/artisticarnie/");
-          break;
-        //Pixel Craft Links.
-        case "pixel-craft-map":
-          location.replace("/pixel-craft/map/");
-          break;
-        case "pcmap":
-          location.replace("/pixel-craft/map/");
-          break;
-        case "pixel-craft-season-6":
-          location.replace("/pixel-craft/season-6/");
-          break;
-        case "pcs6":
-          location.replace("/pixel-craft/season-6/");
-          break;
-        case "pixel-craft-season-5":
-          location.replace("/pixel-craft/season-5/");
-          break;
-        case "pcs5":
-          location.replace("/pixel-craft/season-5/");
-          break;
-        case "pixel-craft-season-4":
-          location.replace("/pixel-craft/season-4/");
-          break;
-        case "pcs4":
-          location.replace("/pixel-craft/season-4/");
-          break;
-        case "pixel-craft-season-3":
-          location.replace("/pixel-craft/season-3/");
-          break;
-        case "pcs3":
-          location.replace("/pixel-craft/season-3/");
-          break;
-        case "pixel-craft-season-2":
-          location.replace("/pixel-craft/season-2/");
-          break;
-        case "pcs2":
-          location.replace("/pixel-craft/season-2/");
-          break;
-        case "pixel-craft-season-1":
-          location.replace("/pixel-craft/season-1/");
-          break;
-        case "pcs1":
-          location.replace("/pixel-craft/season-1/");
-          break;
-        //Pixel Modded Links.
-        case "pixel-modded-map":
-          location.replace("/pixel-modded/map/");
-          break;
-        case "pmmap":
-          location.replace("/pixel-modded/map/");
-          break;
-        case "pixel-modded-season-4":
-          location.replace("/pixel-modded/season-4/");
-          break;
-        case "pms4":
-          location.replace("/pixel-modded/season-4/");
-          break;
-        case "pixel-modded-season-3":
-          location.replace("/pixel-modded/season-3/");
-          break;
-        case "pms3":
-          location.replace("/pixel-modded/season-3/");
-          break;
-        case "pixel-modded-season-2":
-          location.replace("/pixel-modded/season-2/");
-          break;
-        case "pms2":
-          location.replace("/pixel-modded/season-2/");
-          break;
-        case "pixel-modded-season-1":
-          location.replace("/pixel-modded/season-1/");
-          break;
-        case "pms1":
-          location.replace("/pixel-modded/season-1/");
-          break;
-        //Miscellaneous Links.
-        case "home":
-          location.replace("/");
-          break;
-        case "main":
-          location.replace("/");
-          break;
-        case "root":
-          location.replace("/");
-          break;
-        case "members":
-          location.replace("/members/");
-          break;
-        case "member":
-          location.replace("/members/");
-          break;
-        case "peoples":
-          location.replace("/members/");
-          break;
-        case "people":
-          location.replace("/members/");
-          break;
-        case "users":
-          location.replace("/members/");
-          break;
-        case "user":
-          location.replace("/members/");
-          break;
-        case "join-request":
-          location.replace("/join-request/");
-          break;
-        case "join":
-          location.replace("/join-request/");
-          break;
-        //Default if the hash does not match.
-        default:
-          location.replace("/");
+      //Members Links.
+      if(uuid === "ViiUZ" || slug === "herobrain_gamer" || slug === "willongnose") {
+        location.replace("/members/herobrain_gamer/");
+      }
+      if(uuid === "4Qx21" || slug === "iitsbradyy") {
+        location.replace("/members/iitsbradyy/");
+      }
+      if(uuid === "ZMmfF" || slug === "midna_87") {
+        location.replace("/members/midna_87/");
+      }
+      if(uuid === "RRExg" || slug === "gardonn") {
+        location.replace("/members/gardonn/");
+      }
+      if(uuid === "d7NN2" || slug === "eggyladd") {
+        location.replace("/members/eggyladd/");
+      }
+      if(uuid === "rIKR5" || slug === "thetrueduality" || slug === "wolfcat01") {
+        location.replace("/members/thetrueduality/");
+      }
+      if(uuid === "Qd8Yf" || slug === "toomuchstag") {
+        location.replace("/members/toomuchstag/");
+      }
+      if(uuid === "bvtPL" || slug === "annyongb") {
+        location.replace("/members/annyongb/");
+      }
+      if(uuid === "U8G9u" || slug === "butterminer200") {
+        location.replace("/members/butterminer200/");
+      }
+      if(uuid === "VFBmt" || slug === "tanner_marco") {
+        location.replace("/members/tanner_marco/");
+      }
+      if(uuid === "0dM1P" || slug === "iruka77") {
+        location.replace("/members/iruka77/");
+      }
+      if(uuid === "OxCaJ" || slug === "catsandwich999") {
+        location.replace("/members/catsandwich999/");
+      }
+      if(uuid === "gLV0Y" || slug === "_blaze_" || slug === "blaze") {
+        location.replace("/members/blaze/");
+      }
+      if(uuid === "Dd0KQ" || slug === "dieing") {
+        location.replace("/members/dieing/");
+      }
+      if(uuid === "cUA4n" || slug === "skypixels21") {
+        location.replace("/members/skypixels21/");
+      }
+      if(uuid === "HuKve" || slug === "iskygraphics") {
+        location.replace("/members/iskygraphics/");
+      }
+      if(uuid === "1WmHX" || slug === "livvie24") {
+        location.replace("/members/livvie24/");
+      }
+      if(uuid === "N7w5O" || slug === "sparklevamp02") {
+        location.replace("/members/sparklevamp02/");
+      }
+      if(uuid === "93WPf" || slug === "zackman1291" || slug === "zackman129") {
+        location.replace("/members/zackman1291/");
+      }
+      if(uuid === "2fNaQ" || slug === "hellsubjection") {
+        location.replace("/members/hellsubjection/");
+      }
+      if(uuid === "5tYwQ" || slug === "katiebear88") {
+        location.replace("/members/katiebear88/");
+      }
+      if(uuid === "HNm6J" || slug === "bear_mohawk") {
+        location.replace("/members/bear_mohawk/");
+      }
+      if(uuid === "Vjrek" || slug === "stranqe_people") {
+        location.replace("/members/stranqe_people/");
+      }
+      if(uuid === "wx6NQ" || slug === "wulfdemon") {
+        location.replace("/members/wulfdemon/");
+      }
+      if(uuid === "E6Bin" || slug === "chroifala") {
+        location.replace("/members/chroifala/");
+      }
+      if(uuid === "8HJMR" || slug === "masterzent" || slug === "zaag97") {
+        location.replace("/members/masterzent/");
+      }
+      if(uuid === "Mpx9h" || slug === "burningorphans") {
+        location.replace("/members/burningorphans/");
+      }
+      if(uuid === "xNGjG" || slug === "skstarbreaker") {
+        location.replace("/members/skstarbreaker/");
+      }
+      if(uuid === "7rHqZ" || slug === "georgewbush1946") {
+        location.replace("/members/georgewbush1946/");
+      }
+      if(uuid === "ADxsS" || slug === "xqcl") {
+        location.replace("/members/xqcl/");
+      }
+      if(uuid === "XHb1F" || slug === "zyfur") {
+        location.replace("/members/zyfur/");
+      }
+      if(uuid === "ATOym" || slug === "_pengu__" || slug === "pengu") {
+        location.replace("/members/pengu/");
+      }
+      if(uuid === "qMHbw" || slug === "chuzubb") {
+        location.replace("/members/chuzubb/");
+      }
+      if(uuid === "ARZw2" || slug === "kaidonn") {
+        location.replace("/members/kaidonn/");
+      }
+      if(uuid === "zBb29" || slug === "igomigo") {
+        location.replace("/members/igomigo/");
+      }
+      if(uuid === "vFnD2" || slug === "muttonbuster8") {
+        location.replace("/members/muttonbuster8/");
+      }
+      if(uuid === "MpNml" || slug === "mclukers") {
+        location.replace("/members/mclukers/");
+      }
+      if(uuid === "8smDC" || slug === "foughtful") {
+        location.replace("/members/foughtful/");
+      }
+      if(uuid === "uvjUH" || slug === "awoah") {
+        location.replace("/members/awoah/");
+      }
+      if(uuid === "eRiWs" || slug === "perry____") {
+        location.replace("/members/perry____/");
+      }
+      if(uuid === "wOXZ8" || slug === "typicaldude") {
+        location.replace("/members/typicaldude/");
+      }
+      if(uuid === "ZJ2wX" || slug === "7r1") {
+        location.replace("/members/7r1/");
+      }
+      if(uuid === "730Bw" || slug === "pskett") {
+        location.replace("/members/pskett/");
+      }
+      if(uuid === "Es6tF" || slug === "franko27") {
+        location.replace("/members/franko27/");
+      }
+      if(uuid === "8HEQD" || slug === "__guard1an__" || slug === "guard1an") {
+        location.replace("/members/guard1an/");
+      }
+      if(uuid === "Gae3q" || slug === "thatotherpeep") {
+        location.replace("/members/thatotherpeep/");
+      }
+      if(uuid === "NmRdw" || slug === "diamond_miner245") {
+        location.replace("/members/diamond_miner245/");
+      }
+      if(uuid === "UE8Zm" || slug === "bluediamondboy11") {
+        location.replace("/members/bluediamondboy11/");
+      }
+      if(uuid === "btHoV" || slug === "gevans") {
+        location.replace("/members/gevans/");
+      }
+      if(uuid === "bvo9N" || slug === "armoredexplosive") {
+        location.replace("/members/armoredexplosive/");
+      }
+      if(uuid === "LHkMJ" || slug === "_macspy_" || slug === "macspy") {
+        location.replace("/members/macspy/");
+      }
+      if(uuid === "lC5Fi" || slug === "dmanpl") {
+        location.replace("/members/dmanpl/");
+      }
+      if(uuid === "FaQfL" || slug === "bugoutboi") {
+        location.replace("/members/bugoutboi/");
+      }
+      if(uuid === "epuAC" || slug === "rnad") {
+        location.replace("/members/rnad/");
+      }
+      if(uuid === "sQUky" || slug === "frost780") {
+        location.replace("/members/frost780/");
+      }
+      if(uuid === "Q80Hf" || slug === "kigmd") {
+        location.replace("/members/kigmd/");
+      }
+      if(uuid === "7izDv" || slug === "jamacias19") {
+        location.replace("/members/jamacias19/");
+      }
+      if(uuid === "zwTpp" || slug === "zoreon_zen") {
+        location.replace("/members/zoreon_zen/");
+      }
+      if(uuid === "UlSZr" || slug === "comradeautismo") {
+        location.replace("/members/comradeautismo/");
+      }
+      if(uuid === "rSNbO" || slug === "cool_rock_pic") {
+        location.replace("/members/cool_rock_pic/");
+      }
+      if(uuid === "IvoVA" || slug === "phroggers_mc") {
+        location.replace("/members/phroggers_mc/");
+      }
+      if(uuid === "zSJ6o" || slug === "tiwborn") {
+        location.replace("/members/tiwborn/");
+      }
+      if(uuid === "taN1L" || slug === "nik_storey") {
+        location.replace("/members/nik_storey/");
+      }
+      if(uuid === "tlitb" || slug === "seonbwii") {
+        location.replace("/members/seonbwii/");
+      }
+      if(uuid === "fTQBh" || slug === "czerczer") {
+        location.replace("/members/czerczer/");
+      }
+      if(uuid === "9phlL" || slug === "nerdnation454") {
+        location.replace("/members/nerdnation454/");
+      }
+      if(uuid === "B6Y9c" || slug === "mainmanquince") {
+        location.replace("/members/mainmanquince/");
+      }
+      if(uuid === "flIXB" || slug === "lemayz") {
+        location.replace("/members/lemayz/");
+      }
+      if(uuid === "0lo0g" || slug === "peachypugs") {
+        location.replace("/members/peachypugs/");
+      }
+      if(uuid === "C28PE" || slug === "slrvoid") {
+        location.replace("/members/slrvoid/");
+      }
+      if(uuid === "Da1dz" || slug === "matth3w404") {
+        location.replace("/members/matth3w404/");
+      }
+      if(uuid === "NV67j" || slug === "beth1qw") {
+        location.replace("/members/beth1qw/");
+      }
+      if(uuid === "NT5Yc" || slug === "kitteekat115") {
+        location.replace("/members/kitteekat115/");
+      }
+      if(uuid === "hU2j5" || slug === "squiggy_cryptid") {
+        location.replace("/members/squiggy_cryptid/");
+      }
+      if(uuid === "U0FJy" || slug === "thermalbucket41") {
+        location.replace("/members/thermalbucket41/");
+      }
+      if(uuid === "878hs" || slug === "yeahbox") {
+        location.replace("/members/yeahbox/");
+      }
+      if(uuid === "DNacr" || slug === "nave1803") {
+        location.replace("/members/nave1803/");
+      }
+      if(uuid === "AzXvm" || slug === "stansh02") {
+        location.replace("/members/stansh02/");
+      }
+      if(uuid === "i62R2" || slug === "lucidrosez") {
+        location.replace("/members/lucidrosez/");
+      }
+      if(uuid === "nVbcd" || slug === "dain_fa") {
+        location.replace("/members/dain_fa/");
+      }
+      if(uuid === "ndvwo" || slug === "zoaraym") {
+        location.replace("/members/zoaraym/");
+      }
+      if(uuid === "zNhht" || slug === "crustybird") {
+        location.replace("/members/crustybird/");
+      }
+      if(uuid === "g7gLz" || slug === "apparitionx27") {
+        location.replace("/members/apparitionx27/");
+      }
+      if(uuid === "4Dk5E" || slug === "ogknightbro94") {
+        location.replace("/members/ogknightbro94/");
+      }
+      if(uuid === "FFQOe" || slug === "timber_awoo") {
+        location.replace("/members/timber_awoo/");
+      }
+      if(uuid === "8ips1" || slug === "x_cygnus_x") {
+        location.replace("/members/x_cygnus_x/");
+      }
+      if(uuid === "lKBPF" || slug === "tkatra") {
+        location.replace("/members/tkatra/");
+      }
+      if(uuid === "0MMco" || slug === "qwispy_spyderz") {
+        location.replace("/members/qwispy_spyderz/");
+      }
+      if(uuid === "hTGDv" || slug === "the_sharktooth") {
+        location.replace("/members/the_sharktooth/");
+      }
+      if(uuid === "lWO8R" || slug === "aki_ryuto") {
+        location.replace("/members/aki_ryuto/");
+      }
+      if(uuid === "z2NLM" || slug === "chaoscreature4k") {
+        location.replace("/members/chaoscreature4k/");
+      }
+      if(uuid === "0zAeT" || slug === "artisticarnie") {
+        location.replace("/members/artisticarnie/");
+      }
+      //Pixel Craft Links.
+      if(uuid === "FJygB" || slug === "pixel-craft-map" || slug === "pcmap") {
+        location.replace("/pixel-craft/map/");
+      }
+      if(uuid === "RcFbA" || slug === "pixel-craft-season-6" || slug === "pcs6") {
+        location.replace("/pixel-craft/season-6/");
+      }
+
+      //Build Plates.
+      if(uuid === "Jh18x" || slug === "pixel-craft-season-6-build-plates" || slug === "pcs6-build-plates" || slug === "pcs6-bp") {
+        location.replace("/pixel-craft/season-6/build-plates/");
+      }
+      //Unconfigured Map Art Portal Blueprint.
+      if(uuid === "TW1aY" || slug === "pixel-craft-season-6-build-plate-unconfigured-map-art-portal-blueprint" || slug === "pcs6-bp-unconfigured-map-art-portal-blueprint" || slug === "pcs6-bp-umapb") {
+        location.replace("/pixel-craft/season-6/build-plate/unconfigured-map-art-portal-blueprint/");
+      }
+
+      //Custom Items.
+      if(uuid === "aHZMt" || slug === "pixel-craft-season-6-custom-items" || slug === "pcs6-custom-items" || slug === "pcs6-ci") {
+        location.replace("/pixel-craft/season-6/custom-items/");
+      }
+      //Utilities.
+      if(uuid === "F2GEm" || slug === "pixel-craft-season-6-custom-items-utilities-working-table" || slug === "pcs6-ci-u-working-table" || slug === "pcs6-ci-u-wt") {
+        location.replace("/pixel-craft/season-6/custom-items/utilities/working-table/");
+      }
+      if(uuid === "angw0" || slug === "pixel-craft-season-6-custom-items-utilities-scribing-table" || slug === "pcs6-ci-u-scribing-table" || slug === "pcs6-ci-u-st") {
+        location.replace("/pixel-craft/season-6/custom-items/utilities/scribing-table/");
+      }
+      if(uuid === "hTZ6t" || slug === "pixel-craft-season-6-custom-items-utilities-voice-chat-wiretap-microphone" || slug === "pcs6-ci-u-vc-wiretap-microphone" || slug === "pcs6-ci-u-vc-wm") {
+        location.replace("/pixel-craft/season-6/custom-items/utilities/voice-chat/wiretap-microphone/");
+      }
+      if(uuid === "ZGNUm" || slug === "pixel-craft-season-6-custom-items-utilities-voice-chat-radio" || slug === "pcs6-ci-u-vc-radio" || slug === "pcs6-ci-u-vc-r") {
+        location.replace("/pixel-craft/season-6/custom-items/utilities/voice-chat/radio/");
+      }
+      if(uuid === "DS1w0" || slug === "pixel-craft-season-6-custom-items-utilities-voice-chat-music-disc" || slug === "pcs6-ci-u-vc-music-disc" || slug === "pcs6-ci-u-vc-mc") {
+        location.replace("/pixel-craft/season-6/custom-items/utilities/voice-chat/music-disc/");
+      }
+      if(uuid === "Edb2d" || slug === "pixel-craft-season-6-custom-items-utilities-voice-chat-goat-horn" || slug === "pcs6-ci-u-vc-goat-horn" || slug === "pcs6-ci-u-vc-gh") {
+        location.replace("/pixel-craft/season-6/custom-items/utilities/voice-chat/goat-horn/");
+      }
+      //Food.
+      if(uuid === "Dq1zv" || slug === "pixel-craft-season-6-custom-items-food-caramel-muffin" || slug === "pcs6-ci-f-caramel-muffin" || slug === "pcs6-ci-f-crm") {
+        location.replace("/pixel-craft/season-6/custom-items/food/caramel-muffin/");
+      }
+      if(uuid === "yp6lK" || slug === "pixel-craft-season-6-custom-items-food-carrot-muffin" || slug === "pcs6-ci-f-carrot-muffin" || slug === "pcs6-ci-f-cam") {
+        location.replace("/pixel-craft/season-6/custom-items/food/carrot-muffin/");
+      }
+      if(uuid === "e0KGx" || slug === "pixel-craft-season-6-custom-items-food-chocolate-muffin" || slug === "pcs6-ci-f-chocolate-muffin" || slug === "pcs6-ci-f-chm") {
+        location.replace("/pixel-craft/season-6/custom-items/food/chocolate-muffin/");
+      }
+      if(uuid === "4NvQ1" || slug === "pixel-craft-season-6-custom-items-food-pumpkin-muffin" || slug === "pcs6-ci-f-pumpkin-muffin" || slug === "pcs6-ci-f-pm") {
+        location.replace("/pixel-craft/season-6/custom-items/food/pumpkin-muffin/");
+      }
+      if(uuid === "nifhX" || slug === "pixel-craft-season-6-custom-items-food-donut" || slug === "pcs6-ci-f-donut" || slug === "pcs6-ci-f-do") {
+        location.replace("/pixel-craft/season-6/custom-items/food/donut/");
+      }
+      if(uuid === "jp8Qk" || slug === "pixel-craft-season-6-custom-items-food-doughnut" || slug === "pcs6-ci-f-doughnut" || slug === "pcs6-ci-f-du") {
+        location.replace("/pixel-craft/season-6/custom-items/food/doughnut/");
+      }
+      if(uuid === "4naue" || slug === "pixel-craft-season-6-custom-items-food-chocolate-donut" || slug === "pcs6-ci-f-chocolate-donut" || slug === "pcs6-ci-f-cd") {
+        location.replace("/pixel-craft/season-6/custom-items/food/chocolate-donut/");
+      }
+      if(uuid === "8GSqM" || slug === "pixel-craft-season-6-custom-items-food-jelly-donut" || slug === "pcs6-ci-f-jelly-donut" || slug === "pcs6-ci-f-jd") {
+        location.replace("/pixel-craft/season-6/custom-items/food/jelly-donut/");
+      }
+      //Drinks.
+      if(uuid === "L0MOU" || slug === "pixel-craft-season-6-custom-items-drinks-english-wine" || slug === "pcs6-ci-d-english-wine" || slug === "pcs6-ci-d-ew") {
+        location.replace("/pixel-craft/season-6/custom-items/drinks/english-wine/");
+      }
+      if(uuid === "UEWJ2" || slug === "pixel-craft-season-6-custom-items-drinks-watermelon-sling" || slug === "pcs6-ci-d-watermelon-sling" || slug === "pcs6-ci-d-ws") {
+        location.replace("/pixel-craft/season-6/custom-items/drinks/watermelon-sling/");
+      }
+      if(uuid === "xTbbq" || slug === "pixel-craft-season-6-custom-items-drinks-tiger-milk" || slug === "pcs6-ci-d-tiger-milk" || slug === "pcs6-ci-d-tm") {
+        location.replace("/pixel-craft/season-6/custom-items/drinks/tiger-milk/");
+      }
+      if(uuid === "Pv8eD" || slug === "pixel-craft-season-6-custom-items-drinks-irish-pie-toddy" || slug === "pcs6-ci-d-irish-pie-toddy" || slug === "pcs6-ci-d-ipt") {
+        location.replace("/pixel-craft/season-6/custom-items/drinks/irish-pie-toddy/");
+      }
+      if(uuid === "6mkPQ" || slug === "pixel-craft-season-6-custom-items-drinks-blueberry-milkshake" || slug === "pcs6-ci-d-blueberry-milkshake" || slug === "pcs6-ci-d-bm") {
+        location.replace("/pixel-craft/season-6/custom-items/drinks/blueberry-milkshake/");
+      }
+      if(uuid === "7ZIFy" || slug === "pixel-craft-season-6-custom-items-drinks-tasmanian-devil" || slug === "pcs6-ci-d-tasmanian-devil" || slug === "pcs6-ci-d-td") {
+        location.replace("/pixel-craft/season-6/custom-items/drinks/tasmanian-devil/");
+      }
+      if(uuid === "4FYEy" || slug === "pixel-craft-season-6-custom-items-drinks-sailor-fizz" || slug === "pcs6-ci-d-sailor-fizz" || slug === "pcs6-ci-d-sf") {
+        location.replace("/pixel-craft/season-6/custom-items/drinks/sailor-fizz/");
+      }
+      if(uuid === "3g2NA" || slug === "pixel-craft-season-6-custom-items-drinks-pina-colada" || slug === "pcs6-ci-d-pina-colada" || slug === "pcs6-ci-d-pc") {
+        location.replace("/pixel-craft/season-6/custom-items/drinks/pina-colada/");
+      }
+      if(uuid === "Y9rB7" || slug === "pixel-craft-season-6-custom-items-drinks-cocktail-surprise" || slug === "pcs6-ci-d-cocktail-surprise" || slug === "pcs6-ci-d-cs") {
+        location.replace("/pixel-craft/season-6/custom-items/drinks/cocktail-surprise/");
+      }
+      if(uuid === "3r246" || slug === "pixel-craft-season-6-custom-items-drinks-primavera" || slug === "pcs6-ci-d-primavera" || slug === "pcs6-ci-d-p") {
+        location.replace("/pixel-craft/season-6/custom-items/drinks/primavera/");
+      }
+      if(uuid === "NXdxA" || slug === "pixel-craft-season-6-custom-items-drinks-blackberry-caipirinha" || slug === "pcs6-ci-d-blackberry-caipirinha" || slug === "pcs6-ci-d-bc") {
+        location.replace("/pixel-craft/season-6/custom-items/drinks/blackberry-caipirinha/");
+      }
+      if(uuid === "i2QGA" || slug === "pixel-craft-season-6-custom-items-drinks-green-fairy" || slug === "pcs6-ci-d-green-fairy" || slug === "pcs6-ci-d-gf") {
+        location.replace("/pixel-craft/season-6/custom-items/drinks/green-fairy/");
+      }
+      if(uuid === "fc8kt" || slug === "pixel-craft-season-6-custom-items-drinks-orient-express" || slug === "pcs6-ci-d-orient-express" || slug === "pcs6-ci-d-oe") {
+        location.replace("/pixel-craft/season-6/custom-items/drinks/orient-express/");
+      }
+      if(uuid === "EWCAQ" || slug === "pixel-craft-season-6-custom-items-drinks-monochrome" || slug === "pcs6-ci-d-monochrome" || slug === "pcs6-ci-d-m") {
+        location.replace("/pixel-craft/season-6/custom-items/drinks/monochrome/");
+      }
+      if(uuid === "EfbFe" || slug === "pixel-craft-season-6-custom-items-drinks-blue-lagoon" || slug === "pcs6-ci-d-blue-lagoon" || slug === "pcs6-ci-d-bl") {
+        location.replace("/pixel-craft/season-6/custom-items/drinks/blue-lagoon/");
+      }
+      if(uuid === "72ZD0" || slug === "pixel-craft-season-6-custom-items-drinks-devil-touch" || slug === "pcs6-ci-d-devil-touch" || slug === "pcs6-ci-d-dt") {
+        location.replace("/pixel-craft/season-6/custom-items/drinks/devil-touch/");
+      }
+      //Music Discs Wild Collection.
+      if(uuid === "JnEDt" || slug === "pixel-craft-season-6-custom-items-music-disc-wild-lanyrinthine" || slug === "pcs6-ci-md-w-lanyrinthine" || slug === "pcs6-ci-md-w-l") {
+        location.replace("/pixel-craft/season-6/custom-items/music-disc/wild/lanyrinthine/");
+      }
+      if(uuid === "7Hbbl" || slug === "pixel-craft-season-6-custom-items-music-disc-wild-ancestry" || slug === "pcs6-ci-md-w-ancestry" || slug === "pcs6-ci-md-w-an") {
+        location.replace("/pixel-craft/season-6/custom-items/music-disc/wild/ancestry/");
+      }
+      if(uuid === "EA82l" || slug === "pixel-craft-season-6-custom-items-music-disc-wild-aerie" || slug === "pcs6-ci-md-w-aerie" || slug === "pcs6-ci-md-w-ae") {
+        location.replace("/pixel-craft/season-6/custom-items/music-disc/wild/aerie/");
+      }
+      if(uuid === "9hWaM" || slug === "pixel-craft-season-6-custom-items-music-disc-wild-firebugs" || slug === "pcs6-ci-md-w-firebugs" || slug === "pcs6-ci-md-w-f") {
+        location.replace("/pixel-craft/season-6/custom-items/music-disc/wild/firebugs/");
+      }
+      //Miscellaneous.
+      if(uuid === "8tqPz" || slug === "pixel-craft-season-6-custom-items-miscellaneous-minecoin" || slug === "pcs6-ci-misc-minecoin" || slug === "pcs6-ci-misc-mc") {
+        location.replace("/pixel-craft/season-6/custom-items/miscellaneous/minecoin/");
+      }
+      if(uuid === "nGT4l" || slug === "pixel-craft-season-6-custom-items-miscellaneous-diamond-from-minecoin" || slug === "pcs6-ci-misc-diamond-from-minecoin" || slug === "pcs6-ci-misc-dfm") {
+        location.replace("/pixel-craft/season-6/custom-items/miscellaneous/diamond-from-minecoin/");
+      }
+      if(uuid === "RRXie" || slug === "pixel-craft-season-6-custom-items-miscellaneous-cartography-table-globe" || slug === "pcs6-ci-misc-cartography-table-globe" || slug === "pcs6-ci-misc-ctg") {
+        location.replace("/pixel-craft/season-6/custom-items/miscellaneous/cartography-table-globe/");
+      }
+      if(uuid === "hzDC3" || slug === "pixel-craft-season-6-custom-items-miscellaneous-pixilare-company" || slug === "pcs6-ci-misc-pixilare-company" || slug === "pcs6-ci-misc-pc") {
+        location.replace("/pixel-craft/season-6/custom-items/miscellaneous/pixilare-company/");
+      }
+      if(uuid === "4EPh8" || slug === "pixel-craft-season-6-custom-items-miscellaneous-pixilare-from-pixilare-company" || slug === "pcs6-ci-misc-pixilare-from-pixilare-company" || slug === "pcs6-ci-misc-pfpc") {
+        location.replace("/pixel-craft/season-6/custom-items/miscellaneous/pixilare-from-pixilare-company/");
+      }
+      //zackman1291's Miniatures.
+      if(uuid === "el3CY" || slug === "pixel-craft-season-6-custom-items-players-zackman1291-miniatures-headcrab" || slug === "pcs6-ci-p-zm-m-headcrab" || slug === "pcs6-ci-p-zm-m-h") {
+        location.replace("/pixel-craft/season-6/custom-items/players/zackman1291/miniatures/headcrab/");
+      }
+      if(uuid === "KuK8h" || slug === "pixel-craft-season-6-custom-items-players-zackman1291-miniatures-warp-pipe" || slug === "pcs6-ci-p-zm-m-warp-pipe" || slug === "pcs6-ci-p-zm-m-wp") {
+        location.replace("/pixel-craft/season-6/custom-items/players/zackman1291/miniatures/warp-pipe/");
+      }
+      if(uuid === "rqrcO" || slug === "pixel-craft-season-6-custom-items-players-zackman1291-miniatures-securitron" || slug === "pcs6-ci-p-zm-m-securitron" || slug === "pcs6-ci-p-zm-m-s") {
+        location.replace("/pixel-craft/season-6/custom-items/players/zackman1291/miniatures/securitron/");
+      }
+      if(uuid === "SjhDI" || slug === "pixel-craft-season-6-custom-items-players-zackman1291-miniatures-gordon" || slug === "pcs6-ci-p-zm-m-gordon" || slug === "pcs6-ci-p-zm-m-g") {
+        location.replace("/pixel-craft/season-6/custom-items/players/zackman1291/miniatures/gordon/");
+      }
+      if(uuid === "lP7T3" || slug === "pixel-craft-season-6-custom-items-players-zackman1291-miniatures-turret" || slug === "pcs6-ci-p-zm-m-turret" || slug === "pcs6-ci-p-zm-m-t") {
+        location.replace("/pixel-craft/season-6/custom-items/players/zackman1291/miniatures/turret/");
+      }
+      //zackman1291's "Toys".
+      if(uuid === "fRje7" || slug === "pixel-craft-season-6-custom-items-players-zackman1291-toys-blue-dildo" || slug === "pcs6-ci-p-zm-t-blue-dildo" || slug === "pcs6-ci-p-zm-t-bd") {
+        location.replace("/pixel-craft/season-6/custom-items/players/zackman1291/toys/blue-dildo/");
+      }
+      if(uuid === "DT0lV" || slug === "pixel-craft-season-6-custom-items-players-zackman1291-toys-green-dildo" || slug === "pcs6-ci-p-zm-t-green-dildo" || slug === "pcs6-ci-p-zm-t-gd") {
+        location.replace("/pixel-craft/season-6/custom-items/players/zackman1291/toys/green-dildo/");
+      }
+      if(uuid === "ttEek" || slug === "pixel-craft-season-6-custom-items-players-zackman1291-toys-pink-dildo" || slug === "pcs6-ci-p-zm-t-pink-dildo" || slug === "pcs6-ci-p-zm-t-pid") {
+        location.replace("/pixel-craft/season-6/custom-items/players/zackman1291/toys/pink-dildo/");
+      }
+      if(uuid === "1Fdne" || slug === "pixel-craft-season-6-custom-items-players-zackman1291-toys-purple-dildo" || slug === "pcs6-ci-p-zm-t-purple-dildo" || slug === "pcs6-ci-p-zm-t-pud") {
+        location.replace("/pixel-craft/season-6/custom-items/players/zackman1291/toys/purple-dildo/");
+      }
+      if(uuid === "J044E" || slug === "pixel-craft-season-6-custom-items-players-zackman1291-toys-red-dildo" || slug === "pcs6-ci-p-zm-t-red-dildo" || slug === "pcs6-ci-p-zm-t-rd") {
+        location.replace("/pixel-craft/season-6/custom-items/players/zackman1291/toys/red-dildo/");
+      }
+      if(uuid === "iaRXZ" || slug === "pixel-craft-season-6-custom-items-players-zackman1291-toys-yellow-dildo" || slug === "pcs6-ci-p-zm-t-yellow-dildo" || slug === "pcs6-ci-p-zm-t-yd") {
+        location.replace("/pixel-craft/season-6/custom-items/players/zackman1291/toys/yellow-dildo/");
+      }
+      //EggyLadd's Weapons.
+      if(uuid === "VH75I" || slug === "pixel-craft-season-6-custom-items-players-eggyladd-weapons-egg-gun" || slug === "pcs6-ci-p-el-w-egg-gun" || slug === "pcs6-ci-p-el-w-eg") {
+        location.replace("/pixel-craft/season-6/custom-items/players/eggyladd/weapons/egg-gun/");
+      }
+
+      //Item Combinations.
+      if(uuid === "nfUvb" || slug === "pixel-craft-season-6-item-combinations" || slug === "pcs6-item-combinations" || slug === "pcs6-ic") {
+        location.replace("/pixel-craft/season-6/item-combinations/");
+      }
+      //Master Dye.
+      if(uuid === "bxrqz" || slug === "pixel-craft-season-6-item-combinations-master-dye" || slug === "pcs6-ic-master-dye" || slug === "pcs6-ic-md") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-dye/");
+      }
+      if(uuid === "jNHMf" || slug === "pixel-craft-season-6-item-combinations-master-dye-floor-barrel" || slug === "pcs6-ic-md-floor-barrel" || slug === "pcs6-ic-md-fb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-dye/floor-barrel/");
+      }
+      if(uuid === "9Ek5N" || slug === "pixel-craft-season-6-item-combinations-master-dye-roof-barrel" || slug === "pcs6-ic-md-roof-barrel" || slug === "pcs6-ic-md-rb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-dye/roof-barrel/");
+      }
+      if(uuid === "b86EJ" || slug === "pixel-craft-season-6-item-combinations-master-dye-red-shulker-box" || slug === "pcs6-ic-md-red-shulker-box" || slug === "pcs6-ic-md-rsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-dye/red-shulker-box/");
+      }
+      if(uuid === "VLp9X" || slug === "pixel-craft-season-6-item-combinations-master-dye-green-shulker-box" || slug === "pcs6-ic-md-green-shulker-box" || slug === "pcs6-ic-md-gsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-dye/green-shulker-box/");
+      }
+      if(uuid === "5eUGd" || slug === "pixel-craft-season-6-item-combinations-master-dye-blue-shulker-box" || slug === "pcs6-ic-md-blue-shulker-box" || slug === "pcs6-ic-md-bsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-dye/blue-shulker-box/");
+      }
+      if(uuid === "3LAcI" || slug === "pixel-craft-season-6-item-combinations-master-dye-purple-shulker-box" || slug === "pcs6-ic-md-purple-shulker-box" || slug === "pcs6-ic-md-psb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-dye/purple-shulker-box/");
+      }
+      if(uuid === "DlQ6w" || slug === "pixel-craft-season-6-item-combinations-master-dye-cyan-shulker-box" || slug === "pcs6-ic-md-cyan-shulker-box" || slug === "pcs6-ic-md-csb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-dye/cyan-shulker-box/");
+      }
+      if(uuid === "NiWCO" || slug === "pixel-craft-season-6-item-combinations-master-dye-magenta-shulker-box" || slug === "pcs6-ic-md-magenta-shulker-box" || slug === "pcs6-ic-md-msb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-dye/magenta-shulker-box/");
+      }
+      if(uuid === "Tmww2" || slug === "pixel-craft-season-6-item-combinations-master-dye-yellow-shulker-box" || slug === "pcs6-ic-md-yellow-shulker-box" || slug === "pcs6-ic-md-ysb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-dye/yellow-shulker-box/");
+      }
+      if(uuid === "IURrq" || slug === "pixel-craft-season-6-item-combinations-master-dye-orange-shulker-box" || slug === "pcs6-ic-md-orange-shulker-box" || slug === "pcs6-ic-md-osb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-dye/orange-shulker-box/");
+      }
+      //Master Wool.
+      if(uuid === "pIiST" || slug === "pixel-craft-season-6-item-combinations-master-wool" || slug === "pcs6-ic-master-wool" || slug === "pcs6-ic-mw") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-wool/");
+      }
+      if(uuid === "L3aQf" || slug === "pixel-craft-season-6-item-combinations-master-wool-floor-barrel" || slug === "pcs6-ic-mw-floor-barrel" || slug === "pcs6-ic-mw-fb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-wool/floor-barrel/");
+      }
+      if(uuid === "u1rad" || slug === "pixel-craft-season-6-item-combinations-master-wool-roof-barrel" || slug === "pcs6-ic-mw-roof-barrel" || slug === "pcs6-ic-mw-rb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-wool/roof-barrel/");
+      }
+      if(uuid === "A3k4N" || slug === "pixel-craft-season-6-item-combinations-master-wool-red-shulker-box" || slug === "pcs6-ic-mw-red-shulker-box" || slug === "pcs6-ic-mw-rsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-wool/red-shulker-box/");
+      }
+      if(uuid === "4afCa" || slug === "pixel-craft-season-6-item-combinations-master-wool-green-shulker-box" || slug === "pcs6-ic-mw-green-shulker-box" || slug === "pcs6-ic-mw-gsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-wool/green-shulker-box/");
+      }
+      if(uuid === "6vDsO" || slug === "pixel-craft-season-6-item-combinations-master-wool-blue-shulker-box" || slug === "pcs6-ic-mw-blue-shulker-box" || slug === "pcs6-ic-mw-bsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-wool/blue-shulker-box/");
+      }
+      if(uuid === "1sLKj" || slug === "pixel-craft-season-6-item-combinations-master-wool-purple-shulker-box" || slug === "pcs6-ic-mw-purple-shulker-box" || slug === "pcs6-ic-mw-psb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-wool/purple-shulker-box/");
+      }
+      if(uuid === "HDtk3" || slug === "pixel-craft-season-6-item-combinations-master-wool-cyan-shulker-box" || slug === "pcs6-ic-mw-cyan-shulker-box" || slug === "pcs6-ic-mw-csb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-wool/cyan-shulker-box/");
+      }
+      if(uuid === "HZAMy" || slug === "pixel-craft-season-6-item-combinations-master-wool-magenta-shulker-box" || slug === "pcs6-ic-mw-magenta-shulker-box" || slug === "pcs6-ic-mw-msb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-wool/magenta-shulker-box/");
+      }
+      if(uuid === "MSq7M" || slug === "pixel-craft-season-6-item-combinations-master-wool-yellow-shulker-box" || slug === "pcs6-ic-mw-yellow-shulker-box" || slug === "pcs6-ic-mw-ysb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-wool/yellow-shulker-box/");
+      }
+      if(uuid === "Lrnjr" || slug === "pixel-craft-season-6-item-combinations-master-wool-orange-shulker-box" || slug === "pcs6-ic-mw-orange-shulker-box" || slug === "pcs6-ic-mw-osb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-wool/orange-shulker-box/");
+      }
+      //Master Stained Glass.
+      if(uuid === "PHtrw" || slug === "pixel-craft-season-6-item-combinations-master-stained-glass" || slug === "pcs6-ic-master-stained-glass" || slug === "pcs6-ic-msg") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-stained-glass/");
+      }
+      if(uuid === "FjXaJ" || slug === "pixel-craft-season-6-item-combinations-master-stained-glass-floor-barrel" || slug === "pcs6-ic-msg-floor-barrel" || slug === "pcs6-ic-msg-fb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-stained-glass/floor-barrel/");
+      }
+      if(uuid === "xhJf3" || slug === "pixel-craft-season-6-item-combinations-master-stained-glass-roof-barrel" || slug === "pcs6-ic-msg-roof-barrel" || slug === "pcs6-ic-msg-rb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-stained-glass/roof-barrel/");
+      }
+      if(uuid === "EX2wq" || slug === "pixel-craft-season-6-item-combinations-master-stained-glass-red-shulker-box" || slug === "pcs6-ic-msg-red-shulker-box" || slug === "pcs6-ic-msg-rsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-stained-glass/red-shulker-box/");
+      }
+      if(uuid === "n3Men" || slug === "pixel-craft-season-6-item-combinations-master-stained-glass-green-shulker-box" || slug === "pcs6-ic-msg-green-shulker-box" || slug === "pcs6-ic-msg-gsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-stained-glass/green-shulker-box/");
+      }
+      if(uuid === "VDfka" || slug === "pixel-craft-season-6-item-combinations-master-stained-glass-blue-shulker-box" || slug === "pcs6-ic-msg-blue-shulker-box" || slug === "pcs6-ic-msg-bsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-stained-glass/blue-shulker-box/");
+      }
+      if(uuid === "6PM3B" || slug === "pixel-craft-season-6-item-combinations-master-stained-glass-purple-shulker-box" || slug === "pcs6-ic-msg-purple-shulker-box" || slug === "pcs6-ic-msg-psb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-stained-glass/purple-shulker-box/");
+      }
+      if(uuid === "8SlmC" || slug === "pixel-craft-season-6-item-combinations-master-stained-glass-cyan-shulker-box" || slug === "pcs6-ic-msg-cyan-shulker-box" || slug === "pcs6-ic-msg-csb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-stained-glass/cyan-shulker-box/");
+      }
+      if(uuid === "eI9Ek" || slug === "pixel-craft-season-6-item-combinations-master-stained-glass-magenta-shulker-box" || slug === "pcs6-ic-msg-magenta-shulker-box" || slug === "pcs6-ic-msg-msb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-stained-glass/magenta-shulker-box/");
+      }
+      if(uuid === "P0FXR" || slug === "pixel-craft-season-6-item-combinations-master-stained-glass-yellow-shulker-box" || slug === "pcs6-ic-msg-yellow-shulker-box" || slug === "pcs6-ic-msg-ysb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-stained-glass/yellow-shulker-box/");
+      }
+      if(uuid === "aIS3X" || slug === "pixel-craft-season-6-item-combinations-master-stained-glass-orange-shulker-box" || slug === "pcs6-ic-msg-orange-shulker-box" || slug === "pcs6-ic-msg-osb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-stained-glass/orange-shulker-box/");
+      }
+      //Master Terracotta.
+      if(uuid === "D1lIW" || slug === "pixel-craft-season-6-item-combinations-master-terracotta" || slug === "pcs6-ic-master-terracotta" || slug === "pcs6-ic-mt") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-terracotta/");
+      }
+      if(uuid === "ndEMR" || slug === "pixel-craft-season-6-item-combinations-master-terracotta-floor-barrel" || slug === "pcs6-ic-mt-floor-barrel" || slug === "pcs6-ic-mt-fb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-terracotta/floor-barrel/");
+      }
+      if(uuid === "q6A48" || slug === "pixel-craft-season-6-item-combinations-master-terracotta-roof-barrel" || slug === "pcs6-ic-mt-roof-barrel" || slug === "pcs6-ic-mt-rb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-terracotta/roof-barrel/");
+      }
+      if(uuid === "kYHJs" || slug === "pixel-craft-season-6-item-combinations-master-terracotta-red-shulker-box" || slug === "pcs6-ic-mt-red-shulker-box" || slug === "pcs6-ic-mt-rsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-terracotta/red-shulker-box/");
+      }
+      if(uuid === "ISBcA" || slug === "pixel-craft-season-6-item-combinations-master-terracotta-green-shulker-box" || slug === "pcs6-ic-mt-green-shulker-box" || slug === "pcs6-ic-mt-gsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-terracotta/green-shulker-box/");
+      }
+      if(uuid === "Z0cGh" || slug === "pixel-craft-season-6-item-combinations-master-terracotta-blue-shulker-box" || slug === "pcs6-ic-mt-blue-shulker-box" || slug === "pcs6-ic-mt-bsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-terracotta/blue-shulker-box/");
+      }
+      if(uuid === "urkWr" || slug === "pixel-craft-season-6-item-combinations-master-terracotta-purple-shulker-box" || slug === "pcs6-ic-mt-purple-shulker-box" || slug === "pcs6-ic-mt-psb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-terracotta/purple-shulker-box/");
+      }
+      if(uuid === "mAJyX" || slug === "pixel-craft-season-6-item-combinations-master-terracotta-cyan-shulker-box" || slug === "pcs6-ic-mt-cyan-shulker-box" || slug === "pcs6-ic-mt-csb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-terracotta/cyan-shulker-box/");
+      }
+      if(uuid === "9BLzp" || slug === "pixel-craft-season-6-item-combinations-master-terracotta-magenta-shulker-box" || slug === "pcs6-ic-mt-magenta-shulker-box" || slug === "pcs6-ic-mt-msb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-terracotta/magenta-shulker-box/");
+      }
+      if(uuid === "zDdAI" || slug === "pixel-craft-season-6-item-combinations-master-terracotta-yellow-shulker-box" || slug === "pcs6-ic-mt-yellow-shulker-box" || slug === "pcs6-ic-mt-ysb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-terracotta/yellow-shulker-box/");
+      }
+      if(uuid === "xhRvW" || slug === "pixel-craft-season-6-item-combinations-master-terracotta-orange-shulker-box" || slug === "pcs6-ic-mt-orange-shulker-box" || slug === "pcs6-ic-mt-osb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-terracotta/orange-shulker-box/");
+      }
+      //Master Concrete.
+      if(uuid === "SWux2" || slug === "pixel-craft-season-6-item-combinations-master-concrete" || slug === "pcs6-ic-master-concrete" || slug === "pcs6-ic-mco") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-concrete/");
+      }
+      if(uuid === "34OCn" || slug === "pixel-craft-season-6-item-combinations-master-concrete-floor-barrel" || slug === "pcs6-ic-mco-floor-barrel" || slug === "pcs6-ic-mco-fb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-concrete/floor-barrel/");
+      }
+      if(uuid === "fGh3X" || slug === "pixel-craft-season-6-item-combinations-master-concrete-roof-barrel" || slug === "pcs6-ic-mco-roof-barrel" || slug === "pcs6-ic-mco-rb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-concrete/roof-barrel/");
+      }
+      if(uuid === "vLaic" || slug === "pixel-craft-season-6-item-combinations-master-concrete-red-shulker-box" || slug === "pcs6-ic-mco-red-shulker-box" || slug === "pcs6-ic-mco-rsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-concrete/red-shulker-box/");
+      }
+      if(uuid === "pfa3f" || slug === "pixel-craft-season-6-item-combinations-master-concrete-green-shulker-box" || slug === "pcs6-ic-mco-green-shulker-box" || slug === "pcs6-ic-mco-gsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-concrete/green-shulker-box/");
+      }
+      if(uuid === "SpTfZ" || slug === "pixel-craft-season-6-item-combinations-master-concrete-blue-shulker-box" || slug === "pcs6-ic-mco-blue-shulker-box" || slug === "pcs6-ic-mco-bsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-concrete/blue-shulker-box/");
+      }
+      if(uuid === "SQKTp" || slug === "pixel-craft-season-6-item-combinations-master-concrete-purple-shulker-box" || slug === "pcs6-ic-mco-purple-shulker-box" || slug === "pcs6-ic-mco-psb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-concrete/purple-shulker-box/");
+      }
+      if(uuid === "wELz8" || slug === "pixel-craft-season-6-item-combinations-master-concrete-cyan-shulker-box" || slug === "pcs6-ic-mco-cyan-shulker-box" || slug === "pcs6-ic-mco-csb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-concrete/cyan-shulker-box/");
+      }
+      if(uuid === "Yw8ir" || slug === "pixel-craft-season-6-item-combinations-master-concrete-magenta-shulker-box" || slug === "pcs6-ic-mco-magenta-shulker-box" || slug === "pcs6-ic-mco-msb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-concrete/magenta-shulker-box/");
+      }
+      if(uuid === "HRzrm" || slug === "pixel-craft-season-6-item-combinations-master-concrete-yellow-shulker-box" || slug === "pcs6-ic-mco-yellow-shulker-box" || slug === "pcs6-ic-mco-ysb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-concrete/yellow-shulker-box/");
+      }
+      if(uuid === "ecy5P" || slug === "pixel-craft-season-6-item-combinations-master-concrete-orange-shulker-box" || slug === "pcs6-ic-mco-orange-shulker-box" || slug === "pcs6-ic-mco-osb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-concrete/orange-shulker-box/");
+      }
+      //Master Flowers
+      if(uuid === "qzeoY" || slug === "pixel-craft-season-6-item-combinations-master-flowers" || slug === "pcs6-ic-master-flowers" || slug === "pcs6-ic-mf") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-flowers/");
+      }
+      if(uuid === "z4uLa" || slug === "pixel-craft-season-6-item-combinations-master-flowers-floor-barrel" || slug === "pcs6-ic-mf-floor-barrel" || slug === "pcs6-ic-mf-fb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-flowers/floor-barrel/");
+      }
+      if(uuid === "FzXqO" || slug === "pixel-craft-season-6-item-combinations-master-flowers-roof-barrel" || slug === "pcs6-ic-mf-roof-barrel" || slug === "pcs6-ic-mf-rb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-flowers/roof-barrel/");
+      }
+      if(uuid === "R6VQH" || slug === "pixel-craft-season-6-item-combinations-master-flowers-red-shulker-box" || slug === "pcs6-ic-mf-red-shulker-box" || slug === "pcs6-ic-mf-rsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-flowers/red-shulker-box/");
+      }
+      if(uuid === "wtn5S" || slug === "pixel-craft-season-6-item-combinations-master-flowers-green-shulker-box" || slug === "pcs6-ic-mf-green-shulker-box" || slug === "pcs6-ic-mf-gsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-flowers/green-shulker-box/");
+      }
+      if(uuid === "4sCB3" || slug === "pixel-craft-season-6-item-combinations-master-flowers-blue-shulker-box" || slug === "pcs6-ic-mf-blue-shulker-box" || slug === "pcs6-ic-mf-bsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-flowers/blue-shulker-box/");
+      }
+      if(uuid === "0v7NN" || slug === "pixel-craft-season-6-item-combinations-master-flowers-purple-shulker-box" || slug === "pcs6-ic-mf-purple-shulker-box" || slug === "pcs6-ic-mf-psb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-flowers/purple-shulker-box/");
+      }
+      if(uuid === "XpXdz" || slug === "pixel-craft-season-6-item-combinations-master-flowers-cyan-shulker-box" || slug === "pcs6-ic-mf-cyan-shulker-box" || slug === "pcs6-ic-mf-csb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-flowers/cyan-shulker-box/");
+      }
+      if(uuid === "z97lE" || slug === "pixel-craft-season-6-item-combinations-master-flowers-magenta-shulker-box" || slug === "pcs6-ic-mf-magenta-shulker-box" || slug === "pcs6-ic-mf-msb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-flowers/magenta-shulker-box/");
+      }
+      if(uuid === "6yfR8" || slug === "pixel-craft-season-6-item-combinations-master-flowers-yellow-shulker-box" || slug === "pcs6-ic-mf-yellow-shulker-box" || slug === "pcs6-ic-mf-ysb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-flowers/yellow-shulker-box/");
+      }
+      if(uuid === "cJ7L4" || slug === "pixel-craft-season-6-item-combinations-master-flowers-orange-shulker-box" || slug === "pcs6-ic-mf-orange-shulker-box" || slug === "pcs6-ic-mf-osb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-flowers/orange-shulker-box/");
+      }
+      //Master Crops.
+      if(uuid === "HoTeT" || slug === "pixel-craft-season-6-item-combinations-master-crops" || slug === "pcs6-ic-master-crops" || slug === "pcs6-ic-mcr") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-crops/");
+      }
+      if(uuid === "omZc2" || slug === "pixel-craft-season-6-item-combinations-master-crops-floor-barrel" || slug === "pcs6-ic-mcr-floor-barrel" || slug === "pcs6-ic-mcr-fb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-crops/floor-barrel/");
+      }
+      if(uuid === "xS8ok" || slug === "pixel-craft-season-6-item-combinations-master-crops-roof-barrel" || slug === "pcs6-ic-mcr-roof-barrel" || slug === "pcs6-ic-mcr-rb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-crops/roof-barrel/");
+      }
+      if(uuid === "xgjJ2" || slug === "pixel-craft-season-6-item-combinations-master-crops-red-shulker-box" || slug === "pcs6-ic-mcr-red-shulker-box" || slug === "pcs6-ic-mcr-rsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-crops/red-shulker-box/");
+      }
+      if(uuid === "uV06q" || slug === "pixel-craft-season-6-item-combinations-master-crops-green-shulker-box" || slug === "pcs6-ic-mcr-green-shulker-box" || slug === "pcs6-ic-mcr-gsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-crops/green-shulker-box/");
+      }
+      if(uuid === "Ch8Hv" || slug === "pixel-craft-season-6-item-combinations-master-crops-blue-shulker-box" || slug === "pcs6-ic-mcr-blue-shulker-box" || slug === "pcs6-ic-mcr-bsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-crops/blue-shulker-box/");
+      }
+      if(uuid === "WfCsK" || slug === "pixel-craft-season-6-item-combinations-master-crops-purple-shulker-box" || slug === "pcs6-ic-mcr-purple-shulker-box" || slug === "pcs6-ic-mcr-psb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-crops/purple-shulker-box/");
+      }
+      if(uuid === "7ImW1" || slug === "pixel-craft-season-6-item-combinations-master-crops-cyan-shulker-box" || slug === "pcs6-ic-mcr-cyan-shulker-box" || slug === "pcs6-ic-mcr-csb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-crops/cyan-shulker-box/");
+      }
+      if(uuid === "RfoCF" || slug === "pixel-craft-season-6-item-combinations-master-crops-magenta-shulker-box" || slug === "pcs6-ic-mcr-magenta-shulker-box" || slug === "pcs6-ic-mcr-msb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-crops/magenta-shulker-box/");
+      }
+      if(uuid === "xH2CY" || slug === "pixel-craft-season-6-item-combinations-master-crops-yellow-shulker-box" || slug === "pcs6-ic-mcr-yellow-shulker-box" || slug === "pcs6-ic-mcr-ysb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-crops/yellow-shulker-box/");
+      }
+      if(uuid === "33HMJ" || slug === "pixel-craft-season-6-item-combinations-master-crops-orange-shulker-box" || slug === "pcs6-ic-mcr-orange-shulker-box" || slug === "pcs6-ic-mcr-osb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-crops/orange-shulker-box/");
+      }
+      //Master Aquatic Foliage.
+      if(uuid === "qUlk7" || slug === "pixel-craft-season-6-item-combinations-master-aquatic-foliage" || slug === "pcs6-ic-master-aquatic-foliage" || slug === "pcs6-ic-maf") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-aquatic-foliage/");
+      }
+      if(uuid === "hJHmE" || slug === "pixel-craft-season-6-item-combinations-master-aquatic-foliage-floor-barrel" || slug === "pcs6-ic-maf-floor-barrel" || slug === "pcs6-ic-maf-fb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-aquatic-foliage/floor-barrel/");
+      }
+      if(uuid === "dGQup" || slug === "pixel-craft-season-6-item-combinations-master-aquatic-foliage-roof-barrel" || slug === "pcs6-ic-maf-roof-barrel" || slug === "pcs6-ic-maf-rb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-aquatic-foliage/roof-barrel/");
+      }
+      if(uuid === "RILpo" || slug === "pixel-craft-season-6-item-combinations-master-aquatic-foliage-red-shulker-box" || slug === "pcs6-ic-maf-red-shulker-box" || slug === "pcs6-ic-maf-rsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-aquatic-foliage/red-shulker-box/");
+      }
+      if(uuid === "Q1vXU" || slug === "pixel-craft-season-6-item-combinations-master-aquatic-foliage-green-shulker-box" || slug === "pcs6-ic-maf-green-shulker-box" || slug === "pcs6-ic-maf-gsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-aquatic-foliage/green-shulker-box/");
+      }
+      if(uuid === "m4fL4" || slug === "pixel-craft-season-6-item-combinations-master-aquatic-foliage-blue-shulker-box" || slug === "pcs6-ic-maf-blue-shulker-box" || slug === "pcs6-ic-maf-bsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-aquatic-foliage/blue-shulker-box/");
+      }
+      if(uuid === "1gngI" || slug === "pixel-craft-season-6-item-combinations-master-aquatic-foliage-purple-shulker-box" || slug === "pcs6-ic-maf-purple-shulker-box" || slug === "pcs6-ic-maf-psb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-aquatic-foliage/purple-shulker-box/");
+      }
+      if(uuid === "81khM" || slug === "pixel-craft-season-6-item-combinations-master-aquatic-foliage-cyan-shulker-box" || slug === "pcs6-ic-maf-cyan-shulker-box" || slug === "pcs6-ic-maf-csb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-aquatic-foliage/cyan-shulker-box/");
+      }
+      if(uuid === "sOx7P" || slug === "pixel-craft-season-6-item-combinations-master-aquatic-foliage-magenta-shulker-box" || slug === "pcs6-ic-maf-magenta-shulker-box" || slug === "pcs6-ic-maf-msb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-aquatic-foliage/magenta-shulker-box/");
+      }
+      if(uuid === "rf58q" || slug === "pixel-craft-season-6-item-combinations-master-aquatic-foliage-yellow-shulker-box" || slug === "pcs6-ic-maf-yellow-shulker-box" || slug === "pcs6-ic-maf-ysb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-aquatic-foliage/yellow-shulker-box/");
+      }
+      if(uuid === "o5dRO" || slug === "pixel-craft-season-6-item-combinations-master-aquatic-foliage-orange-shulker-box" || slug === "pcs6-ic-maf-orange-shulker-box" || slug === "pcs6-ic-maf-osb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-aquatic-foliage/orange-shulker-box/");
+      }
+      //Master Miscellaneous Foliage.
+      if(uuid === "O6FK1" || slug === "pixel-craft-season-6-item-combinations-master-miscellaneous-foliage" || slug === "pcs6-ic-master-miscellaneous-foliage" || slug === "pcs6-ic-mmf") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-miscellaneous-foliage/");
+      }
+      if(uuid === "ryUIC" || slug === "pixel-craft-season-6-item-combinations-master-miscellaneous-foliage-floor-barrel" || slug === "pcs6-ic-mmf-floor-barrel" || slug === "pcs6-ic-mmf-fb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-miscellaneous-foliage/floor-barrel/");
+      }
+      if(uuid === "mZjjg" || slug === "pixel-craft-season-6-item-combinations-master-miscellaneous-foliage-roof-barrel" || slug === "pcs6-ic-mmf-roof-barrel" || slug === "pcs6-ic-mmf-rb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-miscellaneous-foliage/roof-barrel/");
+      }
+      if(uuid === "m3KJp" || slug === "pixel-craft-season-6-item-combinations-master-miscellaneous-foliage-red-shulker-box" || slug === "pcs6-ic-mmf-red-shulker-box" || slug === "pcs6-ic-mmf-rsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-miscellaneous-foliage/red-shulker-box/");
+      }
+      if(uuid === "FAl1h" || slug === "pixel-craft-season-6-item-combinations-master-miscellaneous-foliage-green-shulker-box" || slug === "pcs6-ic-mmf-green-shulker-box" || slug === "pcs6-ic-mmf-gsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-miscellaneous-foliage/green-shulker-box/");
+      }
+      if(uuid === "Rssj0" || slug === "pixel-craft-season-6-item-combinations-master-miscellaneous-foliage-blue-shulker-box" || slug === "pcs6-ic-mmf-blue-shulker-box" || slug === "pcs6-ic-mmf-bsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-miscellaneous-foliage/blue-shulker-box/");
+      }
+      if(uuid === "7PUVF" || slug === "pixel-craft-season-6-item-combinations-master-miscellaneous-foliage-purple-shulker-box" || slug === "pcs6-ic-mmf-purple-shulker-box" || slug === "pcs6-ic-mmf-psb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-miscellaneous-foliage/purple-shulker-box/");
+      }
+      if(uuid === "ymbVH" || slug === "pixel-craft-season-6-item-combinations-master-miscellaneous-foliage-cyan-shulker-box" || slug === "pcs6-ic-mmf-cyan-shulker-box" || slug === "pcs6-ic-mmf-csb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-miscellaneous-foliage/cyan-shulker-box/");
+      }
+      if(uuid === "4aMSQ" || slug === "pixel-craft-season-6-item-combinations-master-miscellaneous-foliage-magenta-shulker-box" || slug === "pcs6-ic-mmf-magenta-shulker-box" || slug === "pcs6-ic-mmf-msb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-miscellaneous-foliage/magenta-shulker-box/");
+      }
+      if(uuid === "O0pl3" || slug === "pixel-craft-season-6-item-combinations-master-miscellaneous-foliage-yellow-shulker-box" || slug === "pcs6-ic-mmf-yellow-shulker-box" || slug === "pcs6-ic-mmf-ysb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-miscellaneous-foliage/yellow-shulker-box/");
+      }
+      if(uuid === "Afmhi" || slug === "pixel-craft-season-6-item-combinations-master-miscellaneous-foliage-orange-shulker-box" || slug === "pcs6-ic-mmf-orange-shulker-box" || slug === "pcs6-ic-mmf-osb") {
+        location.replace("/pixel-craft/season-6/item-combinations/master-miscellaneous-foliage/orange-shulker-box/");
+      }
+      //Blaze Rods.
+      if(uuid === "9sKDs" || slug === "pixel-craft-season-6-item-combinations-blaze-rods" || slug === "pcs6-ic-blaze-rods" || slug === "pcs6-ic-br") {
+        location.replace("/pixel-craft/season-6/item-combinations/blaze-rods/");
+      }
+      if(uuid === "m3CHX" || slug === "pixel-craft-season-6-item-combinations-blaze-rods-floor-barrel" || slug === "pcs6-ic-br-floor-barrel" || slug === "pcs6-ic-br-fb") {
+        location.replace("/pixel-craft/season-6/item-combinations/blaze-rods/floor-barrel/");
+      }
+      if(uuid === "OI5Cf" || slug === "pixel-craft-season-6-item-combinations-blaze-rods-roof-barrel" || slug === "pcs6-ic-br-roof-barrel" || slug === "pcs6-ic-br-rb") {
+        location.replace("/pixel-craft/season-6/item-combinations/blaze-rods/roof-barrel/");
+      }
+      if(uuid === "03ge9" || slug === "pixel-craft-season-6-item-combinations-blaze-rods-red-shulker-box" || slug === "pcs6-ic-br-red-shulker-box" || slug === "pcs6-ic-br-rsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/blaze-rods/red-shulker-box/");
+      }
+      if(uuid === "m6Jlw" || slug === "pixel-craft-season-6-item-combinations-blaze-rods-green-shulker-box" || slug === "pcs6-ic-br-green-shulker-box" || slug === "pcs6-ic-br-gsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/blaze-rods/green-shulker-box/");
+      }
+      if(uuid === "GZx2V" || slug === "pixel-craft-season-6-item-combinations-blaze-rods-blue-shulker-box" || slug === "pcs6-ic-br-blue-shulker-box" || slug === "pcs6-ic-br-bsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/blaze-rods/blue-shulker-box/");
+      }
+      if(uuid === "9jMi8" || slug === "pixel-craft-season-6-item-combinations-blaze-rods-purple-shulker-box" || slug === "pcs6-ic-br-purple-shulker-box" || slug === "pcs6-ic-br-psb") {
+        location.replace("/pixel-craft/season-6/item-combinations/blaze-rods/purple-shulker-box/");
+      }
+      if(uuid === "xZ1q7" || slug === "pixel-craft-season-6-item-combinations-blaze-rods-cyan-shulker-box" || slug === "pcs6-ic-br-cyan-shulker-box" || slug === "pcs6-ic-br-csb") {
+        location.replace("/pixel-craft/season-6/item-combinations/blaze-rods/cyan-shulker-box/");
+      }
+      if(uuid === "Kps1X" || slug === "pixel-craft-season-6-item-combinations-blaze-rods-magenta-shulker-box" || slug === "pcs6-ic-br-magenta-shulker-box" || slug === "pcs6-ic-br-msb") {
+        location.replace("/pixel-craft/season-6/item-combinations/blaze-rods/magenta-shulker-box/");
+      }
+      if(uuid === "XAV8I" || slug === "pixel-craft-season-6-item-combinations-blaze-rods-yellow-shulker-box" || slug === "pcs6-ic-br-yellow-shulker-box" || slug === "pcs6-ic-br-ysb") {
+        location.replace("/pixel-craft/season-6/item-combinations/blaze-rods/yellow-shulker-box/");
+      }
+      if(uuid === "XB9qJ" || slug === "pixel-craft-season-6-item-combinations-blaze-rods-orange-shulker-box" || slug === "pcs6-ic-br-orange-shulker-box" || slug === "pcs6-ic-br-osb") {
+        location.replace("/pixel-craft/season-6/item-combinations/blaze-rods/orange-shulker-box/");
+      }
+      //Heart of the Sea.
+      if(uuid === "Uz5Gm" || slug === "pixel-craft-season-6-item-combinations-heart-of-the-sea" || slug === "pcs6-ic-heart-of-the-sea" || slug === "pcs6-ic-hots") {
+        location.replace("/pixel-craft/season-6/item-combinations/heart-of-the-sea/");
+      }
+      if(uuid === "Txt2H" || slug === "pixel-craft-season-6-item-combinations-heart-of-the-sea-floor-barrel" || slug === "pcs6-ic-hots-floor-barrel" || slug === "pcs6-ic-hots-fb") {
+        location.replace("/pixel-craft/season-6/item-combinations/heart-of-the-sea/floor-barrel/");
+      }
+      if(uuid === "GcWk6" || slug === "pixel-craft-season-6-item-combinations-heart-of-the-sea-roof-barrel" || slug === "pcs6-ic-hots-roof-barrel" || slug === "pcs6-ic-hots-rb") {
+        location.replace("/pixel-craft/season-6/item-combinations/heart-of-the-sea/roof-barrel/");
+      }
+      if(uuid === "zF4TJ" || slug === "pixel-craft-season-6-item-combinations-heart-of-the-sea-red-shulker-box" || slug === "pcs6-ic-hots-red-shulker-box" || slug === "pcs6-ic-hots-rsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/heart-of-the-sea/red-shulker-box/");
+      }
+      if(uuid === "ZFOjm" || slug === "pixel-craft-season-6-item-combinations-heart-of-the-sea-green-shulker-box" || slug === "pcs6-ic-hots-green-shulker-box" || slug === "pcs6-ic-hots-gsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/heart-of-the-sea/green-shulker-box/");
+      }
+      if(uuid === "JUI9C" || slug === "pixel-craft-season-6-item-combinations-heart-of-the-sea-blue-shulker-box" || slug === "pcs6-ic-hots-blue-shulker-box" || slug === "pcs6-ic-hots-bsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/heart-of-the-sea/blue-shulker-box/");
+      }
+      if(uuid === "EB6o8" || slug === "pixel-craft-season-6-item-combinations-heart-of-the-sea-purple-shulker-box" || slug === "pcs6-ic-hots-purple-shulker-box" || slug === "pcs6-ic-hots-psb") {
+        location.replace("/pixel-craft/season-6/item-combinations/heart-of-the-sea/purple-shulker-box/");
+      }
+      if(uuid === "m6jyX" || slug === "pixel-craft-season-6-item-combinations-heart-of-the-sea-cyan-shulker-box" || slug === "pcs6-ic-hots-cyan-shulker-box" || slug === "pcs6-ic-hots-csb") {
+        location.replace("/pixel-craft/season-6/item-combinations/heart-of-the-sea/cyan-shulker-box/");
+      }
+      if(uuid === "Ph7dd" || slug === "pixel-craft-season-6-item-combinations-heart-of-the-sea-magenta-shulker-box" || slug === "pcs6-ic-hots-magenta-shulker-box" || slug === "pcs6-ic-hots-msb") {
+        location.replace("/pixel-craft/season-6/item-combinations/heart-of-the-sea/magenta-shulker-box/");
+      }
+      if(uuid === "qEOKV" || slug === "pixel-craft-season-6-item-combinations-heart-of-the-sea-yellow-shulker-box" || slug === "pcs6-ic-hots-yellow-shulker-box" || slug === "pcs6-ic-hots-ysb") {
+        location.replace("/pixel-craft/season-6/item-combinations/heart-of-the-sea/yellow-shulker-box/");
+      }
+      if(uuid === "FlO7d" || slug === "pixel-craft-season-6-item-combinations-heart-of-the-sea-orange-shulker-box" || slug === "pcs6-ic-hots-orange-shulker-box" || slug === "pcs6-ic-hots-osb") {
+        location.replace("/pixel-craft/season-6/item-combinations/heart-of-the-sea/orange-shulker-box/");
+      }
+      //Dragons Breath.
+      if(uuid === "Ylx2c" || slug === "pixel-craft-season-6-item-combinations-dragons-breath" || slug === "pcs6-ic-dragons-breath" || slug === "pcs6-ic-db") {
+        location.replace("/pixel-craft/season-6/item-combinations/dragons-breath/");
+      }
+      if(uuid === "2Csv5" || slug === "pixel-craft-season-6-item-combinations-dragons-breath-floor-barrel" || slug === "pcs6-ic-db-floor-barrel" || slug === "pcs6-ic-db-fb") {
+        location.replace("/pixel-craft/season-6/item-combinations/dragons-breath/floor-barrel/");
+      }
+      if(uuid === "0Yccb" || slug === "pixel-craft-season-6-item-combinations-dragons-breath-roof-barrel" || slug === "pcs6-ic-db-roof-barrel" || slug === "pcs6-ic-db-rb") {
+        location.replace("/pixel-craft/season-6/item-combinations/dragons-breath/roof-barrel/");
+      }
+      if(uuid === "iJz5t" || slug === "pixel-craft-season-6-item-combinations-dragons-breath-red-shulker-box" || slug === "pcs6-ic-db-red-shulker-box" || slug === "pcs6-ic-db-rsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/dragons-breath/red-shulker-box/");
+      }
+      if(uuid === "OeKjF" || slug === "pixel-craft-season-6-item-combinations-dragons-breath-green-shulker-box" || slug === "pcs6-ic-db-green-shulker-box" || slug === "pcs6-ic-db-gsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/dragons-breath/green-shulker-box/");
+      }
+      if(uuid === "4SK1k" || slug === "pixel-craft-season-6-item-combinations-dragons-breath-blue-shulker-box" || slug === "pcs6-ic-db-blue-shulker-box" || slug === "pcs6-ic-db-bsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/dragons-breath/blue-shulker-box/");
+      }
+      if(uuid === "y7JfQ" || slug === "pixel-craft-season-6-item-combinations-dragons-breath-purple-shulker-box" || slug === "pcs6-ic-db-purple-shulker-box" || slug === "pcs6-ic-db-psb") {
+        location.replace("/pixel-craft/season-6/item-combinations/dragons-breath/purple-shulker-box/");
+      }
+      if(uuid === "tQj5z" || slug === "pixel-craft-season-6-item-combinations-dragons-breath-cyan-shulker-box" || slug === "pcs6-ic-db-cyan-shulker-box" || slug === "pcs6-ic-db-csb") {
+        location.replace("/pixel-craft/season-6/item-combinations/dragons-breath/cyan-shulker-box/");
+      }
+      if(uuid === "msUGg" || slug === "pixel-craft-season-6-item-combinations-dragons-breath-magenta-shulker-box" || slug === "pcs6-ic-db-magenta-shulker-box" || slug === "pcs6-ic-db-msb") {
+        location.replace("/pixel-craft/season-6/item-combinations/dragons-breath/magenta-shulker-box/");
+      }
+      if(uuid === "5zx5i" || slug === "pixel-craft-season-6-item-combinations-dragons-breath-yellow-shulker-box" || slug === "pcs6-ic-db-yellow-shulker-box" || slug === "pcs6-ic-db-ysb") {
+        location.replace("/pixel-craft/season-6/item-combinations/dragons-breath/yellow-shulker-box/");
+      }
+      if(uuid === "o6u66" || slug === "pixel-craft-season-6-item-combinations-dragons-breath-orange-shulker-box" || slug === "pcs6-ic-db-orange-shulker-box" || slug === "pcs6-ic-db-osb") {
+        location.replace("/pixel-craft/season-6/item-combinations/dragons-breath/orange-shulker-box/");
+      }
+      //Personal Map Art Portal.
+      if(uuid === "o91j6" || slug === "pixel-craft-season-6-item-combinations-personal-map-art-portal" || slug === "pcs6-ic-personal-map-art-portal" || slug === "pcs6-ic-pmap") {
+        location.replace("/pixel-craft/season-6/item-combinations/personal-map-art-portal/");
+      }
+      if(uuid === "BcKgq" || slug === "pixel-craft-season-6-item-combinations-personal-map-art-portal-floor-barrel" || slug === "pcs6-ic-pmap-floor-barrel" || slug === "pcs6-ic-pmap-fb") {
+        location.replace("/pixel-craft/season-6/item-combinations/personal-map-art-portal/floor-barrel/");
+      }
+      if(uuid === "GBZdT" || slug === "pixel-craft-season-6-item-combinations-personal-map-art-portal-roof-barrel" || slug === "pcs6-ic-pmap-roof-barrel" || slug === "pcs6-ic-pmap-rb") {
+        location.replace("/pixel-craft/season-6/item-combinations/personal-map-art-portal/roof-barrel/");
+      }
+      if(uuid === "JwQbM" || slug === "pixel-craft-season-6-item-combinations-personal-map-art-portal-red-shulker-box" || slug === "pcs6-ic-pmap-red-shulker-box" || slug === "pcs6-ic-pmap-rsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/personal-map-art-portal/red-shulker-box/");
+      }
+      if(uuid === "E6u6y" || slug === "pixel-craft-season-6-item-combinations-personal-map-art-portal-green-shulker-box" || slug === "pcs6-ic-pmap-green-shulker-box" || slug === "pcs6-ic-pmap-gsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/personal-map-art-portal/green-shulker-box/");
+      }
+      if(uuid === "nodxz" || slug === "pixel-craft-season-6-item-combinations-personal-map-art-portal-blue-shulker-box" || slug === "pcs6-ic-pmap-blue-shulker-box" || slug === "pcs6-ic-pmap-bsb") {
+        location.replace("/pixel-craft/season-6/item-combinations/personal-map-art-portal/blue-shulker-box/");
+      }
+      if(uuid === "wV2t0" || slug === "pixel-craft-season-6-item-combinations-personal-map-art-portal-purple-shulker-box" || slug === "pcs6-ic-pmap-purple-shulker-box" || slug === "pcs6-ic-pmap-psb") {
+        location.replace("/pixel-craft/season-6/item-combinations/personal-map-art-portal/purple-shulker-box/");
+      }
+      if(uuid === "HDKfj" || slug === "pixel-craft-season-6-item-combinations-personal-map-art-portal-cyan-shulker-box" || slug === "pcs6-ic-pmap-cyan-shulker-box" || slug === "pcs6-ic-pmap-csb") {
+        location.replace("/pixel-craft/season-6/item-combinations/personal-map-art-portal/cyan-shulker-box/");
+      }
+      if(uuid === "seVAy" || slug === "pixel-craft-season-6-item-combinations-personal-map-art-portal-magenta-shulker-box" || slug === "pcs6-ic-pmap-magenta-shulker-box" || slug === "pcs6-ic-pmap-msb") {
+        location.replace("/pixel-craft/season-6/item-combinations/personal-map-art-portal/magenta-shulker-box/");
+      }
+      if(uuid === "sZOAO" || slug === "pixel-craft-season-6-item-combinations-personal-map-art-portal-yellow-shulker-box" || slug === "pcs6-ic-pmap-yellow-shulker-box" || slug === "pcs6-ic-pmap-ysb") {
+        location.replace("/pixel-craft/season-6/item-combinations/personal-map-art-portal/yellow-shulker-box/");
+      }
+      if(uuid === "TkMI9" || slug === "pixel-craft-season-6-item-combinations-personal-map-art-portal-orange-shulker-box" || slug === "pcs6-ic-pmap-orange-shulker-box" || slug === "pcs6-ic-pmap-osb") {
+        location.replace("/pixel-craft/season-6/item-combinations/personal-map-art-portal/orange-shulker-box/");
+      }
+
+      //Summoning Rituals.
+      if(uuid === "F2lNG" || slug === "pixel-craft-season-6-summoning-rituals" || slug === "pcs6-summoning-rituals" || slug === "pcs6-sr") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/");
+      }
+      //Blood Moon.
+      if(uuid === "9SDgr" || slug === "pixel-craft-season-6-summoning-rituals-blood-moon" || slug === "pcs6-sr-blood-moon" || slug === "pcs6-sr-bom") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/blood-moon/");
+      }
+      if(uuid === "60QTo" || slug === "pixel-craft-season-6-summoning-rituals-blood-moon-floor-1-barrel-1" || slug === "pcs6-sr-bom-f1-barrel-1" || slug === "pcs6-sr-bom-f1-b1") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/blood-moon/floor-1/barrel-1/");
+      }
+      if(uuid === "oGPTB" || slug === "pixel-craft-season-6-summoning-rituals-blood-moon-floor-1-barrel-2" || slug === "pcs6-sr-bom-f1-barrel-2" || slug === "pcs6-sr-bom-f1-b2") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/blood-moon/floor-1/barrel-2/");
+      }
+      if(uuid === "H7WXo" || slug === "pixel-craft-season-6-summoning-rituals-blood-moon-floor-1-barrel-3" || slug === "pcs6-sr-bom-f1-barrel-3" || slug === "pcs6-sr-bom-f1-b3") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/blood-moon/floor-1/barrel-3/");
+      }
+      if(uuid === "hZwAJ" || slug === "pixel-craft-season-6-summoning-rituals-blood-moon-floor-1-barrel-4" || slug === "pcs6-sr-bom-f1-barrel-4" || slug === "pcs6-sr-bom-f1-b4") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/blood-moon/floor-1/barrel-4/");
+      }
+      if(uuid === "SxB7A" || slug === "pixel-craft-season-6-summoning-rituals-blood-moon-floor-2-barrel-1" || slug === "pcs6-sr-bom-f2-barrel-1" || slug === "pcs6-sr-bom-f2-b1") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/blood-moon/floor-2/barrel-1/");
+      }
+      if(uuid === "udUQE" || slug === "pixel-craft-season-6-summoning-rituals-blood-moon-floor-2-barrel-2" || slug === "pcs6-sr-bom-f2-barrel-2" || slug === "pcs6-sr-bom-f2-b2") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/blood-moon/floor-2/barrel-2/");
+      }
+      if(uuid === "s05NV" || slug === "pixel-craft-season-6-summoning-rituals-blood-moon-floor-2-barrel-3" || slug === "pcs6-sr-bom-f2-barrel-3" || slug === "pcs6-sr-bom-f2-b3") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/blood-moon/floor-2/barrel-3/");
+      }
+      if(uuid === "pTXSM" || slug === "pixel-craft-season-6-summoning-rituals-blood-moon-floor-2-barrel-4" || slug === "pcs6-sr-bom-f2-barrel-4" || slug === "pcs6-sr-bom-f2-b4") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/blood-moon/floor-2/barrel-4/");
+      }
+      if(uuid === "EmWq1" || slug === "pixel-craft-season-6-summoning-rituals-blood-moon-floor-3-barrel-1" || slug === "pcs6-sr-bom-f3-barrel-1" || slug === "pcs6-sr-bom-f3-b1") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/blood-moon/floor-3/barrel-1/");
+      }
+      if(uuid === "lzAf5" || slug === "pixel-craft-season-6-summoning-rituals-blood-moon-floor-3-barrel-2" || slug === "pcs6-sr-bom-f3-barrel-2" || slug === "pcs6-sr-bom-f3-b2") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/blood-moon/floor-3/barrel-2/");
+      }
+      if(uuid === "R0eGP" || slug === "pixel-craft-season-6-summoning-rituals-blood-moon-floor-3-barrel-3" || slug === "pcs6-sr-bom-f3-barrel-3" || slug === "pcs6-sr-bom-f3-b3") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/blood-moon/floor-3/barrel-3/");
+      }
+      if(uuid === "vDaUE" || slug === "pixel-craft-season-6-summoning-rituals-blood-moon-floor-3-barrel-4" || slug === "pcs6-sr-bom-f3-barrel-4" || slug === "pcs6-sr-bom-f3-b4") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/blood-moon/floor-3/barrel-4/");
+      }
+      //Harvest Moon.
+      if(uuid === "eYxMZ" || slug === "pixel-craft-season-6-summoning-rituals-harvest-moon" || slug === "pcs6-sr-harvest-moon" || slug === "pcs6-sr-hm") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/harvest-moon/");
+      }
+      if(uuid === "uX7AN" || slug === "pixel-craft-season-6-summoning-rituals-harvest-moon-floor-1-barrel-1" || slug === "pcs6-sr-hm-f1-barrel-1" || slug === "pcs6-sr-hm-f1-b1") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/harvest-moon/floor-1/barrel-1/");
+      }
+      if(uuid === "wtQ8D" || slug === "pixel-craft-season-6-summoning-rituals-harvest-moon-floor-1-barrel-2" || slug === "pcs6-sr-hm-f1-barrel-2" || slug === "pcs6-sr-hm-f1-b2") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/harvest-moon/floor-1/barrel-2/");
+      }
+      if(uuid === "5ix16" || slug === "pixel-craft-season-6-summoning-rituals-harvest-moon-floor-1-barrel-3" || slug === "pcs6-sr-hm-f1-barrel-3" || slug === "pcs6-sr-hm-f1-b3") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/harvest-moon/floor-1/barrel-3/");
+      }
+      if(uuid === "D1qMQ" || slug === "pixel-craft-season-6-summoning-rituals-harvest-moon-floor-1-barrel-4" || slug === "pcs6-sr-hm-f1-barrel-4" || slug === "pcs6-sr-hm-f1-b4") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/harvest-moon/floor-1/barrel-4/");
+      }
+      if(uuid === "vGzo2" || slug === "pixel-craft-season-6-summoning-rituals-harvest-moon-floor-2-barrel-1" || slug === "pcs6-sr-hm-f2-barrel-1" || slug === "pcs6-sr-hm-f2-b1") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/harvest-moon/floor-2/barrel-1/");
+      }
+      if(uuid === "6KaXV" || slug === "pixel-craft-season-6-summoning-rituals-harvest-moon-floor-2-barrel-2" || slug === "pcs6-sr-hm-f2-barrel-2" || slug === "pcs6-sr-hm-f2-b2") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/harvest-moon/floor-2/barrel-2/");
+      }
+      if(uuid === "9IJHD" || slug === "pixel-craft-season-6-summoning-rituals-harvest-moon-floor-2-barrel-3" || slug === "pcs6-sr-hm-f2-barrel-3" || slug === "pcs6-sr-hm-f2-b3") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/harvest-moon/floor-2/barrel-3/");
+      }
+      if(uuid === "iVQwJ" || slug === "pixel-craft-season-6-summoning-rituals-harvest-moon-floor-2-barrel-4" || slug === "pcs6-sr-hm-f2-barrel-4" || slug === "pcs6-sr-hm-f2-b4") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/harvest-moon/floor-2/barrel-4/");
+      }
+      if(uuid === "Q0V1S" || slug === "pixel-craft-season-6-summoning-rituals-harvest-moon-floor-3-barrel-1" || slug === "pcs6-sr-hm-f3-barrel-1" || slug === "pcs6-sr-hm-f3-b1") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/harvest-moon/floor-3/barrel-1/");
+      }
+      if(uuid === "4mMqm" || slug === "pixel-craft-season-6-summoning-rituals-harvest-moon-floor-3-barrel-2" || slug === "pcs6-sr-hm-f3-barrel-2" || slug === "pcs6-sr-hm-f3-b2") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/harvest-moon/floor-3/barrel-2/");
+      }
+      if(uuid === "wPfdl" || slug === "pixel-craft-season-6-summoning-rituals-harvest-moon-floor-3-barrel-3" || slug === "pcs6-sr-hm-f3-barrel-3" || slug === "pcs6-sr-hm-f3-b3") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/harvest-moon/floor-3/barrel-3/");
+      }
+      if(uuid === "KDnQy" || slug === "pixel-craft-season-6-summoning-rituals-harvest-moon-floor-3-barrel-4" || slug === "pcs6-sr-hm-f3-barrel-4" || slug === "pcs6-sr-hm-f3-b4") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/harvest-moon/floor-3/barrel-4/");
+      }
+      //Blue Moon.
+      if(uuid === "2aiwa" || slug === "pixel-craft-season-6-summoning-rituals-blue-moon" || slug === "pcs6-sr-blue-moon" || slug === "pcs6-sr-bum") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/blue-moon/");
+      }
+      //Thunder Storm.
+      if(uuid === "PHK7m" || slug === "pixel-craft-season-6-summoning-rituals-thuner-storm" || slug === "pcs6-sr-thuner-storm" || slug === "pcs6-sr-ts") {
+        location.replace("/pixel-craft/season-6/summoning-rituals/thuner-storm/");
+      }
+
+      //Shulker Box Advancements.
+      if(uuid === "ue68Y" || slug === "pixel-craft-season-6-shulker-box-advancements" || slug === "pcs6-shulker-box-advancements" || slug === "pcs6-sba") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/");
+      }
+      if(uuid === "keYhz" || slug === "pixel-craft-season-6-shulker-box-advancements-redstone-box" || slug === "pcs6-sba-redstone-box" || slug === "pcs6-sba-rb") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/redstone-box/");
+      }
+      if(uuid === "AdMuH" || slug === "pixel-craft-season-6-shulker-box-advancements-build-box" || slug === "pcs6-sba-build-box" || slug === "pcs6-sba-bub") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/build-box/");
+      }
+      if(uuid === "Th4Pq" || slug === "pixel-craft-season-6-shulker-box-advancements-wood-box" || slug === "pcs6-sba-wood-box" || slug === "pcs6-sba-wb") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/wood-box/");
+      }
+      if(uuid === "hWX9h" || slug === "pixel-craft-season-6-shulker-box-advancements-vegetation-box-1" || slug === "pcs6-sba-vegetation-box-1" || slug === "pcs6-sba-vb1") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/vegetation-box-1/");
+      }
+      if(uuid === "FXn7J" || slug === "pixel-craft-season-6-shulker-box-advancements-vegetation-box-2" || slug === "pcs6-sba-vegetation-box-2" || slug === "pcs6-sba-vb2") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/vegetation-box-2/");
+      }
+      if(uuid === "vYvzs" || slug === "pixel-craft-season-6-shulker-box-advancements-sea-box" || slug === "pcs6-sba-sea-box" || slug === "pcs6-sba-seb") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/sea-box/");
+      }
+      if(uuid === "jAKxI" || slug === "pixel-craft-season-6-shulker-box-advancements-stone-box-1" || slug === "pcs6-sba-stone-box-1" || slug === "pcs6-sba-sb1") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/stone-box-1/");
+      }
+      if(uuid === "Cg0Hi" || slug === "pixel-craft-season-6-shulker-box-advancements-stone-box-2" || slug === "pcs6-sba-stone-box-2" || slug === "pcs6-sba-sb2") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/stone-box-2/");
+      }
+      if(uuid === "ZVJQM" || slug === "pixel-craft-season-6-shulker-box-advancements-crop-box" || slug === "pcs6-sba-crop-box" || slug === "pcs6-sba-cb") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/crop-box/");
+      }
+      if(uuid === "Agv93" || slug === "pixel-craft-season-6-shulker-box-advancements-food-box" || slug === "pcs6-sba-food-box" || slug === "pcs6-sba-fb") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/food-box/");
+      }
+      if(uuid === "XinGh" || slug === "pixel-craft-season-6-shulker-box-advancements-drinking-box" || slug === "pcs6-sba-drinking-box" || slug === "pcs6-sba-db") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/drinking-box/");
+      }
+      if(uuid === "O5VGg" || slug === "pixel-craft-season-6-shulker-box-advancements-splashing-box" || slug === "pcs6-sba-splashing-box" || slug === "pcs6-sba-spb") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/splashing-box/");
+      }
+      if(uuid === "LDOgS" || slug === "pixel-craft-season-6-shulker-box-advancements-lingering-box" || slug === "pcs6-sba-lingering-box" || slug === "pcs6-sba-lb") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/lingering-box/");
+      }
+      if(uuid === "2ICPe" || slug === "pixel-craft-season-6-shulker-box-advancements-tool-box" || slug === "pcs6-sba-tool-box" || slug === "pcs6-sba-tb") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/tool-box/");
+      }
+      if(uuid === "tV2gl" || slug === "pixel-craft-season-6-shulker-box-advancements-battle-box" || slug === "pcs6-sba-battle-box" || slug === "pcs6-sba-bab") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/battle-box/");
+      }
+      if(uuid === "EDaVW" || slug === "pixel-craft-season-6-shulker-box-advancements-shulker-shulker-box" || slug === "pcs6-sba-shulker-shulker-box" || slug === "pcs6-sba-ssb") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/shulker-shulker-box/");
+      }
+      if(uuid === "Ubm9F" || slug === "pixel-craft-season-6-shulker-box-advancements-beacon-box" || slug === "pcs6-sba-beacon-box" || slug === "pcs6-sba-beb") {
+        location.replace("/pixel-craft/season-6/shulker-box-advancements/beacon-box/");
+      }
+
+      //The other Pixel Craft Seasons.
+      if(uuid === "nS0Yi" || slug === "pixel-craft-season-5" || slug === "pcs5") {
+        location.replace("/pixel-craft/season-5/");
+      }
+      if(uuid === "PcCdR" || slug === "pixel-craft-season-4" || slug === "pcs4") {
+        location.replace("/pixel-craft/season-4/");
+      }
+      if(uuid === "NWIBS" || slug === "pixel-craft-season-3" || slug === "pcs3") {
+        location.replace("/pixel-craft/season-3/");
+      }
+      if(uuid === "qh4RG" || slug === "pixel-craft-season-2" || slug === "pcs2") {
+        location.replace("/pixel-craft/season-2/");
+      }
+      if(uuid === "BpMUs" || slug === "pixel-craft-season-1" || slug === "pcs1") {
+        location.replace("/pixel-craft/season-1/");
+      }
+      //Pixel Modded Links.
+      if(uuid === "1nBnh" || slug === "pixel-modded-map" || slug === "pmmap") {
+        location.replace("/pixel-modded/map/");
+      }
+      if(uuid === "2J0FK" || slug === "pixel-modded-season-4" || slug === "pms4") {
+        location.replace("/pixel-modded/season-4/");
+      }
+      if(uuid === "cSC3M" || slug === "pixel-modded-season-3" || slug === "pms3") {
+        location.replace("/pixel-modded/season-3/");
+      }
+      if(uuid === "4lcMK" || slug === "pixel-modded-season-2" || slug === "pms2") {
+        location.replace("/pixel-modded/season-2/");
+      }
+      if(uuid === "v7sb4" || slug === "pixel-modded-season-1" || slug === "pms1") {
+        location.replace("/pixel-modded/season-1/");
+      }
+      //Miscellaneous Links.
+      if(uuid === "PpsZt" || slug === "members" || slug === "member" || slug === "peoples" || slug === "people" || slug === "users" || slug === "user") {
+        location.replace("/members/");
+      }
+      if(uuid === "gX5Pw" || slug === "join-request" || slug === "join") {
+        location.replace("/join-request/");
       }
     }
   }
