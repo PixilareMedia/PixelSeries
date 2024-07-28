@@ -1,1 +1,0 @@
-import"./Theme.astro_astro_type_script_index_0_lang.ee5a355e.js";const o=document.getElementById("topButton");window.onscroll=function(){n()};function n(){document.body.scrollTop>20||document.documentElement.scrollTop>20?o.style.display="block":o.style.display="none"}o.onclick=()=>{t()};function t(){document.body.scrollTop=0,document.documentElement.scrollTop=0}
