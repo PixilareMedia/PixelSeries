@@ -1,15 +1,17 @@
 ---
 export interface Props {
   title: string;
+  img: string;
+  series: string;
   anchor: string;
   id: string;
 }
 
-const { id, anchor, title } = Astro.props;
+const { id, anchor, title, img, series } = Astro.props;
 ---
 
 <div id={id} class="col justify-content-center text-center season-info">
-  <h2 class="tertiary-title">{title}</h2>
+  <h2 class="tertiary-title"><img class="header-logo" src=`/images/${series}/${img}.png` alt=`${title}`></h2>
   <a class="anchor-link" href={anchor}>(Link)</a>
   <div class="col justify-content-center">
     <slot/>
@@ -17,6 +19,10 @@ const { id, anchor, title } = Astro.props;
 </div>
 
 <style>
+  .header-logo {
+    width: 15%;
+    height: auto;
+  }
   .season-info {
     border: 3px;
     border-color: lightslategray;

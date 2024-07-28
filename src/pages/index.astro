@@ -3,13 +3,13 @@ import Layout from "../layouts/FrontPage.astro";
 ---
 
 <Layout title="Pixel Series">
-  <div class="row justify-content-center">
-    <h1 class="primary-title">Pixel Series</h1>
+  <div class="col justify-content-center">
+    <h1 class="primary-title"><img class="header-logo" src="/images/icons/pixelseries_name.png"></h1>
   </div>
   <div class="row justify-content-center">
     <div class="col info text-center">
       <h2 class="secondary-title">Hello and Welcome to Pixel Series</h2>
-      <p>Where the only thing that gets in the way of us doing cool things is other obligations we have. Here we play "Vanilla" and Modded Minecraft: Java Edition with some of us Streaming or Recording it as well. Created back in 2016 we've played and updated through 4 differnt modpacks and 9 major vanilla updates.</p>
+      <p>Where the only thing that gets in the way of us doing cool things is other obligations we have. Here we play "Vanilla" and Modded Minecraft: Java Edition with some of us Streaming or Recording it as well. Created back in 2016 we've played and updated through 4 differnt modpacks and 10 major vanilla updates.</p>
     </div>
   </div>
   <div class="row justify-content-center">
@@ -57,6 +57,18 @@ import Layout from "../layouts/FrontPage.astro";
 </Layout>
 
 <style>
+  .primary-title {
+    /*border: 3px;
+    border-color: lightslategray;
+    border-style: groove;
+    border-radius: 25px;*/
+    padding: 10px;
+    /*background: rgba(51, 51, 51, 0.5);*/
+  }
+  .primary-title > .header-logo {
+    width: 60%;
+    height: auto;
+  }
   .info {
     border: 3px;
     border-color: lightslategray;
@@ -77,14 +89,5 @@ import Layout from "../layouts/FrontPage.astro";
   .season-link > img {
     width: 40%;
     height: auto;
-  }
-
-  .primary-title {
-    border: 3px;
-    border-color: lightslategray;
-    border-style: groove;
-    border-radius: 25px;
-    padding: 10px;
-    background: rgba(51, 51, 51, 0.5);
   }
 </style>

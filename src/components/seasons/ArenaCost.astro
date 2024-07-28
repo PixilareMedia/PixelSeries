@@ -1,0 +1,35 @@
+---
+export interface Props {
+  name: string;
+}
+
+const { name } = Astro.props;
+---
+
+<div class="text-left">
+  <ul class="required-items">
+    <h4 class="text-center">{name}</h4>
+    <slot/>
+  </ul>
+</div>
+
+<style>
+  .required-items {
+    list-style: none;
+    max-width: 26em;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .text-left:first-child {
+    margin-left: 0em;
+  }
+  .text-left:last-child {
+    margin-right: 0em;
+  }
+</style>

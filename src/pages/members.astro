@@ -6,12 +6,12 @@ import Card from '../components/members/Card.astro';
 
 <Layout title='Members - Pixel Series' backPage='/' id='PpsZt' slug='Members'>
   <div class="row justify-content-center">
-    <h1 class="primary-title">Members</h1>
+    <h1 class="primary-title"><img class="header-logo" src="/images/icons/pixelseries_members.png"></h1>
   </div>
-  <div class="row info justify-content-center">
+  <div class="row justify-content-center">
     <div class="col"></div>
-    <div class="col text-center">
-      <h2 class="secondary-title">Pixel Craft</h2>
+    <div class="col info text-center">
+      <h2 class="secondary-title"><img class="header-logo" src="/images/pixel-craft/name.png"></h2>
       <div class="row justify-content-center">
         <button id="PixelCraftSeason1Button" class="showHeads">S1</button>
         <button id="PixelCraftSeason2Button" class="showHeads">S2</button>
@@ -21,8 +21,8 @@ import Card from '../components/members/Card.astro';
         <button id="PixelCraftSeason6Button" class="showHeads">S6</button>
       </div>
     </div>
-    <div class="col text-center">
-      <h2 class="secondary-title">Pixel Modded</h2>
+    <div class="col info text-center">
+      <h2 class="secondary-title"><img class="header-logo" src="/images/pixel-modded/name.png"></h2>
       <div class="row justify-content-center">
         <button id="PixelModdedSeason1Button" class="showHeads">S1</button>
         <button id="PixelModdedSeason2Button" class="showHeads">S2</button>
@@ -33,7 +33,7 @@ import Card from '../components/members/Card.astro';
     <div class="col"></div>
   </div>
   <div class="col justify-content-center">
-    <Season title='Pixel Craft Season 6' id='PixelCraftSeason6Members' anchor='#Pixel-Craft-Season-6'>
+    <Season title='Pixel Craft Season 6' img='season_6' series='pixel-craft' id='PixelCraftSeason6Members' anchor='#Pixel-Craft-Season-6'>
       <div class="row">
         <Card
           name='Herobrain_gamer'
@@ -160,6 +160,16 @@ import Card from '../components/members/Card.astro';
           href="aki_ryuto"
           uuid="8346118d-296a-4e7c-a1df-3e88debefa29"
         />
+        <Card
+          name="icecreammosh"
+          href="icecreammosh"
+          uuid="8fbc1542-3428-4f2f-b815-0373712995e3"
+        />
+        <Card
+          name="Lockness666"
+          href="lockness666"
+          uuid="d896cfe0-0845-4157-9bab-624ef734e686"
+        />
       </div>
       <div class="row">
         <Card
@@ -184,7 +194,7 @@ import Card from '../components/members/Card.astro';
         />
       </div>
     </Season>
-    <Season title='Pixel Craft Season 5' id='PixelCraftSeason5Members' anchor='#Pixel-Craft-Season-5'>
+    <Season title='Pixel Craft Season 5' img='season_5' series='pixel-craft' id='PixelCraftSeason5Members' anchor='#Pixel-Craft-Season-5'>
       <div class="row">
           <Card
               name="Herobrain_gamer"
@@ -362,7 +372,7 @@ import Card from '../components/members/Card.astro';
           />
       </div>
     </Season>
-    <Season title='Pixel Craft Season 4' id='PixelCraftSeason4Members' anchor='#Pixel-Craft-Season-4'>
+    <Season title='Pixel Craft Season 4' img='season_4' series='pixel-craft' id='PixelCraftSeason4Members' anchor='#Pixel-Craft-Season-4'>
       <div class="row">
           <Card
               name="Herobrain_gamer"
@@ -557,7 +567,7 @@ import Card from '../components/members/Card.astro';
           />
       </div>
     </Season>
-    <Season title='Pixel Craft Season 3' id='PixelCraftSeason3Members' anchor='#Pixel-Craft-Season-3'>
+    <Season title='Pixel Craft Season 3' img='season_3' series='pixel-craft' id='PixelCraftSeason3Members' anchor='#Pixel-Craft-Season-3'>
       <div class="row">
           <Card
               name="Herobrain_gamer"
@@ -823,7 +833,7 @@ import Card from '../components/members/Card.astro';
           />
       </div>
     </Season>
-    <Season title='Pixel Craft Season 2' id='PixelCraftSeason2Members' anchor='#Pixel-Craft-Season-2'>
+    <Season title='Pixel Craft Season 2' img='season_2' series='pixel-craft' id='PixelCraftSeason2Members' anchor='#Pixel-Craft-Season-2'>
       <div class="row">
           <Card
               name="Herobrain_gamer"
@@ -923,7 +933,7 @@ import Card from '../components/members/Card.astro';
           />
       </div>
     </Season>
-    <Season title='Pixel Craft Season 1' id='PixelCraftSeason1Members' anchor='#Pixel-Craft-Season-1'>
+    <Season title='Pixel Craft Season 1' img='season_1' series='pixel-craft' id='PixelCraftSeason1Members' anchor='#Pixel-Craft-Season-1'>
       <div class="row">
           <Card
               name="Herobrain_gamer"
@@ -949,7 +959,7 @@ import Card from '../components/members/Card.astro';
     </Season>
   </div>
   <div class="col justify-content-center">
-    <Season title='Pixel Modded Season 4' id='PixelModdedSeason4Members' anchor='#Pixel-Modded-Season-4'>
+    <Season title='Pixel Modded Season 4' img='season_4' series='pixel-modded' id='PixelModdedSeason4Members' anchor='#Pixel-Modded-Season-4'>
       <div class="row">
           <Card
               name="Herobrain_gamer"
@@ -1012,7 +1022,7 @@ import Card from '../components/members/Card.astro';
           />
       </div>
     </Season>
-    <Season title='Pixel Modded Season 3' id='PixelModdedSeason3Members' anchor='#Pixel-Modded-Season-3'>
+    <Season title='Pixel Modded Season 3' img='season_3' series='pixel-modded' id='PixelModdedSeason3Members' anchor='#Pixel-Modded-Season-3'>
       <div class="row">
           <Card
               name="Herobrain_gamer"
@@ -1075,7 +1085,7 @@ import Card from '../components/members/Card.astro';
           />
       </div>
     </Season>
-    <Season title='Pixel Modded Season 2' id='PixelModdedSeason2Members' anchor='#Pixel-Modded-Season-2'>
+    <Season title='Pixel Modded Season 2' img='season_2' series='pixel-modded' id='PixelModdedSeason2Members' anchor='#Pixel-Modded-Season-2'>
       <div class="row">
           <Card
               name="Herobrain_gamer"
@@ -1148,7 +1158,7 @@ import Card from '../components/members/Card.astro';
           />
       </div>
     </Season>
-    <Season title='Pixel Modded Season 1' id='PixelModdedSeason1Members' anchor='#Pixel-Modded-Season-1'>
+    <Season title='Pixel Modded Season 1' img='season_1' series='pixel-modded' id='PixelModdedSeason1Members' anchor='#Pixel-Modded-Season-1'>
       <div class="row">
           <Card
               name="Herobrain_gamer"
@@ -1169,7 +1179,7 @@ import Card from '../components/members/Card.astro';
     </Season>
   </div>
   <div class="col justify-content-center">
-    <Season title='All Pixel Series' id='PixelSeriesAllMembers' anchor='#All'>
+    <Season title='All Pixel Series' img='pixelseries_members_all' series='icons' id='PixelSeriesAllMembers' anchor='#All'>
       <div class="row">
           <Card
               name="Herobrain_gamer"
@@ -1675,6 +1685,16 @@ import Card from '../components/members/Card.astro';
               href="artisticarnie"
               uuid="3885722f-3aab-493d-a45b-92694fd3f1a4"
           />
+          <Card
+            name="icecreammosh"
+            href="icecreammosh"
+            uuid="8fbc1542-3428-4f2f-b815-0373712995e3"
+          />
+          <Card
+            name="Lockness666"
+            href="lockness666"
+            uuid="d896cfe0-0845-4157-9bab-624ef734e686"
+          />
       </div>
     </Season>
   </div>
@@ -1682,12 +1702,20 @@ import Card from '../components/members/Card.astro';
 
 <style>
   .primary-title {
-    border: 3px;
+    /*border: 3px;
     border-color: lightslategray;
     border-style: groove;
-    border-radius: 25px;
+    border-radius: 25px;*/
     padding: 10px;
-    background: rgba(51, 51, 51, 0.5);
+    /*background: rgba(51, 51, 51, 0.5);*/
+  }
+  .primary-title > .header-logo {
+    width: 60%;
+    height: auto;
+  }
+  .secondary-title > .header-logo {
+    width: 60%;
+    height: auto;
   }
   .info {
     border: 3px;
