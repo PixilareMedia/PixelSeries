@@ -1,0 +1,88 @@
+---
+import Layout from '../../../../layouts/Generic.astro';
+import Costs from '../../../../components/seasons/ArenaCost.astro';
+---
+
+<Layout title='Diamond Bowman - Mob Arena - Season #6 - Pixel Craft - Pixel Series' backPage='/pixel-craft/season-6/mob-arena/' id='BZInD' slug='PCS6-MA-Diamond-Bowman'>
+  <div class="row justify-content-center">
+    <h1 class="primary-title">Pixel Craft Season #6</h1>
+  </div>
+  <div class="col justify-content-center">
+    <div class="col info text-center">
+      <h2>Diamond Bowman Fight</h2>
+      <p>To initiate the Diamond Bowman fright follow these requirements.<br/>The Mob Arena is located at the back of the Unlock Isles.</p>
+      <div class="col justify-content-center">
+        <img class="mob" src="/images/pixel-craft/season-6/mob-arena/diamond-bowman/fight.png" alt="An image of the Diamond Bowman.">
+        <h3>Build Cost</h3>
+        <div class="row justify-content-center">
+          <Costs name='Sacrifical Livestock'>
+            <li>5x Cow</li>
+            <li>5x Sheep</li>
+            <li>5x Pig</li>
+          </Costs>
+          <Costs name='Caged Entities'>
+            <li>Cell 1 | Skeleton</li>
+            <li>Cell 2 | Skeleton</li>
+            <li>Cell 3 | Skeleton</li>
+            <li>Cell 4 | Skeleton</li>
+            <li>Cell 5 | Skeleton</li>
+            <li>Cell 6 | Skeleton</li>
+            <li>Cell 7 | Skeleton</li>
+            <li>Cell 8 | Skeleton</li>
+            <li>Cell 9 | Skeleton</li>
+            <li>Cell 10 | Skeleton</li>
+            <li>Cell 11 | Skeleton</li>
+            <li>Cell 12 | Skeleton</li>
+            <li>Cell 13 | Skeleton</li>
+            <li>Cell 14 | Skeleton</li>
+            <li>Cell 15 | Skeleton</li>
+            <li>Cell 16 | Skeleton</li>
+            <li>Cell 17 | Skeleton</li>
+            <li>Cell 18 | Skeleton</li>
+            <li>Cell 19 | Skeleton</li>
+            <li>Cell 20 | Skeleton</li>
+            <li>Cell 21 | Skeleton</li>
+            <li>Cell 22 | Skeleton</li>
+          </Costs>
+          <Costs name='Other Criteria'>
+            <li>Time of Day | Night</li>
+            <li>Lunar Event | Blue</li>
+          </Costs>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .primary-title {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: groove;
+    border-radius: 25px;
+    padding: 10px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+  .info {
+    border: 3px;
+    border-color: lightslategray;
+    border-style: inset;
+    border-radius: 25px;
+    font-size: large;
+    padding: 10px;
+    margin: 5px;
+    background: rgba(51, 51, 51, 0.5);
+  }
+  .info:last-child {
+    margin-bottom: 3em;
+  }
+
+.mob {
+  width: auto;
+  height: 50%;
+  border: 3px;
+  border-style: double;
+  border-color: gray;
+  border-radius: 33px;
+}
+</style>
