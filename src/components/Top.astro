@@ -1,22 +1,8 @@
 <button id="topButton" title="Go to the top of the page.">Top &uarr;</button>
 
 <script>
-  const topButton = document.getElementById("topButton");
-  
-  window.onscroll = function() {scrollFunction()};
-  function scrollFunction() {
-    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      topButton.style.display = "block";
-    } else {
-      topButton.style.display = "none";
-    }
-  }
-
-  topButton.onclick = () => {topFunction()};
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
+  import { topButtonSetup } from '../scripts/topButton.ts';
+  document.addEventListener("DOMContentLoaded", topButtonSetup);
 </script>
 
 <style>

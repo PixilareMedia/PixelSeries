@@ -165,13 +165,40 @@ import Card from '../components/members/Card.astro';
           href="icecreammosh"
           uuid="8fbc1542-3428-4f2f-b815-0373712995e3"
         />
+      </div>
+      <div class="row">
         <Card
           name="Lockness666"
           href="lockness666"
           uuid="d896cfe0-0845-4157-9bab-624ef734e686"
         />
+        <Card
+          name="Zorlou"
+          href="zorlou"
+          uuid="98bc7d68-559e-4974-bc81-f8104393d5dd"
+        />
+        <Card
+          name="Kaizaddini"
+          href="kaizaddini"
+          uuid="3636c96a-696e-48c3-b052-1d811f587bc8"
+        />
+        <Card
+          name="realhauntedmound"
+          href="realhauntedmound"
+          uuid="be0b8906-088d-4abd-8988-e06cb3abdb9d"
+        />
+        <Card
+          name="Jormundandr"
+          href="jormundandr"
+          uuid="bf101544-b7a5-41a5-b97c-ec94b77db222"
+        />
       </div>
       <div class="row">
+        <Card
+          name="Th3R34lP0gg3r5"
+          href="th3r34lp0gg3r5"
+          uuid="abe04262-835a-4bd3-b3de-97f85c3af2a5"
+        />
         <Card
           name="KitteeKat115"
           href="kitteekat115"
@@ -1685,6 +1712,8 @@ import Card from '../components/members/Card.astro';
               href="artisticarnie"
               uuid="3885722f-3aab-493d-a45b-92694fd3f1a4"
           />
+      </div>
+      <div class="row">
           <Card
             name="icecreammosh"
             href="icecreammosh"
@@ -1695,6 +1724,33 @@ import Card from '../components/members/Card.astro';
             href="lockness666"
             uuid="d896cfe0-0845-4157-9bab-624ef734e686"
           />
+          <Card
+            name="Zorlou"
+            href="zorlou"
+            uuid="98bc7d68-559e-4974-bc81-f8104393d5dd"
+          />
+          <Card
+            name="Kaizaddini"
+            href="kaizaddini"
+            uuid="3636c96a-696e-48c3-b052-1d811f587bc8"
+          />
+      </div>
+      <div class="row">
+          <Card
+            name="realhauntedmound"
+            href="realhauntedmound"
+            uuid="be0b8906-088d-4abd-8988-e06cb3abdb9d"
+          />
+          <Card
+            name="Jormundandr"
+            href="jormundandr"
+            uuid="bf101544-b7a5-41a5-b97c-ec94b77db222"
+          />
+          <Card
+            name="Th3R34lP0gg3r5"
+            href="th3r34lp0gg3r5"
+            uuid="abe04262-835a-4bd3-b3de-97f85c3af2a5"
+          />
       </div>
     </Season>
   </div>
@@ -1702,12 +1758,7 @@ import Card from '../components/members/Card.astro';
 
 <style>
   .primary-title {
-    /*border: 3px;
-    border-color: lightslategray;
-    border-style: groove;
-    border-radius: 25px;*/
     padding: 10px;
-    /*background: rgba(51, 51, 51, 0.5);*/
   }
   .primary-title > .header-logo {
     width: 60%;
@@ -1747,136 +1798,6 @@ import Card from '../components/members/Card.astro';
 </style>
 
 <script>
-  //Run This Function Once The DOM Content Has Loaded.
-  document.addEventListener("DOMContentLoaded", startUp);
-  
-  //Variables.
-  const PixelSeriesAll = document.getElementById("PixelSeriesAllMembers");
-  const PixelCraftSeason1 = document.getElementById("PixelCraftSeason1Members");
-  const PixelCraftSeason2 = document.getElementById("PixelCraftSeason2Members");
-  const PixelCraftSeason3 = document.getElementById("PixelCraftSeason3Members");
-  const PixelCraftSeason4 = document.getElementById("PixelCraftSeason4Members");
-  const PixelCraftSeason5 = document.getElementById("PixelCraftSeason5Members");
-  const PixelCraftSeason6 = document.getElementById("PixelCraftSeason6Members");
-  const PixelModdedSeason1 = document.getElementById("PixelModdedSeason1Members");
-  const PixelModdedSeason2 = document.getElementById("PixelModdedSeason2Members");
-  const PixelModdedSeason3 = document.getElementById("PixelModdedSeason3Members");
-  const PixelModdedSeason4 = document.getElementById("PixelModdedSeason4Members");
-
-  //OnClick events for the buttons.
-  document.getElementById("PixelCraftSeason1Button").onclick = () => {
-    openClose(PixelCraftSeason1);
-  }
-  document.getElementById("PixelCraftSeason2Button").onclick = () => {
-    openClose(PixelCraftSeason2);
-  }
-  document.getElementById("PixelCraftSeason3Button").onclick = () => {
-    openClose(PixelCraftSeason3);
-  }
-  document.getElementById("PixelCraftSeason4Button").onclick = () => {
-    openClose(PixelCraftSeason4);
-  }
-  document.getElementById("PixelCraftSeason5Button").onclick = () => {
-    openClose(PixelCraftSeason5);
-  }
-  document.getElementById("PixelCraftSeason6Button").onclick = () => {
-    openClose(PixelCraftSeason6);
-  }
-  document.getElementById("PixelModdedSeason1Button").onclick = () => {
-    openClose(PixelModdedSeason1);
-  }
-  document.getElementById("PixelModdedSeason2Button").onclick = () => {
-    openClose(PixelModdedSeason2);
-  }
-  document.getElementById("PixelModdedSeason3Button").onclick = () => {
-    openClose(PixelModdedSeason3);
-  }
-  document.getElementById("PixelModdedSeason4Button").onclick = () => {
-    openClose(PixelModdedSeason4);
-  }
-
-  //Setup for the Members Page.
-  function startUp() {
-      //Changing the Display value of the Elements.
-      hideBlocks();
-      PixelCraftSeason6.style.display = "block";
-      //Checking For Valid URL Anchor.
-      anchorCheck();
-      console.log("There are " + document.getElementById("PixelSeriesAllMembers").getElementsByClassName("card-info").length + " members total.")
-  }
-
-  //Set all Elements to be Hidden.
-  function hideBlocks() {
-    PixelSeriesAll.style.display = "none";
-    PixelCraftSeason1.style.display = "none";
-    PixelCraftSeason2.style.display = "none";
-    PixelCraftSeason3.style.display = "none";
-    PixelCraftSeason4.style.display = "none";
-    PixelCraftSeason5.style.display = "none";
-    PixelCraftSeason6.style.display = "none";
-    PixelModdedSeason1.style.display = "none";
-    PixelModdedSeason2.style.display = "none";
-    PixelModdedSeason3.style.display = "none";
-    PixelModdedSeason4.style.display = "none";
-  }
-
-  //Change Display of One Element.
-  function openClose(name) {
-    hideBlocks();
-    if(name.style.display === "none") {
-      name.style.display = "block";
-    } else {
-      name.style.display = "none";
-    }
-  }
-
-  //Anchor Checking On Page Load.
-  function anchorCheck() {
-    //Variables.
-    let lhash = location.hash.toLocaleLowerCase();
-    let hash = lhash.replace("#", "");
-
-    //Check the anchors/hashs.
-    if(!hash) {
-      openClose(PixelCraftSeason6);
-    } else {
-      switch(hash) {
-        case "pixel-craft-season-1":
-          openClose(PixelCraftSeason1);
-          break;
-        case "pixel-craft-season-2":
-          openClose(PixelCraftSeason2);
-          break;
-        case "pixel-craft-season-3":
-          openClose(PixelCraftSeason3);
-          break;
-        case "pixel-craft-season-4":
-          openClose(PixelCraftSeason4);
-          break;
-        case "pixel-craft-season-5":
-          openClose(PixelCraftSeason5);
-          break;
-        case "pixel-craft-season-6":
-          openClose(PixelCraftSeason6);
-          break;
-        case "pixel-modded-season-1":
-          openClose(PixelModdedSeason1);
-          break;
-        case "pixel-modded-season-2":
-          openClose(PixelModdedSeason2);
-          break;
-        case "pixel-modded-season-3":
-          openClose(PixelModdedSeason3);
-          break;
-        case "pixel-modded-season-4":
-          openClose(PixelModdedSeason4);
-          break;
-        case "all":
-          openClose(PixelSeriesAll);
-          break;
-        default:
-          openClose(PixelCraftSeason6);
-      }
-    }
-  }
+  import { membersSetup } from '../scripts/members.ts';
+  document.addEventListener("DOMContentLoaded", membersSetup);
 </script>

@@ -77,19 +77,6 @@ const { id, slug } = Astro.props;
 </style>
 
 <script>
-  const idButton = document.getElementById("idButton");
-  const slugButton = document.getElementById("slugButton");
-
-  idButton.onclick = () => {copyText(document.getElementById("idAnchorCopy").innerHTML)}
-  slugButton.onclick = () => {copyText(document.getElementById("slugAnchorCopy").innerHTML)}
-
-  async function copyText(type) {
-    try {
-      let hold = location.origin + "/u/#" + type;
-      await navigator.clipboard.writeText(hold);
-      //console.log('Content copied to clipboard: ', hold);
-    } catch(error) {
-      console.error('Failed to copy: ', error);
-    }
-  }
+  import { shortURLsSetup } from '../scripts/shortURLs.ts';
+  document.addEventListener("DOMContentLoaded", shortURLsSetup);
 </script>
